@@ -10,7 +10,7 @@ Rodriguez, Fernando:
 
 
 
-Costa Garcia, Ramiro:
+Costa Garcia, Ramiro: Tengo 31 años, soy ingeniero en telecomunicaciones, trabajo como qa tester en una empresa francesa que provee cablemodems y decodificadores a distintas empresas de cable de argentina. My hobbie es practicar remo los fines de semana.
 
 
 
