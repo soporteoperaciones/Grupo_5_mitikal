@@ -12,6 +12,8 @@ Rodriguez, Fernando:
 
 Costa Garcia, Ramiro: Tengo 31 años, soy ingeniero en telecomunicaciones, trabajo como qa tester en una empresa francesa que provee cablemodems y decodificadores a distintas empresas de cable de argentina. My hobbie es practicar remo los fines de semana.
 
+Fernando Rodriguez : 55 años , 4 hijos, 2 gatos , 1 perro , Analista de Sistemas, Gte de Operaciones empresa de marketing y desarrollo Mobile, Ecommerce. Me gusta el futsal y los buenos vinos.
+
 
 
 Gomez, Gerardo:
