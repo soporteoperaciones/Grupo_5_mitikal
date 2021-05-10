@@ -16,7 +16,7 @@ Fernando Rodriguez : 55 años , 4 hijos, 2 gatos , 1 perro , Analista de Sistema
 
 
 
-Gomez, Gerardo:
+Gomez, Gerardo: 35 años, 1 hijo, 1 perro, hincha de Boca. Casi Ingeniero en Telecomunicaciones. Trabajo en TGN, como analista de telecomunicaciones.
 
 
 
