@@ -55,19 +55,18 @@ header{
     width: 100%;
 }
 
-  .main_box_2 .destacados{
+.main_box_2 .destacados{
     font-family: Arial;
     font-size: 11px;
     color: #ffffff;
     background: #202020 url("/img/image_destacados.jpeg") no-repeat top center fixed;
-    background-size: cover;
     height: fit-content;
     width: fit-content;
 
   }
 
   
-  .main_box_2 .novedades{
+.main_box_2 .novedades{
     font-family: Arial;
     font-size: 11px;
     color: #ffffff;
@@ -82,6 +81,12 @@ header{
     border: 1px solid black;
     margin-right: 10px;
     justify-content: space-evenly;
+
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 500px;
+    height: 400px;
+    align-content: space-between;
   }
 
 
@@ -92,8 +97,12 @@ header{
 
 .main_box_3{
     display:flex;
-    height: fit-content;
     width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 500px;
+    height: 400px;
+    align-content: space-between;
 }
 
 /*Footer*/
