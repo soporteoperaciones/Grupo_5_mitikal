@@ -2,6 +2,9 @@
 
 header{
     background: #000101;
+    position:sticky;
+    top:0;
+    z-index:1;
 
 }
 
@@ -12,7 +15,7 @@ header{
     font-family: 'Rubik', sans-serif;
     color:white;
     background-color:#151515;
-    position:sticky;
+
 
 }
 
@@ -21,6 +24,7 @@ header{
     text-decoration:none;
     font-size:12px;
   }
+
 
 .header_box_1 {
     display: flex;
@@ -31,19 +35,29 @@ header{
     height:155px;
 }
 
-#header_buscar{
-    position: relative;
-    display: flex;
-    min-width: 100px;
+.header_buscar{
     background-color:#151515;
     border-radius:50px;
     height:32px;
     border: 2px solid #FFFEFE;
     margin:5px;
-    font-family: "Font Awesome 5 Free"; 
-    font-weight: 900;
 }
 
+#header_id_buscar{
+    background:none;
+    border:none;
+
+}
+
+.header_sub_box_0{
+
+    display: flex;
+    width: 5%;
+    text-align: left;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;*/
+    }
 
 .header_sub_box_1{
 
@@ -210,24 +224,24 @@ header i{
 /*Prueba*/
 
 .fa-search {
-    position: absolute;
-    top: 6px;
-    left: 8px;
-    width: 14px;
+    margin-right:10px;
 }
-  
+
+/*
 .header_buscar {
     width: 100%;
     margin-bottom: 10px;
 }
-  
+  */
 .navigation_bar_icon {
     padding: 10px;
     min-width: 40px;
 }
-  
+/*
 #header_buscar {
     width: 100%;
     padding: 10px;
     text-align: center;
 }
+*/  
+
