@@ -20,31 +20,31 @@
 <body>
     <!-- Parte superior de la pagina dividido en un box, con tres box internos -->
 
-    <header class="header_index">
-	    <div class="div_element_header">
-            <section class="header_box_0">
-                <div>
-                    <div><a class="a_banner_header" href="Link a envios">  3 CUOTAS SIN INTERES - ENVIOS GRATIS A TODO EL PAIS </a></div>
+    <header>
+        <div class="container-header-all">
+            <div class="row0">
+                <a class="a_banner_header" href="Link a envios">  3 CUOTAS SIN INTERES - ENVIOS GRATIS A TODO EL PAIS </a>
+                
+            </div>
+                <div class="container-body">  
+                    <div class="row1">
+                        <div class="colum0">
+                            <div class="header_bars_icon"><a href="*"><i class="fas fa-bars"></i></a>
+                            </div>
+                        </div>           
+                        <div class="colum1">
+                            <input type="header_type_buscar" id="header_id_buscar" placeholder="Buscar..." />
+                            <img src="" alt=""><i class="fa fa-search"></i>
+                        </div>
+                        <div class="colum2">
+                            <img class="logo_mitikal" src="/img/mitikal_logo.png" alt="Mitikal - Logo">
+                        </div>
+                        <div class="colum3">
+                            <a href="*"><i class="fas fa-user"></i></a>
+                            <a href="*"><i class="fas fa-shopping-cart"></i></a>
+                        </div>  
+                    </div>    
                 </div>
-            </section>
-            <section class="header_box_1">
-                <div class="header_sub_box_0">
-                    <div class="header_bars_icon"><i class="fas fa-bars"></i></div>
-                </div>
-                <div class="header_sub_box_1">
-                    <div class="header_buscar">
-                        <input type="header_type_buscar" id="header_id_buscar" placeholder="Buscar..." />
-                        <img src="" alt=""><i class="fa fa-search"></i>
-                    </div>
-                </div>
-                <div class="header_sub_box_2">
-                    <div><img class="logo_mitikal" src="/img/mitikal_logo.png" alt="Mitikal - Logo"></div>
-                </div>
-                <div class="header_sub_box_3">
-                    <div class="header_user_icon"><i class="fas fa-user"></i></div>
-                    <div class="header_cart_icon"><i class="fas fa-shopping-cart"></i></div>
-                </div>
-            </section>
         </div>
     </header>
         <!-- Cuerpo principal de la pagina dividido en 4 boxes, -->
@@ -149,14 +149,18 @@
             </article>
         </section>
         <section class="main_box_4">
-            <div>
+            <div class="newsletter">
                 <h3> Suscribite a nuestro newsletter </h3>
                 <h4> ¡Registrate y disfrutá nuestras ofertas!</h4>
-                <div class="registro_mail"><input type="text"> MAIL </div>
-                <div ><button class="boton_enviar">ENVIAR</button> </div>
+                <input class="register" type="text" placeholder="E-MAIL...">
+                <button class="boton_enviar">ENVIAR</button>
             </div>
         </section>
     </main>
+
+
+
+
     <!-- Parte inferior con dos cajas, una exclusiva para el copyright, y la otra subdividida en 3 boxes-->
     <footer>
 
