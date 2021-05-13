@@ -154,51 +154,112 @@ header{
 /*Footer*/
 
 
-footer  {
-    background: salmon;
-}
-
-.footer_box_1 {
-    display: flex;
-    flex-wrap: no-wrap;
+footer{
+    width: 100%;
+    background: #202020;
+    color: white;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
-    align-self: center;
+    font-family: sans-serif;
+    
 }
 
-.footer_sub_box_1{
+
+
+.container-body{
     display: flex;
-    width: 34%;
-    text-align: left;
-    justify-content: center;
-    align-items: left;
+    justify-content: space-between;
+    padding: 10px;
+    height:min-content;
+}
+.container-footer-all{
+    width: 100%;
+    margin:auto;
+}
+.colum0{
+    max-width: 300px;
+}
+.colum0 h1{
+    font-size: 22px;
+}
+
+.colum1{
+    max-width: 300px;
+}
+
+.colum1 h1{
+    font-size: 22px;
+}
+
+.colum2{
+    max-width: 300px;
+}
+.colum2 h1{
+    font-size: 22px;
+}
+.colum3{
+    max-width: 300px;
+}
+.colum3 h1{
+    font-size: 22px;
+}
+.row0{
+    margin-top: 20px;
+    display: flex;
     flex-direction: column;
+    
 }
-
-.footer_sub_box_2{
+.row0 a{
+    color: #c7c7c7;
+    text-decoration: none; 
+    padding: 5px;
+}
+.row{
+    margin-top: 20px;
     display: flex;
-    width: 22%;
-    text-align: center;
+}
+.row a {
+    color: #c7c7c7;
+    text-decoration: none;
+}
+.row label{
+    margin-top: 1px;
+    margin-left: 10px;
+    color: #c7c7c7;
+}
+.row2{
+    margin-top: 20px;
+    display: flex;
+    flex-flow: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+}
+.row2 a{
+    margin: 5px;
+    color: #c7c7c7;
+    text-decoration: none;
+    
+}
+.row2 a i{
+    font-size: 25px;
 }
 
-.footer_sub_box_3{
+.container-footer{
     display: flex;
-    width: 22%;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
+    justify-content: space-between;
+    background: #101010;
+    padding: 10px;
+    
 
-.footer_sub_box_4{
-    display: flex;
-    width: 22%;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+}
+.copyright{
+    color: #c7c7c7;
+}
+.politicas a{
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
 }
 
 
