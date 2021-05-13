@@ -94,28 +94,38 @@ header{
 /*Main*/
 
 .main_box_2{
-    display:flex;
-    height: fit-content;
-    width: 100%;
+    display: flex;
+    background-color:#151515;
+    position: relative;
+    text-align: center;
+  
+  }
+  
+.main_box_2 .destacados{
+        flex: 1;
+        text-align:center;
+  }
+  
+.main_box_2 .novedades{
+        flex: 1;
+        text-align:center;
+  }
+  
+.main_box_2 .destacados h3{
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    color: white;
+    font-size:80px;
 }
 
-.main_box_2 .main_sub_box {
-    border: 1px solid black;
-    margin-right: 10px;
-    justify-content: space-evenly;
-
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 500px;
-    height: 400px;
-    align-content: space-between;
-  }
-
-
-  .main_box_2 .main_sub_box img{
-        max-width: 100%; 
-        height: auto; 
-      }
+.main_box_2 .novedades h3{
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    color: white;
+    font-size:80px;
+}
 
 .main_box_3{
     display:flex;
@@ -125,6 +135,20 @@ header{
     width: 500px;
     height: 400px;
     align-content: space-between;
+}
+
+.main_box_2 button{
+    /*background-color:#151515;*/
+    background:none;
+    border-radius:50px;
+    /*height:60px;*/
+    width:auto;
+    border: 3px solid #FFFEFE;
+    margin:5px;
+    color: white;
+    margin:10px;
+    font-size:50px;
+    padding:20px;
 }
 
 /*Footer*/
@@ -196,22 +220,6 @@ header i{
 
 
 
-   /*
-.fa-user{
-    border: 1px solid black;
-    position:static;  
-    color:grey;
-    background-color: white;
-    border-radius: 25;
-}
-
-.fa-shopping-cart{
-    border: 1px solid black;
-    position:static;  
-    background-color: white;
-    border-radius: 50;
-}
-*/
 
 /* Botones */
 
@@ -244,4 +252,3 @@ header i{
     text-align: center;
 }
 */  
-
