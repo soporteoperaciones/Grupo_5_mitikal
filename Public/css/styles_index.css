@@ -209,6 +209,42 @@ main .container-main3-all .container-body .row0 .colum0{
     flex-direction:column;
     justify-content:center;
 }
+
+main .container-main3-all .container-body .row0 .colum0 .producto{
+    max-width: 100%;
+    width: 100%;
+    max-height: 80%;
+    height:80%;
+    border:black 5px solid;
+    display:flex;
+    background-image: url("/img/image_destacados.jpeg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    display:flex;
+    align-items:flex-start;
+    flex-direction:column-reverse;
+    align-items:center;
+    border:black 5px solid;
+    margin:0%;
+    font-size:70px 
+}
+
+main .container-main3-all .container-body .row0 .colum0 .description{
+    max-width: 100%;
+    width: 100%;
+    height:20%;
+    max-height: 20%;
+    display:flex;
+    align-items:flex-start;
+    flex-direction:column-reverse;
+    align-items:center;
+    border:black 5px solid;
+    margin:0%
+}
+
+
+
 main .container-main3-all .container-body .row0 .colum1{
     max-width: 30%;
     width: 30%;
@@ -220,8 +256,41 @@ main .container-main3-all .container-body .row0 .colum1{
     display:flex;
     flex-direction:column;
     justify-content:center;
-
 }
+
+main .container-main3-all .container-body .row0 .colum1 .producto{
+    max-width: 100%;
+    width: 100%;
+    max-height: 80%;
+    height:80%;
+    border:black 5px solid;
+    display:flex;
+    background-image: url("/img/image_destacados.jpeg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    display:flex;
+    align-items:flex-start;
+    flex-direction:column-reverse;
+    align-items:center;
+    border:black 5px solid;
+    margin:0%;
+    font-size:70px;
+}
+
+main .container-main3-all .container-body .row0 .colum1 .description{
+    max-width: 100%;
+    width: 100%;
+    height:20%;
+    max-height: 20%;
+    display:flex;
+    align-items:flex-start;
+    flex-direction:column-reverse;
+    align-items:center;
+    border:black 5px solid;
+    margin:0%;
+}
+
 
 main .container-main3-all .container-body .row0 .colum2{
     max-width: 30%;
@@ -234,7 +303,39 @@ main .container-main3-all .container-body .row0 .colum2{
     display:flex;
     flex-direction:column;
     justify-content:center;
+}
 
+main .container-main3-all .container-body .row0 .colum2 .producto{
+    max-width: 100%;
+    width: 100%;
+    max-height: 80%;
+    height:80%;
+    border:black 5px solid;
+    display:flex;
+    background-image: url("/img/image_destacados.jpeg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    display:flex;
+    align-items:flex-start;
+    flex-direction:column-reverse;
+    align-items:center;
+    border:black 5px solid;
+    margin:0%;
+    font-size:70px;
+}
+
+main .container-main3-all .container-body .row0 .colum2 .description{
+    max-width: 100%;
+    width: 100%;
+    height:20%;
+    max-height: 20%;
+    display:flex;
+    align-items:flex-start;
+    flex-direction:column-reverse;
+    align-items:center;
+    border:black 5px solid;
+    margin:0%;
 }
 
 main .container-main3-all .container-body .row0 .colum3{
@@ -248,75 +349,42 @@ main .container-main3-all .container-body .row0 .colum3{
     display:flex;
     flex-direction:column;
     justify-content:center;
-
 }
 
-
-/* ------------------------------------------------------------------------------------------------------------------------------      */
-
-
-/*Main*--OLD 
-.main_box_2{
-    display: flex;
-    background-color:#151515;
-    position: relative;
-    text-align: center;
-  
-  }
-  
-.main_box_2 .destacados{
-        flex: 1;
-        text-align:center;
-  }
-  
-.main_box_2 .novedades{
-        flex: 1;
-        text-align:center;
-  }
-  
-.main_box_2 .destacados h3{
-    position:
-    top: 50%;
-    left: 15%;
-    color: white;
-    font-size:80px;
-}
-
-.main_box_2 .novedades h3{
-    position: absolute;
-    top: 50%;
-    left: 65%;
-    color: white;
-    font-size:80px;
-}
-
-.main_box_3{
-    display:flex;
+main .container-main3-all .container-body .row0 .colum3 .producto{
+    max-width: 100%;
     width: 100%;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 500px;
-    height: 400px;
-    align-content: space-between;
+    max-height: 80%;
+    height:80%;
+    border:black 5px solid;
+    display:flex;
+    background-image: url("/img/image_destacados.jpeg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    display:flex;
+    align-items:flex-start;
+    flex-direction:column-reverse;
+    align-items:center;
+    border:black 5px solid;
+    margin:0%;
+    font-size:70px;
+
 }
 
-
-
-.main_box_2 button{
-    background-color:#151515;
-    background:none;
-    border-radius:50px;
-    height:60px;
-    width:auto;
-    border: 3px solid #FFFEFE;
-    margin:5px;
-    color: white;
-    margin:10px;
-    font-size:50px;
-    padding:20px;
+main .container-main3-all .container-body .row0 .colum3 .description{
+    max-width: 100%;
+    width: 100%;
+    height:20%;
+    max-height: 20%;
+    display:flex;
+    align-items:flex-start;
+    flex-direction:column-reverse;
+    align-items:center;
+    border:black 5px solid;
+    margin:0%;
 }
 
-*/
 /* ------------------------------------------------------------------------------------------------------------------------------      */
 /* ------------------------------------------------------------------------------------------------------------------------------      */
 /*Newsletter*/
