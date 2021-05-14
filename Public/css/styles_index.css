@@ -96,7 +96,7 @@ main{
    
     
 }
-main .container-body{
+main .container-main2-all .container-body{
     display: flex;
     justify-content: space-between;
     padding: 10px;
@@ -171,6 +171,84 @@ main .container-main2-all .container-body .row0 .colum1 h1{
 main .container-main2-all .container-body .row0 .colum1 button{
     color:white;
     font-size: 22px;
+}
+
+
+main .container-main3-all{
+    width: 100%;
+    margin:auto;
+
+}
+
+main .container-main3-all .container-body{
+    padding: 10px;
+    height:1500px;
+}
+
+
+main .container-main3-all .row0{
+    display: flex;
+    height:90%;
+    width: 100%;
+    padding:10px;
+    border:black 5px solid;
+    margin:auto;
+    justify-content:center
+
+}
+
+main .container-main3-all .container-body .row0 .colum0{
+    max-width: 30%;
+    width: 30%;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+    margin-right:10px;
+    border:black 5px solid;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+main .container-main3-all .container-body .row0 .colum1{
+    max-width: 30%;
+    width: 30%;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+    margin-right:10px;
+    border:black 5px solid;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+}
+
+main .container-main3-all .container-body .row0 .colum2{
+    max-width: 30%;
+    width: 30%;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+    margin-right:10px;
+    border:black 5px solid;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+}
+
+main .container-main3-all .container-body .row0 .colum3{
+    max-width: 30%;
+    width: 30%;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+    margin-right:10px;
+    border:black 5px solid;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
 }
 
 
@@ -275,6 +353,9 @@ main .container-main2-all .container-body .row0 .colum1 button{
      border: solid #c7c7c7 3px;
  }
 
+
+ /* ------------------------------------------------------------------------------------------------------------------------------      */
+/* ------------------------------------------------------------------------------------------------------------------------------      */
 
  /*Footer*/
 
