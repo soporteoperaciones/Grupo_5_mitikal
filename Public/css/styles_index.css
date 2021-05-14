@@ -83,8 +83,104 @@ header .container-body .colum3 i{
     padding-right: 20px;
 }
 
-/*Main*/
+/* ---- main ---------------------------------------------------------------------------------------------------------------      */
 
+
+
+main{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+   
+    
+}
+main .container-body{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    height:1000px;
+}
+
+main .container-main2-all{
+    width: 100%;
+    margin:auto;
+
+}
+
+main .container-main2-all .row0{
+    display: flex;
+    height:90%;
+    width: 100%;
+    padding:10px;
+}
+
+main .container-main2-all .container-body .row0 .colum0{
+    max-width: 50%;
+    width: 50%;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+    margin-right:10px;
+
+}
+
+main .container-main2-all .container-body .row0 .colum1{
+    max-width: 50%;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left:10px;    
+}
+
+main .container-main2-all .container-body .row0 .colum0{
+    background-image: url("/img/image_destacados.jpeg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+main .container-main2-all .container-body .row0 .colum1{
+    background-image: url("/img/image_novedades.jpeg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+
+main .container-main2-all .container-body .row0 .colum0 h1{
+    font-size: 22px;
+}
+
+main .container-main2-all .container-body .row0 .colum0 button{
+    color:white;
+    font-size: 22px;
+}
+main .container-main2-all .container-body .row0 .colum1 h1{
+    font-size: 22px;
+}
+
+main .container-main2-all .container-body .row0 .colum1 button{
+    color:white;
+    font-size: 22px;
+}
+
+
+*/
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------      */
+
+
+/*Main*--OLD 
 .main_box_2{
     display: flex;
     background-color:#151515;
@@ -104,7 +200,7 @@ header .container-body .colum3 i{
   }
   
 .main_box_2 .destacados h3{
-    position: absolute;
+    position:
     top: 50%;
     left: 15%;
     color: white;
@@ -129,11 +225,13 @@ header .container-body .colum3 i{
     align-content: space-between;
 }
 
+
+
 .main_box_2 button{
-    /*background-color:#151515;*/
+    background-color:#151515;
     background:none;
     border-radius:50px;
-    /*height:60px;*/
+    height:60px;
     width:auto;
     border: 3px solid #FFFEFE;
     margin:5px;
@@ -173,8 +271,10 @@ header .container-body .colum3 i{
      margin-bottom: 15px;
      border: solid #c7c7c7 3px;
  }
+ */
 
-/*Footer*/
+
+ /*Footer*/
 
 
 footer{
