@@ -241,10 +241,13 @@ main .container-main2-all .container-body .row0 .colum1 button{
     padding:20px;
 }
 
+*/
+
 .main_box_4{
     width: 100%;
     box-sizing: border-box;
 }
+
 
 .newsletter{
     text-align: center;
@@ -388,10 +391,11 @@ footer .politicas a{
 
 
 /*Iconos*/
+
 header i{
     color:white;
   }
-
+/*
 .header_sub_box_3 i{
     background:none;
     padding:2.5px;
@@ -415,7 +419,7 @@ header i{
 }
 
 /*Prueba*/
-
+/*
 .fa-search {
     margin-right:10px;
 }
@@ -426,7 +430,8 @@ header i{
     margin-bottom: 10px;
 }
   */
-.navigation_bar_icon {
+/*
+  .navigation_bar_icon {
     padding: 10px;
     min-width: 40px;
 }
