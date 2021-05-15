@@ -12,3 +12,10 @@ app.get('/', function (req, res) {
     //console.log(__dirname);
     //        res.send(producto);
 });
+
+app.get('/login', function (req, res) {
+    let htmlPath = path.resolve(__dirname,'./views/login.html')
+    res.sendFile(htmlPath)
+    //console.log(__dirname);
+    //        res.send(producto);
+});
