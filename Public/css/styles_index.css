@@ -99,11 +99,18 @@ main{
 
 main .whatsapp_icon{
     position: fixed;
-    top: 80%;
-    right: 5%;
     color:green;
     font-size:100px;
+    animation: whatsapp-move 0.5s infinite;
 }
+
+
+@keyframes whatsapp-move {
+  0% { top: 80%; right: 5% ; }
+  /*50% { top: 82%; right: 5% ; }*/
+  100% { top: 85%; right: 5% ; }    
+}
+
 
 main .container-main2-all .container-body{
     display: flex;
@@ -126,6 +133,7 @@ main .container-main2-all .row0{
 }
 
 main .container-main2-all .container-body .row0 .colum0{
+    position:relative;
     max-width: 50%;
     width: 50%;
     justify-content: left;
@@ -154,6 +162,17 @@ main .container-main2-all .container-body .row0 .colum0{
     justify-content:center;
 }
 
+main .container-main2-all .container-body .row0 .colum0:hover{
+    background-image: url("/img/image_destacados.jpeg");
+    background-size: 140%;
+    background-repeat:no-repeat;
+    background-position:center;
+    opacity:10%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
 main .container-main2-all .container-body .row0 .colum1{
     background-image: url("/img/image_novedades.jpeg");
     background-size:cover;
@@ -162,11 +181,27 @@ main .container-main2-all .container-body .row0 .colum1{
     display:flex;
     flex-direction:column;
     justify-content:center;
+
+}
+
+main .container-main2-all .container-body .row0 .colum1:hover{
+    background-image: url("/img/image_novedades.jpeg");
+    background-size: 140%;
+    background-repeat:no-repeat;
+    background-position:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
 }
 
 
+
 main .container-main2-all .container-body .row0 .colum0 h1{
-    font-size: 22px;
+    position:absolute;
+    top:0%;
+    left:0%;
+    color:yellow;
+    font-size: 50px;
 }
 
 main .container-main2-all .container-body .row0 .colum0 button{
@@ -217,6 +252,20 @@ main .container-main3-all .container-body .row0 .colum0{
     display:flex;
     flex-direction:column;
     justify-content:center;
+}
+
+main .container-main3-all .container-body .row0 .colum0:hover,.colum1:hover,.colum2:hover,.colum3:hover{
+    max-width: 30%;
+    width: 35%;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+    margin-right:10px;
+    border:black 5px solid;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    height:105%;
 }
 
 main .container-main3-all .container-body .row0 .colum0 .producto{
@@ -286,6 +335,7 @@ main .container-main3-all .container-body .row0 .colum1 .producto{
     margin:0%;
     font-size:70px;
 }
+
 
 main .container-main3-all .container-body .row0 .colum1 .description{
     max-width: 100%;
