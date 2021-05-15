@@ -96,6 +96,15 @@ main{
    
     
 }
+
+main .whatsapp_icon{
+    position: fixed;
+    top: 80%;
+    right: 5%;
+    color:green;
+    font-size:100px;
+}
+
 main .container-main2-all .container-body{
     display: flex;
     justify-content: space-between;
