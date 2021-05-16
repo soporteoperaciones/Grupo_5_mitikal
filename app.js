@@ -18,6 +18,11 @@ app.get('/login', function (req, res) {
     res.sendFile(htmlPath)
 });
 
+app.get('/reset_account', function (req, res) {
+    let htmlPath = path.resolve(__dirname,'./views/reset_account.html')
+    res.sendFile(htmlPath)
+});
+
 app.get('/market', function (req, res) {
     let htmlPath = path.resolve(__dirname,'./views/market.html')
     res.sendFile(htmlPath)
