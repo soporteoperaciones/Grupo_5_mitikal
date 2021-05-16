@@ -16,6 +16,9 @@ app.get('/', function (req, res) {
 app.get('/login', function (req, res) {
     let htmlPath = path.resolve(__dirname,'./views/login.html')
     res.sendFile(htmlPath)
-    //console.log(__dirname);
-    //        res.send(producto);
+});
+
+app.get('/market', function (req, res) {
+    let htmlPath = path.resolve(__dirname,'./views/market.html')
+    res.sendFile(htmlPath)
 });

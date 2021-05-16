@@ -133,7 +133,7 @@ main .container-main2-all .row0{
 }
 
 main .container-main2-all .container-body .row0 .colum0{
-    position:relative;
+    /*position:relative;*/
     max-width: 50%;
     width: 50%;
     justify-content: left;
@@ -152,6 +152,7 @@ main .container-main2-all .container-body .row0 .colum1{
     margin-left:10px;    
 }
 
+
 main .container-main2-all .container-body .row0 .colum0{
     background-image: url("/img/image_destacados.jpeg");
     background-size: cover;
@@ -162,16 +163,7 @@ main .container-main2-all .container-body .row0 .colum0{
     justify-content:center;
 }
 
-main .container-main2-all .container-body .row0 .colum0:hover{
-    background-image: url("/img/image_destacados.jpeg");
-    background-size: 140%;
-    background-repeat:no-repeat;
-    background-position:center;
-    opacity:10%;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-}
+
 
 main .container-main2-all .container-body .row0 .colum1{
     background-image: url("/img/image_novedades.jpeg");
@@ -184,6 +176,17 @@ main .container-main2-all .container-body .row0 .colum1{
 
 }
 
+.ef_novedades_destacados:hover{
+    background-image: url("/img/image_destacados.jpeg");
+    background-size: 140%;
+    background-repeat:no-repeat;
+    background-position:center;
+    opacity:10%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+/*
 main .container-main2-all .container-body .row0 .colum1:hover{
     background-image: url("/img/image_novedades.jpeg");
     background-size: 140%;
@@ -194,10 +197,10 @@ main .container-main2-all .container-body .row0 .colum1:hover{
     justify-content:center;
 }
 
-
+*/
 
 main .container-main2-all .container-body .row0 .colum0 h1{
-    position:absolute;
+    /*position:absolute;*/
     top:0%;
     left:0%;
     color:yellow;
@@ -254,7 +257,7 @@ main .container-main3-all .container-body .row0 .colum0{
     justify-content:center;
 }
 
-main .container-main3-all .container-body .row0 .colum0:hover,.colum1:hover,.colum2:hover,.colum3:hover{
+.ef_producto:hover{
     max-width: 30%;
     width: 35%;
     justify-content: left;
