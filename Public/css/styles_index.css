@@ -87,7 +87,6 @@ header .container-body .colum3 i{
 
 
 
-
 main{
     width: 100%;
     margin: 0px;
@@ -133,7 +132,7 @@ main .container-main2-all{
 
 main .container-main2-all .row0{
     display: flex;
-    height:90%;
+    height:100%;
     width: 100%;
     padding:10px;
 }
@@ -233,24 +232,24 @@ main .ef_novedades_destacados h1{
 
 main .container-main3-all{
     width: 100%;
-    margin:auto;
+   /* margin:auto;*/
 
 }
 
 main .container-main3-all .container-body{
-    padding: 10px;
+ /*   padding: 10px;*/
     height:1500px;
 }
 
 
 main .container-main3-all .row0{
     display: flex;
-    height:90%;
+    height:100%;
     width: 100%;
     padding:10px;
     border:black 5px solid;
     margin:auto;
-    justify-content:center
+    justify-content:space-evenly;
 
 }
 /*
@@ -293,7 +292,7 @@ main .ef_producto .description{
     flex-direction:column-reverse;
     align-items:center;
     margin:%;
-    border:black 5px solid
+
 }
 
 .ef_producto:hover{
@@ -309,6 +308,7 @@ main .ef_producto .description{
     justify-content:center;
     height:115%;
 }
+
 
 
 /* ------------------------------------------------------------------------------------------------------------------------------      */
