@@ -82,96 +82,171 @@ header .container-body .colum3 i{
     font-size: 25px;
     padding-right: 20px;
 }
+header .row2{
+    display: flex;
+    justify-content:space-between
+    align-items:flex-end;
+ 
+}
 
 /* ---- main ---------------------------------------------------------------------------------------------------------------      */
 
-main .box-register{
- 
+
+main{
     width: 100%;
-    height: 500px;
-    
+    margin: 0px
+    padding: 0px;
+    display:flex;
+    justify-content:center;
+    box-sizing: border-box;
+    font-family: sans-serif;
+   /* border:black 5px solid;*/
+}
+
+main .container-main-all {
+    width: 100%;
+    display:flex;
+    justify-content:center;
+    box-sizing: border-box;
+    /* border:black 5px solid;*/
+}
+
+main .container-main-all .container-body{
     display: flex;
+    justify-content: center;
+    flex-direction:column;
+    justify-content:space-between;
+    width:98%;
+    height:2000px;
+    border:black 5px solid;
+}
+
+
+
+main .container-main-all .container-body .row0{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
     align-items: center;
-    flex-direction: column;
-}
-
-main h1{ 
     text-align: center;
-    font-family: 'Mulish', sans-serif;
-    font-size: 60px;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    height: 30%;
+    width:100%;
+}
+
+main .container-main-all .container-body .row0 .colum0{
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+    width:30%;
+}
+
+main .container-main-all .container-body .row0 .colum1{
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+    width:30%;
+}
+
+main .container-main-all .container-body .row0 .colum2{
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+    width:30%;
+}
+
+main .container-main-all .container-body .row1{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items: center;
+    text-align: center;
+    height: 30%;
+    width:100%;
+}
+
+main .container-main-all .container-body .row1 .colum0{
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+    width:30%;
+}
+
+main .container-main-all .container-body .row1 .colum1{
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+    width:30%;
+}
+
+main .container-main-all .container-body .row1 .colum2{
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+    width:30%;
+}
+
+main .container-main-all .container-body .row2{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items: center;
+    text-align: center;
+    height: 30%;
+    width:100%;
+}
+
+main .container-main-all .container-body .row2 .colum0{
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+    width:30%;
+}
+
+main .container-main-all .container-body .row2 .colum1{
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+    width:30%;
+}
+
+main .container-main-all .container-body .row2 .colum2{
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+    width:30%;
+}
+
+main .whatsapp_icon{
+    position: fixed;
+    color:green;
+    font-size:100px;
+    animation: whatsapp-move 0.5s infinite;
 }
 
 
-main .input-container{
-   
-    margin-top: 20px;
- 
+@keyframes whatsapp-move {
+  0% { top: 80%; right: 5% ; }
+  /*50% { top: 82%; right: 5% ; }*/
+  100% { top: 85%; right: 5% ; }    
 }
-
-main form{
-    position: relative;
-}
-
-main input{
-    border-radius: 50px;
-    border:1px solid rgba(67, 67, 67, 0.14);
-    height: 40px;
-    width: 500px;
-    padding: 10px;
-    
-}
-main input::placeholder{
-    color:#434343;
-}
-
-main label{
-    color: black;
-    display: block;
-    margin: .5em 0 0 0;
-    font-family: 'Rubik', sans-serif;
-    color:#afafaf;
-}
-
-main .olvidaste-contrasena{
-    color: #434343;
-    font-family: 'Rubik', sans-serif;
-    position:absolute;
-    left: 60%;  
-
-}
-main .iniciar_sesion{
-    border-radius: 50px;
-    background-color:black ;
-    color:white;
-    font-family: 'Rubik', sans-serif;
-    width: 300px;
-    height: 50px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 20%
-    
-}
-main .crear-cuenta{
-    color: #434343;
-    font-family: 'Rubik', sans-serif;
-    position:absolute;
-    width: 55%;
-    left: 22.5%;
-
-}
-main .crear-cuenta a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #434343;
-}
-
-
-
-
-
-
 
 
 
