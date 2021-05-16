@@ -97,18 +97,24 @@ main{
     
 }
 
-main .whatsapp_icon{
+main .whatsapp-logo img{
+    height: 45px;
+    height: 45px;
     position: fixed;
-    color:green;
-    font-size:100px;
-    animation: whatsapp-move 0.5s infinite;
+    right: 20px;
+    bottom: 250px;
+    animation: whatsapp-animation 3s infinite;
+
+    
+
 }
 
+@keyframes whatsapp-animation {
 
-@keyframes whatsapp-move {
-  0% { top: 80%; right: 5% ; }
-  /*50% { top: 82%; right: 5% ; }*/
-  100% { top: 85%; right: 5% ; }    
+    50%{
+        transform: translateY(-20px);
+    }
+
 }
 
 

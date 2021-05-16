@@ -82,6 +82,13 @@ header .container-body .colum3 i{
     font-size: 25px;
     padding-right: 20px;
 }
+
+header .row2{
+    display: flex;
+    justify-content:space-between
+    align-items:flex-end;
+ 
+}
 header .row2{
     display: flex;
     justify-content:space-between
@@ -89,7 +96,91 @@ header .row2{
  
 }
 
+header .row2{
+    display: flex;
+    justify-content:space-between
+    align-items:flex-end;
+    width:100%;
+    height:100px;
+    background:white;
+}
+
+
+header .row2 .colum0{
+    display: flex;
+    justify-content:space-between
+    align-items:flex-end;
+    width:33%
+}
+
+header .row2 .colum1{
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
+    text-align: center; 
+    width:33%;
+    color:black;
+}
+
+header .row2 .colum2{
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction:row;
+    align-items: center;
+    text-align: center;   
+    width:33%;
+}
+
+header .filtrar_contenido{
+    border-radius: 50px;
+    background-color:white ;
+    color:black;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: 4px;
+    width: 42%;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30%;  
+    /*transition-duration: 5s;*/
+}
+
+header .filtrar_contenido:hover{
+    border: black solid 2.5px;
+    background-color: white;
+    color: black;
+    width: 44%;
+    height: 55px;
+    font-weight:bold;
+}
+
+header .mostrar_detacados{
+    border-radius: 50px;
+    background-color:white ;
+    color:black;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: 4px;
+    width: 70%;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 2%;
+    margin-left: 5%; 
+}
+
+header .mostrar_detacados:hover{
+    border: black solid 2.5px;
+    background-color: white;
+    color: black;
+    width: 74%;
+    height: 55px;
+    font-weight:bold;
+}
+
 /* ---- main ---------------------------------------------------------------------------------------------------------------      */
+
+
 
 
 main{
@@ -118,7 +209,7 @@ main .container-main-all .container-body{
     justify-content:space-between;
     width:98%;
     height:2000px;
-    border:black 5px solid;
+ 
 }
 
 
@@ -133,14 +224,52 @@ main .container-main-all .container-body .row0{
     width:100%;
 }
 
+.producto{
+    height:70%;
+    width:100%;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    display:flex;
+    align-items:flex-start;
+    flex-direction:column-reverse;
+    align-items:center;
+    margin:0%;
+    font-size:30px;     
+}
+
+.producto i{
+    color:black;
+}
+
+.description{
+    height:30%;
+    width:100%;
+}
+
 main .container-main-all .container-body .row0 .colum0{
     display:flex;
     justify-content: center;
     flex-direction:column;
     align-items: center;
     text-align: center;
+    height:100%;
     width:30%;
 }
+
+
+main .container-main-all .container-body .colum0{
+     box-shadow: 0px 0px 10px rgb(100, 100, 100) 
+}
+
+main .container-main-all .container-body .colum1{
+     box-shadow: 0px 0px 10px rgb(100, 100, 100) 
+}
+
+main .container-main-all .container-body .colum2{
+     box-shadow: 0px 0px 10px rgb(100, 100, 100) 
+}
+
 
 main .container-main-all .container-body .row0 .colum1{
     display:flex;
@@ -148,6 +277,7 @@ main .container-main-all .container-body .row0 .colum1{
     flex-direction:column;
     align-items: center;
     text-align: center;
+    height:100%;
     width:30%;
 }
 
@@ -157,6 +287,7 @@ main .container-main-all .container-body .row0 .colum2{
     flex-direction:column;
     align-items: center;
     text-align: center;
+    height:100%;
     width:30%;
 }
 
@@ -177,6 +308,7 @@ main .container-main-all .container-body .row1 .colum0{
     align-items: center;
     text-align: center;
     width:30%;
+    height:100%;
 }
 
 main .container-main-all .container-body .row1 .colum1{
@@ -185,6 +317,7 @@ main .container-main-all .container-body .row1 .colum1{
     flex-direction:column;
     align-items: center;
     text-align: center;
+    height:100%;
     width:30%;
 }
 
@@ -194,6 +327,7 @@ main .container-main-all .container-body .row1 .colum2{
     flex-direction:column;
     align-items: center;
     text-align: center;
+    height:100%;
     width:30%;
 }
 
@@ -213,6 +347,7 @@ main .container-main-all .container-body .row2 .colum0{
     flex-direction:column;
     align-items: center;
     text-align: center;
+    height:100%;
     width:30%;
 }
 
@@ -222,6 +357,7 @@ main .container-main-all .container-body .row2 .colum1{
     flex-direction:column;
     align-items: center;
     text-align: center;
+    height:100%;
     width:30%;
 }
 
@@ -231,22 +367,137 @@ main .container-main-all .container-body .row2 .colum2{
     flex-direction:column;
     align-items: center;
     text-align: center;
+    height:100%;
     width:30%;
 }
 
-main .whatsapp_icon{
+main .whatsapp-logo img{
+    height: 45px;
+    height: 45px;
     position: fixed;
-    color:green;
-    font-size:100px;
-    animation: whatsapp-move 0.5s infinite;
+    right: 20px;
+    bottom: 250px;
+    animation: whatsapp-animation 3s infinite;
+
+}
+
+@keyframes whatsapp-animation {
+
+    50%{
+        transform: translateY(-20px);
+    }
+
+}
+
+/* Carga de productos*/
+
+
+.row0 .colum0 .producto{
+    background-image: url("/img/image_destacados.jpeg");
+
+}
+
+.row0 .colum1 .producto{
+    background-image: url("/img/image_novedades.jpeg");
+
+}
+.row0 .colum2 .producto{
+    background-image: url("/img/image_destacados.jpeg");
+
 }
 
 
-@keyframes whatsapp-move {
-  0% { top: 80%; right: 5% ; }
-  /*50% { top: 82%; right: 5% ; }*/
-  100% { top: 85%; right: 5% ; }    
+.row1 .colum0 .producto{
+    background-image: url("/img/image_novedades.jpeg");
+
 }
+
+.row1 .colum1 .producto{
+    background-image: url("/img/image_destacados.jpeg");
+
+}
+.row1 .colum2 .producto{
+    background-image: url("/img/image_novedades.jpeg");
+
+}
+
+.row2 .colum0 .producto{
+    background-image: url("/img/image_destacados.jpeg");
+
+}
+
+.row2 .colum1 .producto{
+    background-image: url("/img/image_novedades.jpeg");
+
+}
+.row2 .colum2 .producto{
+    background-image: url("/img/image_destacados.jpeg");
+
+}
+
+/*Efectos de productos*/
+
+.row0 .colum0 .producto:hover{
+    background-image: url("/img/image_novedades.jpeg");
+    transition-duration:0.8s;
+}
+
+.row0 .colum1 .producto:hover{
+	background-image: url("/img/image_destacados.jpeg");
+	transition-duration:0.8s;
+}
+
+.row0 .colum2 .producto:hover{
+    background-image: url("/img/image_novedades.jpeg");
+    transition-duration:0.8s;
+
+}
+
+
+.row1 .colum0 .producto:hover{
+   	background-image: url("/img/image_destacados.jpeg");
+	transition-duration:0.8s;
+
+}
+
+.row1 .colum1 .producto:hover{
+    background-image: url("/img/image_novedades.jpeg");
+    transition-duration:0.8s;
+
+}
+.row1 .colum2 .producto:hover{
+   	background-image: url("/img/image_destacados.jpeg");
+	transition-duration:0.8s;
+
+}
+
+.row2 .colum0 .producto:hover{
+    background-image: url("/img/image_novedades.jpeg");
+    transition-duration:0.8s;
+
+}
+
+.row2 .colum1 .producto:hover{
+    	background-image: url("/img/image_destacados.jpeg");
+	transition-duration:0.8s;
+
+}
+.row2 .colum2 .producto:hover{
+    background-image: url("/img/image_novedades.jpeg");
+    transition-duration:0.8s;
+
+}
+
+.row0 .colum0 .description:hover ~ .row0 .colum0 .producto {
+
+    height:150%;
+    width:150%; 
+}
+
+/*
+~ img{}
+
+*/
 
 
 
