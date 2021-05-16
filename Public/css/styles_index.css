@@ -87,14 +87,14 @@ header .container-body .colum3 i{
 
 
 
+
 main{
     width: 100%;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: sans-serif;
-   
-    
+     
 }
 
 main .whatsapp-logo img{
@@ -137,6 +137,9 @@ main .container-main2-all .row0{
     width: 100%;
     padding:10px;
 }
+
+
+
 
 main .container-main2-all .container-body .row0 .colum0{
     /*position:relative;*/
@@ -182,49 +185,50 @@ main .container-main2-all .container-body .row0 .colum1{
 
 }
 
+.ef_novedades_destacados{
+    transition-duration: 1s;
+}
+
 .ef_novedades_destacados:hover{
     background-image: url("/img/image_destacados.jpeg");
-    background-size: 140%;
+    background-size: 200%;
     background-repeat:no-repeat;
     background-position:center;
-    opacity:10%;
+    opacity:70%;
     display:flex;
     flex-direction:column;
-    justify-content:center;
-}
-/*
-main .container-main2-all .container-body .row0 .colum1:hover{
-    background-image: url("/img/image_novedades.jpeg");
-    background-size: 140%;
-    background-repeat:no-repeat;
-    background-position:center;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
 }
 
-*/
 
-main .container-main2-all .container-body .row0 .colum0 h1{
-    /*position:absolute;*/
+main .ef_novedades_destacados button{ 
+    border: white solid 1px;
+    color:white;
+    border-radius: 50px;
+    font-family: 'Rubik', sans-serif;
+    background-color:inherit;
+    letter-spacing: 4px;
+    width: 300px;
+    height: 50px;
+}
+
+main .container-main2-all .container-body .row0 button:hover{
+    border: black solid 1px;
+    background-color: white;
+    color:black;
+    font-family:bold;
+    font-size:20px;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+main .ef_novedades_destacados h1{
     top:0%;
     left:0%;
-    color:yellow;
+    color:white;
     font-size: 50px;
+    font-family: 'Muli', sans-serif;
 }
 
-main .container-main2-all .container-body .row0 .colum0 button{
-    color:white;
-    font-size: 22px;
-}
-main .container-main2-all .container-body .row0 .colum1 h1{
-    font-size: 22px;
-}
-
-main .container-main2-all .container-body .row0 .colum1 button{
-    color:white;
-    font-size: 22px;
-}
 
 
 main .container-main3-all{
@@ -249,209 +253,63 @@ main .container-main3-all .row0{
     justify-content:center
 
 }
-
-main .container-main3-all .container-body .row0 .colum0{
-    max-width: 30%;
-    width: 30%;
-    justify-content: left;
-    align-items: center;
-    text-align: center;
-    margin-right:10px;
+/*
+main .container-main3-all .row0 .colum0{
+    height:90%;
+    width: 20%;
+    padding:10px;
     border:black 5px solid;
+    margin:auto;
+    justify-content:center
+
+}
+*/
+main .ef_producto .producto{
+    max-width: 100%;
+    width: 100%;
+    max-height: 80%;
+    height:80%;
     display:flex;
-    flex-direction:column;
-    justify-content:center;
+    background-image: url("/img/image_destacados.jpeg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    display:flex;
+    flex-direction:column-reverse;
+    align-items:center;
+    margin:0%;
+    font-size:70px;
+    border:black 5px solid
+
+}
+
+main .ef_producto .description{
+    max-width: 100%;
+    width: 100%;
+    height:20%;
+    max-height: 20%;
+    display:flex;
+    align-items:flex-start;
+    flex-direction:column-reverse;
+    align-items:center;
+    margin:%;
+    border:black 5px solid
 }
 
 .ef_producto:hover{
-    max-width: 30%;
-    width: 35%;
+/*    max-width: 30%;*/
+    width: 40%;
     justify-content: left;
     align-items: center;
     text-align: center;
     margin-right:10px;
-    border:black 5px solid;
+   /*  border:black 5px solid;*/
     display:flex;
     flex-direction:column;
     justify-content:center;
-    height:105%;
+    height:115%;
 }
 
-main .container-main3-all .container-body .row0 .colum0 .producto{
-    max-width: 100%;
-    width: 100%;
-    max-height: 80%;
-    height:80%;
-    border:black 5px solid;
-    display:flex;
-    background-image: url("/img/image_destacados.jpeg");
-    background-size: cover;
-    background-repeat:no-repeat;
-    background-position:center;
-    display:flex;
-    align-items:flex-start;
-    flex-direction:column-reverse;
-    align-items:center;
-    border:black 5px solid;
-    margin:0%;
-    font-size:70px 
-}
-
-main .container-main3-all .container-body .row0 .colum0 .description{
-    max-width: 100%;
-    width: 100%;
-    height:20%;
-    max-height: 20%;
-    display:flex;
-    align-items:flex-start;
-    flex-direction:column-reverse;
-    align-items:center;
-    border:black 5px solid;
-    margin:0%
-}
-
-
-
-main .container-main3-all .container-body .row0 .colum1{
-    max-width: 30%;
-    width: 30%;
-    justify-content: left;
-    align-items: center;
-    text-align: center;
-    margin-right:10px;
-    border:black 5px solid;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-}
-
-main .container-main3-all .container-body .row0 .colum1 .producto{
-    max-width: 100%;
-    width: 100%;
-    max-height: 80%;
-    height:80%;
-    border:black 5px solid;
-    display:flex;
-    background-image: url("/img/image_destacados.jpeg");
-    background-size: cover;
-    background-repeat:no-repeat;
-    background-position:center;
-    display:flex;
-    align-items:flex-start;
-    flex-direction:column-reverse;
-    align-items:center;
-    border:black 5px solid;
-    margin:0%;
-    font-size:70px;
-}
-
-
-main .container-main3-all .container-body .row0 .colum1 .description{
-    max-width: 100%;
-    width: 100%;
-    height:20%;
-    max-height: 20%;
-    display:flex;
-    align-items:flex-start;
-    flex-direction:column-reverse;
-    align-items:center;
-    border:black 5px solid;
-    margin:0%;
-}
-
-
-main .container-main3-all .container-body .row0 .colum2{
-    max-width: 30%;
-    width: 30%;
-    justify-content: left;
-    align-items: center;
-    text-align: center;
-    margin-right:10px;
-    border:black 5px solid;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-}
-
-main .container-main3-all .container-body .row0 .colum2 .producto{
-    max-width: 100%;
-    width: 100%;
-    max-height: 80%;
-    height:80%;
-    border:black 5px solid;
-    display:flex;
-    background-image: url("/img/image_destacados.jpeg");
-    background-size: cover;
-    background-repeat:no-repeat;
-    background-position:center;
-    display:flex;
-    align-items:flex-start;
-    flex-direction:column-reverse;
-    align-items:center;
-    border:black 5px solid;
-    margin:0%;
-    font-size:70px;
-}
-
-main .container-main3-all .container-body .row0 .colum2 .description{
-    max-width: 100%;
-    width: 100%;
-    height:20%;
-    max-height: 20%;
-    display:flex;
-    align-items:flex-start;
-    flex-direction:column-reverse;
-    align-items:center;
-    border:black 5px solid;
-    margin:0%;
-}
-
-main .container-main3-all .container-body .row0 .colum3{
-    max-width: 30%;
-    width: 30%;
-    justify-content: left;
-    align-items: center;
-    text-align: center;
-    margin-right:10px;
-    border:black 5px solid;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-}
-
-main .container-main3-all .container-body .row0 .colum3 .producto{
-    max-width: 100%;
-    width: 100%;
-    max-height: 80%;
-    height:80%;
-    border:black 5px solid;
-    display:flex;
-    background-image: url("/img/image_destacados.jpeg");
-    background-size: cover;
-    background-repeat:no-repeat;
-    background-position:center;
-    display:flex;
-    align-items:flex-start;
-    flex-direction:column-reverse;
-    align-items:center;
-    border:black 5px solid;
-    margin:0%;
-    font-size:70px;
-
-}
-
-main .container-main3-all .container-body .row0 .colum3 .description{
-    max-width: 100%;
-    width: 100%;
-    height:20%;
-    max-height: 20%;
-    display:flex;
-    align-items:flex-start;
-    flex-direction:column-reverse;
-    align-items:center;
-    border:black 5px solid;
-    margin:0%;
-}
 
 /* ------------------------------------------------------------------------------------------------------------------------------      */
 /* ------------------------------------------------------------------------------------------------------------------------------      */
