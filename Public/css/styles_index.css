@@ -372,18 +372,33 @@ main .ef_producto .description h5{
      margin-bottom: 20px;
  }
 
- .newsletter .register{
-     border-radius: 8px;
-     width: 300px;
+.newsletter button{
+    border-radius: 50px;
+    background-color:white ;
+    color:black;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: 4px;
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 1%;  
+    transition-duration: 0.5s;
+}
 
- }
+.newsletter button:hover{
+    border: black solid 1px;
+    background-color: black;
+    color: white;
+}
 
- .newsletter button{
-     margin-top: 10px;
-     margin-bottom: 15px;
-     border: solid #c7c7c7 3px;
- }
-
+.newsletter input {
+    border-radius: 50px;
+    border: 1px solid rgba(67, 67, 67, 0.14);
+    height: 50px;
+    width: 500px;
+    padding: 10px;
+}
 
  /* ------------------------------------------------------------------------------------------------------------------------------      */
 /* ------------------------------------------------------------------------------------------------------------------------------      */
