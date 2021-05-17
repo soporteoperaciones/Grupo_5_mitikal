@@ -10,6 +10,7 @@ header{
     box-sizing: border-box;
     font-family: sans-serif;
     position: sticky;
+    z-index:100;
 }
 
 header .container-body{
@@ -84,6 +85,10 @@ header .container-body .colum3 i{
 }
 
 /* ---- main ---------------------------------------------------------------------------------------------------------------      */
+
+
+
+
 
 
 
@@ -186,6 +191,7 @@ main .container-main2-all .container-body .row0 .colum1{
 
 .ef_novedades_destacados{
     transition-duration: 1s;
+     box-shadow: 0px 0px 10px rgb(100, 100, 100) 
 }
 
 .ef_novedades_destacados:hover{
@@ -238,7 +244,7 @@ main .container-main3-all{
 
 main .container-main3-all .container-body{
  /*   padding: 10px;*/
-    height:1500px;
+    height:1300px;
 }
 
 
@@ -246,23 +252,30 @@ main .container-main3-all .row0{
     display: flex;
     height:100%;
     width: 100%;
-    padding:10px;
-    border:black 5px solid;
-    margin:auto;
+    padding:0px 0px 195px 0px;
     justify-content:space-evenly;
 
-}
-/*
-main .container-main3-all .row0 .colum0{
-    height:90%;
-    width: 20%;
-    padding:10px;
-    border:black 5px solid;
-    margin:auto;
-    justify-content:center
 
 }
-*/
+
+.ef_producto{
+   width:24%;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100)  
+}
+
+.producto i{
+    color:black;
+    margin-bottom:100px;
+    font-size:50px;
+}
+
+
+.producto i:hover{
+    color:black;
+    margin-bottom:100px;
+    font-size:70px;
+}
+
 main .ef_producto .producto{
     max-width: 100%;
     width: 100%;
@@ -278,7 +291,7 @@ main .ef_producto .producto{
     align-items:center;
     margin:0%;
     font-size:70px;
-    border:black 5px solid
+    
 
 }
 
@@ -291,9 +304,32 @@ main .ef_producto .description{
     align-items:flex-start;
     flex-direction:column-reverse;
     align-items:center;
-    margin:%;
+    justify-content:center;
+}
+
+main .ef_producto .description h3{
+     font-family: 'Muli', sans-serif;
+     font-size:37px;
+     margin-top:3%;
+}
+
+main .ef_producto .description h4{
+     font-family: 'Rubik', sans-serif;
+     font-size:30px;
+     margin-bottom:3%;
+     font-weight: 700;
+     color: black;
+}
+
+main .ef_producto .description h5{
+     font-family: 'Rubik', sans-serif;
+     font-size:25px;
+     margin-bottom:3%;
+     font-weight: 500;
+     color: black;
 
 }
+
 
 .ef_producto:hover{
 /*    max-width: 30%;*/
@@ -308,6 +344,7 @@ main .ef_producto .description{
     justify-content:center;
     height:115%;
 }
+
 
 
 
