@@ -8,6 +8,7 @@ header {
     box-sizing: border-box;
     font-family: sans-serif;
     position: sticky;
+    z-index:999;
 }
 
 header .container-body {
@@ -170,29 +171,59 @@ header .mostrar_detacados:hover {
 
 
 /* ---- main ---------------------------------------------------------------------------------------------------------------      */
+main{
+    height: 900px;
+    width:100%;
+}
 
-main .container-main1-all{
-    height:1100px;
+main .container-main-all{
+    height:100%;
     width: 100%;
     padding:10px;
     display:flex;
     justify-content:center;
     position:relative;
+    border:5px solid red;
 }
-
-
-main .container-main1-all .container-body .row0{
+main .container-main-all .container-body{
     height:100%;
     width: 100%;
+    display:flex;
+    flex-direction:column;
+    border:5px solid black;
+
 }
 
+main .container-main-all .container-body .row0{
+    height:70%;
+    width: 100%;
+    border:5px solid green;
 
-main .container-main1-all .galeria{
+    display:flex;
+}
+
+main .container-main-all .container-body .row1{
+    height:30%;
+    width: 100%;
+    border:5px solid blue;
+}
+
+main .container-main-all .producto{    
+    width:50%;
     height:100%;
-    width: 3300px;
+     border:5px solid black;
+    
 }
 
-main .container-main1-all .galeria img[alt="Galeria CSS 1"]{
+main .container-main-all .galeria{
+    height:100%;   
+    width:50%;
+    border:5px solid black; 
+        position:relative;   
+
+}
+
+main .container-main-all .galeria img[alt="Galeria CSS 1"]{
     position:absolute;
     height:90%;
     width:90%;
@@ -203,7 +234,7 @@ main .container-main1-all .galeria img[alt="Galeria CSS 1"]{
 /*    animation:change_image 10s infinite;*/
 }
 
-main .container-main1-all .galeria img[alt="Galeria CSS 2"]{
+main .container-main-all .galeria img[alt="Galeria CSS 2"]{
     position:absolute;
     height:90%;
     width:90%;
@@ -215,7 +246,7 @@ main .container-main1-all .galeria img[alt="Galeria CSS 2"]{
 
 }
 
-main .container-main1-all .galeria img[alt="Galeria CSS 3"]{
+main .container-main-all .galeria img[alt="Galeria CSS 3"]{
     position:absolute;
     height:90%;
     width:90%;
@@ -226,7 +257,7 @@ main .container-main1-all .galeria img[alt="Galeria CSS 3"]{
 /*    animation:change_image 10s infinite;*/
 
 }
-main .container-main1-all .galeria #_1{
+main .container-main-all .galeria #_1{
     position:absolute;
     left:47%;
     bottom:1%;
@@ -234,29 +265,29 @@ main .container-main1-all .galeria #_1{
 
 
 
-main .container-main1-all .galeria #_2{
+main .container-main-all .galeria #_2{
     position:absolute;
     left:49%;
     bottom:1%;
 
 }
 
-main .container-main1-all .galeria #_3{
+main .container-main-all .galeria #_3{
     position:absolute;
     left:51%;
     bottom:1%;
 
 }
 
-main .container-main1-all .galeria input[type=radio]:nth-of-type(1):checked ~ img:nth-of-type(1) {
+main .container-main-all .galeria input[type=radio]:nth-of-type(1):checked ~ img:nth-of-type(1) {
   opacity: 1;
 }
 
-main .container-main1-all .galeria input[type=radio]:nth-of-type(2):checked ~ img:nth-of-type(2) {
+main .container-main-all .galeria input[type=radio]:nth-of-type(2):checked ~ img:nth-of-type(2) {
   opacity: 1;
 }
 
-main .container-main1-all .galeria input[type=radio]:nth-of-type(3):checked ~ img:nth-of-type(2) {
+main .container-main-all .galeria input[type=radio]:nth-of-type(3):checked ~ img:nth-of-type(3) {
   opacity: 1;
 }
 
@@ -296,120 +327,7 @@ main .container-main1-all .galeria input[type=radio]:nth-of-type(3):checked ~ im
 }
 
 
-/***************/
-
-
-
-
-
-
-
-
-
-/  **/
-main {
-    width: 100%;
-    margin: 0px padding: 0px;
-    display: flex;
-    justify-content: center;
-    box-sizing: border-box;
-    font-family: sans-serif;
-    /* border:black 5px solid;*/
-}
-
-main .container-main-all {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    box-sizing: border-box;
-    /* border:black 5px solid;*/
-}
-
-main .container-main-all .container-body {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 70%;
-    height: 1000px;
-}
-
-main .container-main-all .container-body .row0 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    height: 100%;
-    width: 100%;
-}
-
-.producto {
-    height: 80%;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column-reverse;
-    align-items: center;
-    margin: 0%;
-    font-size: 30px;
-}
-
-.producto i {
-    color: black;
-}
-
-.description {
-    height: 30%;
-    width: 100%;
-}
-
-main .container-main-all .container-body .row0 .colum0 {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    height: 100%;
-    width: 30%;
-}
-
-main .container-main-all .container-body .colum0 {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100)
-}
-
-main .container-main-all .container-body .row0 .colum1 {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    height: 100%;
-    width: 30%;
-}
-
-main .container-main-all .container-body .row0 .colum2 {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    height: 100%;
-    width: 30%;
-}
-
-main .container-main-all .container-body .row1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    height: 30%;
-    width: 100%;
-}
+/*----------------------------------------------------------------------------------------------------------------------------------*/
 
 main .whatsapp-logo img {
     height: 45px;
@@ -427,37 +345,6 @@ main .whatsapp-logo img {
 }
 
 
-/* Carga de productos*/
-
-.row0 .colum0 .producto {
-    background-image: url("/img/foto1.jpg");
-}
-
-.row0 .colum1 .producto {
-    background-image: url("/img/foto2.jpg");
-}
-
-.row0 .colum2 .producto {
-    background-image: url("/img/foto3.jpg");
-}
-
-
-/*Efectos de productos*/
-
-.row0 .colum0 .producto:hover {
-    background-image: url("/img/foto1.jpg");
-    transition-duration: 0.8s;
-}
-
-.row0 .colum1 .producto:hover {
-    background-image: url("/img/foto2.jpg");
-    transition-duration: 0.8s;
-}
-
-.row0 .colum2 .producto:hover {
-    background-image: url("/img/foto3.jpg");
-    transition-duration: 0.8s;
-}
 
 .row0 .colum0 .description:hover~.row0 .colum0 .producto {
     height: 150%;
@@ -466,7 +353,6 @@ main .whatsapp-logo img {
 
 
 /*
-~ img{}
 
 */
 
