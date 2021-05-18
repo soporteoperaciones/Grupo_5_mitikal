@@ -171,6 +171,142 @@ header .mostrar_detacados:hover {
 
 /* ---- main ---------------------------------------------------------------------------------------------------------------      */
 
+main .container-main1-all{
+    height:1100px;
+    width: 100%;
+    padding:10px;
+    display:flex;
+    justify-content:center;
+    position:relative;
+}
+
+
+main .container-main1-all .container-body .row0{
+    height:100%;
+    width: 100%;
+}
+
+
+main .container-main1-all .galeria{
+    height:100%;
+    width: 3300px;
+}
+
+main .container-main1-all .galeria img[alt="Galeria CSS 1"]{
+    position:absolute;
+    height:90%;
+    width:90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity:0;
+/*    animation:change_image 10s infinite;*/
+}
+
+main .container-main1-all .galeria img[alt="Galeria CSS 2"]{
+    position:absolute;
+    height:90%;
+    width:90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity:0;
+/*    animation:change_image 10s infinite;*/
+
+}
+
+main .container-main1-all .galeria img[alt="Galeria CSS 3"]{
+    position:absolute;
+    height:90%;
+    width:90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity:0;
+/*    animation:change_image 10s infinite;*/
+
+}
+main .container-main1-all .galeria #_1{
+    position:absolute;
+    left:47%;
+    bottom:1%;
+}
+
+
+
+main .container-main1-all .galeria #_2{
+    position:absolute;
+    left:49%;
+    bottom:1%;
+
+}
+
+main .container-main1-all .galeria #_3{
+    position:absolute;
+    left:51%;
+    bottom:1%;
+
+}
+
+main .container-main1-all .galeria input[type=radio]:nth-of-type(1):checked ~ img:nth-of-type(1) {
+  opacity: 1;
+}
+
+main .container-main1-all .galeria input[type=radio]:nth-of-type(2):checked ~ img:nth-of-type(2) {
+  opacity: 1;
+}
+
+main .container-main1-all .galeria input[type=radio]:nth-of-type(3):checked ~ img:nth-of-type(2) {
+  opacity: 1;
+}
+
+@keyframes change_image{
+
+    0% {
+        opacity:0;
+    }
+    25% {
+        opacity:0.25;
+    }
+    50% {
+        opacity:0.50;
+    }
+    75% {
+        opacity:0.75;
+    }
+    0% {
+        opacity:1;
+    }
+    100% {
+        opacity:1;
+    }
+    75% {
+        opacity:0.75;
+    }
+    50% {
+        opacity:0.50;
+    }
+    25% {
+        opacity:0.25;
+    }
+    0% {
+        opacity:0;
+    }
+
+}
+
+
+/***************/
+
+
+
+
+
+
+
+
+
+/  **/
 main {
     width: 100%;
     margin: 0px padding: 0px;
