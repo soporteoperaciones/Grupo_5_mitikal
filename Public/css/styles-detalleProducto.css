@@ -194,8 +194,8 @@ main .container-main-all .container-body {
     justify-content: center;
     flex-direction: column;
     justify-content: space-between;
-    width: 98%;
-    height: 2000px;
+    width: 70%;
+    height: 1000px;
 }
 
 main .container-main-all .container-body .row0 {
@@ -204,12 +204,12 @@ main .container-main-all .container-body .row0 {
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    height: 35%;
+    height: 100%;
     width: 100%;
 }
 
 .producto {
-    height: 70%;
+    height: 80%;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -245,14 +245,6 @@ main .container-main-all .container-body .colum0 {
     box-shadow: 0px 0px 10px rgb(100, 100, 100)
 }
 
-main .container-main-all .container-body .colum1 {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100)
-}
-
-main .container-main-all .container-body .colum2 {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100)
-}
-
 main .container-main-all .container-body .row0 .colum1 {
     display: flex;
     justify-content: center;
@@ -281,76 +273,6 @@ main .container-main-all .container-body .row1 {
     text-align: center;
     height: 30%;
     width: 100%;
-}
-
-main .container-main-all .container-body .row1 .colum0 {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 30%;
-    height: 100%;
-}
-
-main .container-main-all .container-body .row1 .colum1 {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    height: 100%;
-    width: 30%;
-}
-
-main .container-main-all .container-body .row1 .colum2 {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    height: 100%;
-    width: 30%;
-}
-
-main .container-main-all .container-body .row2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    height: 30%;
-    width: 100%;
-}
-
-main .container-main-all .container-body .row2 .colum0 {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    height: 100%;
-    width: 30%;
-}
-
-main .container-main-all .container-body .row2 .colum1 {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    height: 100%;
-    width: 30%;
-}
-
-main .container-main-all .container-body .row2 .colum2 {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    height: 100%;
-    width: 30%;
 }
 
 main .whatsapp-logo img {
