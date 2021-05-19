@@ -263,7 +263,7 @@ main .container-main-all .producto .botonera .seleccion button{
     color:black;
     font-family: 'Rubik', sans-serif;
     letter-spacing: 4px;
-    width: 42%;
+    width: 20%;
     height: 30px;
     /*transition-duration: 5s;*/
 }

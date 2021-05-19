@@ -92,7 +92,7 @@ header .container-body .colum3 i{
 /* ---- main ---------------------------------------------------------------------------------------------------------------      */
 
 main .main-body{
-    background: tomato;
+/*    background: tomato;*/
     height: 100vh;
     width: 100%;
     display: flex;
@@ -106,7 +106,7 @@ main .main-body{
 
 
 main .main-body .box0{
-    background-color: teal;
+ /*   background-color: teal;*/
     height: 65vh;
     width: 60%;
     display: flex;
@@ -134,12 +134,12 @@ main .main-body .contact input{
 
 
 main .main-body .box1{
-    background-color: blue;
+  /*  background-color: blue; */
     height: 60vh;
     width: 40%;
 }
 main .main-body .box2{
-    background-color: green;
+    /*background-color: green; */
     height: 60vh;
     
 }
