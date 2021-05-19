@@ -4,7 +4,7 @@ const app = express();
 
 app.use(express.static('Public'));
 
-app.listen(3050, () => console.log('Servidor corriendo en el puerto 3050'));
+app.listen(process.env.PORT || 3050, () => console.log('Servidor corriendo en el puerto 3050'));
 
 app.get('/', function(req, res) {
     let htmlPath = path.resolve(__dirname, './Views/index.html')
