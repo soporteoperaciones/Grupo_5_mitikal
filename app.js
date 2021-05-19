@@ -37,10 +37,6 @@ app.get('/detalleProducto', function(req, res) {
     let htmlPath = path.resolve(__dirname, './Views/detalleProducto.html')
     res.sendFile(htmlPath)
 });
-<<<<<<< HEAD
-
-=======
->>>>>>> 7f28bd3055e463259221b87c62fd0b7a8507ce26
 app.get('/cart', function(req, res) {
     let htmlPath = path.resolve(__dirname, './Views/cart.html')
     res.sendFile(htmlPath)

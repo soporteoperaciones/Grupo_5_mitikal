@@ -163,21 +163,11 @@ main .main-body .contact input{
 
 
 main .main-body .box1{
-<<<<<<< HEAD
-  /*  background-color: blue; */
-    height: 60vh;
-    width: 40%;
-}
-main .main-body .box2{
-    /*background-color: green; */
-    height: 60vh;
-=======
     height: auto;
     width: 40%;
 }
 main .main-body .box2{
     height: auto;
->>>>>>> 7f28bd3055e463259221b87c62fd0b7a8507ce26
     
 }
 main .main-body h2{
