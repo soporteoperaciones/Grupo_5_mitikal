@@ -92,10 +92,7 @@ header .container-body .colum3 i{
 /* ---- main ---------------------------------------------------------------------------------------------------------------      */
 
 main .main-body{
-<<<<<<< HEAD
-/*    background: tomato;*/
-=======
->>>>>>> 7f28bd3055e463259221b87c62fd0b7a8507ce26
+
     height: 100vh;
     width: 100%;
     display: flex;
@@ -109,12 +106,8 @@ main .main-body{
 
 
 main .main-body .box0{
-<<<<<<< HEAD
- /*   background-color: teal;*/
+
     height: 65vh;
-=======
-    height: 97vh;
->>>>>>> 7f28bd3055e463259221b87c62fd0b7a8507ce26
     width: 60%;
     display: flex;
     flex-direction: column;
