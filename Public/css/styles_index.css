@@ -126,7 +126,7 @@ main .container-main1-all .galeria img[alt="Galeria CSS 2"]{
     left: 50%;
     transform: translate(-50%, -50%);
     opacity:0;
-/*    animation:change_image 10s infinite;*/
+/*     animation:change_image 10s infinite;*/
 
 }
 
