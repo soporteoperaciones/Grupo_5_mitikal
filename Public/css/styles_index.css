@@ -204,11 +204,12 @@ main{
 }
 
 main .whatsapp-logo img{
-    height: 45px;
-    height: 45px;
-    position: fixed;
-    right: 20px;
-    bottom: 250px;
+    position:fixed;
+    height: 5vh;
+    width: 5vw;
+    top:253vh;
+    right:169vw;
+    z-index:99999;
     animation: whatsapp-animation 3s infinite;
 
     
@@ -673,6 +674,7 @@ header i{
 
 
 @media (max-width: 768px){
+    /*header*/
 
 
     header{
@@ -760,5 +762,120 @@ header i{
         font-size: 25px;
         padding-right: 20px;
     }
+
+    /*main*/
+
+    main .container-main1-all{
+    display:none;
+
+    }
+    main .container-main3-all .container-body{
+ /*   padding: 10px;*/
+    height:auto;
+}
+
+
+main .container-main3-all .row0{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    height:100%;
+    width: 100%;
+/*    padding:0px 0px 195px 0px;
+    justify-content:space-evenly;
+*/
+
+}
+
+.ef_producto{
+   width:90%;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100)  ;
+    height:70vh;
+    margin-top:1vh;
+    border: blue 15px solid
+}
+
+.producto i{
+    color:black;
+    margin-bottom:100px;
+    font-size:50px;
+}
+
+
+.producto i:hover{
+    color:black;
+    margin-bottom:100px;
+    font-size:70px;
+}
+
+main .ef_producto .producto{
+    max-width: 100%;
+    width: 100%;
+    max-height: 80%;
+    height:80%;
+    display:flex;
+    background-image: url("/img/image_destacados.jpeg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    display:flex;
+    flex-direction:column-reverse;
+    align-items:center;
+    margin:0%;
+    font-size:70px;
     
-     }
+
+}
+
+main .ef_producto .description{
+    max-width: 100%;
+    width: 100%;
+    height:20%;
+    max-height: 20%;
+    display:flex;
+    align-items:flex-start;
+    flex-direction:column-reverse;
+    align-items:center;
+    justify-content:center;
+}
+
+main .ef_producto .description h3{
+     font-family: 'Muli', sans-serif;
+     font-size:37px;
+     margin-top:3%;
+}
+
+main .ef_producto .description h4{
+     font-family: 'Rubik', sans-serif;
+     font-size:30px;
+     margin-bottom:3%;
+     font-weight: 700;
+     color: black;
+}
+
+main .ef_producto .description h5{
+     font-family: 'Rubik', sans-serif;
+     font-size:25px;
+     margin-bottom:3%;
+     font-weight: 500;
+     color: black;
+
+}
+
+
+.ef_producto:hover{
+/*    max-width: 30%;*/
+    width: 40%;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+    margin-right:10px;
+   /*  border:black 5px solid;*/
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    height:115%;
+}
+
+    
+}
