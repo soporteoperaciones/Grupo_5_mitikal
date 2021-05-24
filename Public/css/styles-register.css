@@ -191,16 +191,14 @@ main .whatsapp-logo{
 }
 
 
-main .whatsapp-logo img{
-    height: 45px;
-    width: 45px;
-    right: 2%;
-    bottom: 15%;
+header .whatsapp-logo img{
+    position:fixed;
+    height: 4vh;
+    width: 4vw;
+    top:88vh;
+    right:5vw;
+    z-index:99999;
     animation: whatsapp-animation 3s infinite;
-    
-
-    
-
 }
 
 @keyframes whatsapp-animation {
@@ -210,6 +208,7 @@ main .whatsapp-logo img{
     }
 
 }
+
 
 
 /*----------------------------------------------------------------------------------------------------------------------------------*/
