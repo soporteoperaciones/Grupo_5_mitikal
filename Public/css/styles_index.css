@@ -16,7 +16,6 @@ header{
 header .container-body{
     display: flex;
     justify-content: space-between;
-    padding: 10px;
     height: 120px;
 }
 
@@ -36,7 +35,7 @@ header .container-header-all .row0{
 header .row0 a{
     color: #c7c7c7;
     text-decoration: none; 
-    padding: 5px; 
+    padding: 0.1%; 
 }
 
 header .row1{
@@ -50,18 +49,38 @@ header .row1 .colum0{
     text-align: center;
 }
 header .row1 .colum1{
+    position:relative;
     max-width: 27%;
     width: 27%;
     
 }
+
 header .row1 .colum1 input{
-    border-radius: 8px;
+    border-radius: 0.8%;
 }
+
+header .row1 .colum1 i{
+    position:absolute;
+    top:0.9vh;
+    right:5vw;
+    font-size:100%;
+    color:#202020;
+
+}
+
 header .row1 .colum2{
     max-width: 40%;
     width: 40%;
     text-align: center;
 }
+
+header .row1 .colum2 img{
+    max-width:60%;
+    width: auto;
+    text-align: center;
+}
+
+
 header .row1 .colum3{
     max-width: 30%;
     width: 30%;
@@ -78,19 +97,19 @@ header .container-body .colum3{
 
 header .container-body .colum3 i{
     color: white;
-    margin: 20px;
+    margin: 0.5vw;
     text-align: right;
-    font-size: 25px;
-    padding-right: 20px;
+    font-size: 120%;
+    padding-right: 2vw;
 }
 
 header .whatsapp-logo img{
     position:fixed;
-    height: 4vh;
-    width: 4vw;
+    height: 3vh;
+    width: auto;
     top:88vh;
-    right:5vw;
-    z-index:99999;
+    right:2vw;
+    z-index:120;
     animation: whatsapp-animation 3s infinite;
 }
 
@@ -107,7 +126,7 @@ header .whatsapp-logo img{
 main .container-main1-all{
     height:1100px;
     width: 100%;
-    padding:10px;
+    padding:0.1%;
     display:flex;
     justify-content:center;
     position:relative;
@@ -122,7 +141,7 @@ main .container-main1-all .container-body .row0{
 
 main .container-main1-all .galeria{
     height:100%;
-    width: 3300px;
+    width: 100%;
 }
 
 main .container-main1-all .galeria img[alt="Galeria CSS 1"]{
@@ -214,8 +233,8 @@ main .container-main1-all .galeria input[type=radio]:nth-of-type(2):checked ~ im
 
 main{
     width: 100%;
-    margin: 0px;
-    padding: 0px;
+    margin: 0%;
+    padding: 0%;
     box-sizing: border-box;
     font-family: sans-serif;
      
@@ -224,21 +243,21 @@ main{
 main .container-main2-all .container-body{
     display: flex;
     justify-content: space-between;
-    padding: 10px;
-    height:1000px;
+    padding: 0.1%;
+    height:84vh;
 }
 
 main .container-main2-all{
     width: 100%;
     margin:auto;
-
 }
 
 main .container-main2-all .row0{
     display: flex;
     height:100%;
     width: 100%;
-    padding:10px;
+    padding:0.5% 2% 0.5% 2%;
+
 }
 
 
@@ -251,8 +270,7 @@ main .container-main2-all .container-body .row0 .colum0{
     justify-content: left;
     align-items: center;
     text-align: center;
-    margin-right:10px;
-
+    margin-right:0.4%;
 }
 
 main .container-main2-all .container-body .row0 .colum1{
@@ -261,7 +279,7 @@ main .container-main2-all .container-body .row0 .colum1{
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-left:10px;    
+    margin-left:0.4%;
 }
 
 
@@ -273,6 +291,8 @@ main .container-main2-all .container-body .row0 .colum0{
     display:flex;
     flex-direction:column;
     justify-content:center;
+    box-shadow: -10px 10px 10px rgb(100, 100, 100) 
+
 }
 
 
@@ -285,13 +305,13 @@ main .container-main2-all .container-body .row0 .colum1{
     display:flex;
     flex-direction:column;
     justify-content:center;
+    box-shadow: 10px 10px 10px rgb(100, 100, 100); 
 
 }
 
 .ef_novedades_destacados{
     transition-duration: 1s;
-     box-shadow: 0px 0px 10px rgb(100, 100, 100) 
-}
+     }
 
 .ef_novedades_destacados:hover{
     background-image: url("/img/image_destacados.jpeg");
@@ -303,24 +323,24 @@ main .container-main2-all .container-body .row0 .colum1{
     flex-direction:column;
 }
 
-
 main .ef_novedades_destacados button{ 
-    border: white solid 1px;
+    border: white solid 0.1vh;
     color:white;
     border-radius: 50px;
     font-family: 'Rubik', sans-serif;
     background-color:inherit;
-    letter-spacing: 4px;
-    width: 300px;
-    height: 50px;
+    letter-spacing:0.7vh;
+    width: 37.3vw;
+    height: 8vh;
 }
 
+
 main .container-main2-all .container-body .row0 button:hover{
-    border: black solid 1px;
+    border: black solid 0.1vh;
     background-color: white;
     color:black;
     font-family:bold;
-    font-size:20px;
+    font-size:120%;
     font-family: 'Rubik', sans-serif;
 }
 
@@ -329,7 +349,7 @@ main .ef_novedades_destacados h1{
     top:0%;
     left:0%;
     color:white;
-    font-size: 50px;
+    font-size: 370%;
     font-family: 'Muli', sans-serif;
 }
 
@@ -337,13 +357,16 @@ main .ef_novedades_destacados h1{
 
 main .container-main3-all{
     width: 100%;
-   /* margin:auto;*/
+    margin-top:2%;
+    margin-bottom:4%;
 
 }
 
 main .container-main3-all .container-body{
- /*   padding: 10px;*/
-    height:1300px;
+        height:60vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
 }
 
 
@@ -351,16 +374,18 @@ main .container-main3-all .row0{
     display: flex;
     height:100%;
     width: 100%;
-    padding:0px 0px 195px 0px;
-    justify-content:space-evenly;
-
-
+    justify-content:space-between;
 }
+
 
 .ef_producto{
-   width:24%;
-    box-shadow: 0px 0px 10px rgb(100, 100, 100)  
+   width:100%;
+   height: 100%;
+   margin:0.4%;
+   box-shadow: 0px 0px 4px #c7c7c7;
+   background-color:#fcfdff;
 }
+
 
 .producto i{
     color:black;
@@ -373,6 +398,7 @@ main .container-main3-all .row0{
     color:black;
     margin-bottom:100px;
     font-size:70px;
+
 }
 
 main .ef_producto .producto{
@@ -381,18 +407,46 @@ main .ef_producto .producto{
     max-height: 80%;
     height:80%;
     display:flex;
-    background-image: url("/img/image_destacados.jpeg");
-    background-size: cover;
-    background-repeat:no-repeat;
-    background-position:center;
-    display:flex;
-    flex-direction:column-reverse;
-    align-items:center;
-    margin:0%;
-    font-size:70px;
-    
+    flex-direction:column;
+    padding:1%;
+    position:relative;
+}
+
+main .ef_producto .producto img{
+    width:100%;
+    height:100%;
+}
+
+main .ef_producto .producto i{
+    position:absolute;
+    top:42vh;
+    right:11vw;
+    font-size:3.2vw;
+    color:#202020;
+    transition: 1s infinite;
+}
+
+main .ef_producto .producto i:hover{
+    animation: flip 0.5s infinite;
+}
+
+  @keyframes flip {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(-15deg);
+  }
+
+  100% {
+    transform: rotateZ(15deg);
+  }
+
 
 }
+
+
+
 
 main .ef_producto .description{
     max-width: 100%;
@@ -401,49 +455,68 @@ main .ef_producto .description{
     max-height: 20%;
     display:flex;
     align-items:flex-start;
-    flex-direction:column-reverse;
+    flex-direction:column;
     align-items:center;
-    justify-content:center;
+    justify-content:space-evenly;
 }
 
 main .ef_producto .description h3{
      font-family: 'Muli', sans-serif;
-     font-size:37px;
-     margin-top:3%;
+     font-size:1vh;
+     margin-bottom:8%;
+     color:green;
+
 }
 
 main .ef_producto .description h4{
      font-family: 'Rubik', sans-serif;
-     font-size:30px;
-     margin-bottom:3%;
+     font-size:2vh;
+     margin-bottom:0%;
      font-weight: 700;
-     color: black;
+     color: red;
 }
 
 main .ef_producto .description h5{
      font-family: 'Rubik', sans-serif;
-     font-size:25px;
-     margin-bottom:3%;
+     font-size:1vh;
+     margin-bottom:0%;
      font-weight: 500;
-     color: black;
+     color: blue;
 
 }
 
-
+/*.ef_producto:hover{
+    max-width: 30%;
+    width: 24%;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+    margin-right:10px;
+    border:black 5px solid;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    height:80%;
+    main .ef_producto .description{
+        display:contents;
+    }
+}
+*/
+/*
 .ef_producto:hover{
-/*    max-width: 30%;*/
+    max-width: 30%;
     width: 40%;
     justify-content: left;
     align-items: center;
     text-align: center;
     margin-right:10px;
-   /*  border:black 5px solid;*/
+    border:black 5px solid;
     display:flex;
     flex-direction:column;
     justify-content:center;
     height:115%;
 }
-
+*/
 
 
 
