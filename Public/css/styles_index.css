@@ -13,6 +13,11 @@ header{
     z-index:100;
 }
 
+header i{
+    color:white;
+  }
+
+
 header .container-body{
     display: flex;
     justify-content: space-between;
@@ -116,7 +121,7 @@ header .whatsapp-logo img{
 @keyframes whatsapp-animation {
 
     50%{
-        transform: translateY(-20px);
+        transform: translateY(-3vh);
     }
 
 }
@@ -349,7 +354,7 @@ main .ef_novedades_destacados h1{
     top:0%;
     left:0%;
     color:white;
-    font-size: 370%;
+    font-size: 300%;
     font-family: 'Muli', sans-serif;
 }
 
@@ -485,38 +490,7 @@ main .ef_producto .description h5{
 
 }
 
-/*.ef_producto:hover{
-    max-width: 30%;
-    width: 24%;
-    justify-content: left;
-    align-items: center;
-    text-align: center;
-    margin-right:10px;
-    border:black 5px solid;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    height:80%;
-    main .ef_producto .description{
-        display:contents;
-    }
-}
-*/
-/*
-.ef_producto:hover{
-    max-width: 30%;
-    width: 40%;
-    justify-content: left;
-    align-items: center;
-    text-align: center;
-    margin-right:10px;
-    border:black 5px solid;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    height:115%;
-}
-*/
+
 
 
 
@@ -537,11 +511,11 @@ main .ef_producto .description h5{
 
  .newsletter h3{
     font-weight: bold;
-    font-size: 35px;
+    font-size: 3.5vh;
  }
  .newsletter h4{
-     font-size: 25px;
-     margin-bottom: 20px;
+     font-size: 2.5vh;
+     margin-bottom: 2%;
  }
 
 .newsletter button{
@@ -549,14 +523,15 @@ main .ef_producto .description h5{
     background-color:white ;
     color:black;
     font-family: 'Rubik', sans-serif;
-    letter-spacing: 4px;
-    width: 150px;
-    height: 50px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    letter-spacing: 0.7vw;
+    width: 15vw;
+    height: 5vh;
+    margin-top: 2%;
+    margin-bottom: 2%;
     margin-left: 1%;  
     transition-duration: 0.5s;
 }
+
 
 .newsletter button:hover{
     border: black solid 1px;
@@ -567,9 +542,9 @@ main .ef_producto .description h5{
 .newsletter input {
     border-radius: 50px;
     border: 1px solid rgba(67, 67, 67, 0.14);
-    height: 50px;
-    width: 500px;
-    padding: 10px;
+    height: 5vh;
+    width: 50vw;
+    padding: 2.5vw;
 }
 
  /* ------------------------------------------------------------------------------------------------------------------------------      */
@@ -583,7 +558,7 @@ footer{
     background: #202020;
     color: white;
     margin: 0px;
-    margin-top: 25px;
+    margin-top: 2.5%;
     padding: 0px;
     box-sizing: border-box;
     font-family: sans-serif;
@@ -593,7 +568,7 @@ footer{
 footer .container-body{
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 1vh;
     height:min-content;
 }
 footer .container-footer-all{
@@ -601,34 +576,34 @@ footer .container-footer-all{
     margin:auto;
 }
 footer .colum0{
-    max-width: 300px;
+    max-width: 25%;
 }
 footer .colum0 h1{
-    font-size: 22px;
+    font-size: 2.3vh;
 }
 
 footer .colum1{
-    max-width: 300px;
+    max-width: 25%;
 }
 
 footer .colum1 h1{
-    font-size: 22px;
+    font-size: 2.3vh;
 }
 
 footer .colum2{
-    max-width: 300px;
+    max-width: 25%;
 }
 footer .colum2 h1{
-    font-size: 22px;
+    font-size: 2.3vh;
 }
 footer .colum3{
-    max-width: 300px;
+    max-width: 25%;
 }
 footer .colum3 h1{
-    font-size: 22px;
+    font-size: 2.2vh;
 }
 footer .row0{
-    margin-top: 20px;
+    margin-top: 2%;
     display: flex;
     flex-direction: column;
     
@@ -636,10 +611,11 @@ footer .row0{
 footer .row0 a{
     color: #c7c7c7;
     text-decoration: none; 
-    padding: 5px;
+    padding: 1.2%;
 }
+
 footer .row{
-    margin-top: 20px;
+    margin-top: 10%;
     display: flex;
 }
 footer .row a {
@@ -647,34 +623,35 @@ footer .row a {
     text-decoration: none;
 }
 footer .row label{
-    margin-top: -4px;
-    margin-left: 10px;
+    margin-top: -0.5vh;
+    margin-left: 0.8vw;
     color: #c7c7c7;
+
 }
 footer .row2{
-    margin-top: 20px;
+    margin-top: 2%;
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
 }
+
 footer .row2 a{
-    margin: 5px;
+    margin: 2%;
     color: #c7c7c7;
     text-decoration: none;
     
 }
 footer .row2 a i{
-    font-size: 25px;
+    font-size: 2.5vh;
 }
 
 footer .container-footer{
     display: flex;
     justify-content: space-between;
     background: #101010;
-    padding: 1px 4px;
+    padding: 0.3vh 0.5vw;
     height: min-content;
-    
 
 }
 footer .copyright{
@@ -687,60 +664,7 @@ footer .politicas a{
     font-weight: bold;
 }
 
-
-/*Iconos*/
-
-header i{
-    color:white;
-  }
-/*
-.header_sub_box_3 i{
-    background:none;
-    padding:2.5px;
-    border-radius:50px;
-    border-color:white;
-    font-size:130%;
-    margin-right:5%;
-    margin-top:2%;
-    margin-bottom:2%;
-   }
-
-
-
-
-/* Botones */
-
-.boton_enviar{
-    background: black;
-    color: white;
-    border-radius: 40px ;
-}
-
-/*Prueba*/
-/*
-.fa-search {
-    margin-right:10px;
-}
-
-/*
-.header_buscar {
-    width: 100%;
-    margin-bottom: 10px;
-}
-  */
-/*
-  .navigation_bar_icon {
-    padding: 10px;
-    min-width: 40px;
-}
-/*
-#header_buscar {
-    width: 100%;
-    padding: 10px;
-    text-align: center;
-}
-*/  
-
+/* Media Query */
 
 @media (max-width: 768px){
     /*header*/
@@ -762,7 +686,7 @@ header i{
     header .container-body{
         display: flex;
         justify-content: space-between;
-        padding: 10px;
+        padding: 0.3%;
         height: 120px;
     }
     
@@ -782,7 +706,7 @@ header i{
     header .row0 a{
         color: #c7c7c7;
         text-decoration: none; 
-        padding: 5px; 
+        padding: 3%; 
     }
     
     header .row1{
@@ -802,9 +726,12 @@ header i{
         display:none;
         
     }
+
     header .row1 .colum1 input{
         border-radius: 8px;
     }
+
+
     header .row1 .colum2{
         max-width:80%;
         width: 80%;
@@ -825,23 +752,25 @@ header i{
     }
     
     header .container-body .colum3 i{
-        color: white;
-        margin: 20px;
-        text-align: right;
-        font-size: 25px;
-        padding-right: 20px;
+    color: white;
+    margin: 0.5vw;
+    text-align: right;
+    font-size: 120%;
+    padding-right: 2vw;
     }
 
-    /*main*/
+  /*main*/
+
 
     main .container-main1-all{
     display:none;
 
     }
+
     main .container-main3-all .container-body{
- /*   padding: 10px;*/
     height:auto;
-}
+    }
+
 
 
 main .container-main3-all .row0{
@@ -850,31 +779,17 @@ main .container-main3-all .row0{
     align-items:center;
     height:100%;
     width: 100%;
-/*    padding:0px 0px 195px 0px;
-    justify-content:space-evenly;
-*/
-
 }
+
 
 .ef_producto{
-   width:90%;
-    box-shadow: 0px 0px 10px rgb(100, 100, 100)  ;
-    height:70vh;
-    margin-top:1vh;
+   width:100%;
+   height: 100%;
+   margin:0.4%;
+   box-shadow: 0px 0px 4px #c7c7c7;
+   background-color:#fcfdff;
 }
 
-.producto i{
-    color:black;
-    margin-bottom:10px;
-    font-size:50px;
-}
-
-
-.producto i:hover{
-    color:black;
-    margin-bottom:100px;
-    font-size:70px;
-}
 
 main .ef_producto .producto{
     max-width: 100%;
@@ -882,17 +797,26 @@ main .ef_producto .producto{
     max-height: 80%;
     height:80%;
     display:flex;
-    background-image: url("/img/image_destacados.jpeg");
-    background-size: cover;
-    background-repeat:no-repeat;
-    background-position:center;
-    display:flex;
-    flex-direction:column-reverse;
-    align-items:center;
-    margin:0%;
-    font-size:70px;
+    flex-direction:column;
+    padding:1%;
+    position:relative;
 
 }
+
+main .ef_producto .producto img{
+    width:100%;
+    height:100%;
+}
+
+main .ef_producto .producto i{
+    position:absolute;
+    top:65vh;
+    right:45vw;
+    font-size:7vw;
+    color:#202020;
+    transition: 1s infinite;
+}
+
 
 main .ef_producto .description{
     max-width: 100%;
@@ -901,39 +825,283 @@ main .ef_producto .description{
     max-height: 20%;
     display:flex;
     align-items:flex-start;
-    flex-direction:column-reverse;
+    flex-direction:column;
     align-items:center;
-    justify-content:center;
+    justify-content:space-evenly;
 }
 
 main .ef_producto .description h3{
      font-family: 'Muli', sans-serif;
-     font-size:20px;
-     margin-top:0.1%;
+     font-size:1vh;
+     margin-bottom:8%;
+     color:green;
+
 }
 
 main .ef_producto .description h4{
      font-family: 'Rubik', sans-serif;
-     font-size:30px;
-     margin-bottom:0.1%;
-     font-weight: 500;
-     color: black;
+     font-size:2vh;
+     margin-bottom:0%;
+     font-weight: 700;
+     color: red;
 }
 
 main .ef_producto .description h5{
-    /**/
      font-family: 'Rubik', sans-serif;
-     font-size:30px;
-     margin-bottom:0.1%;
+     font-size:1vh;
+     margin-bottom:0%;
      font-weight: 500;
-     color: black;
+     color: blue;
+
+}
+
+    
+}
+
+
+/******************/
+
+@media (max-width: 425px){
+    /*header*/
+
+header .whatsapp-logo img{
+    position:fixed;
+    height: 3vh;
+    width: auto;
+    top:88vh;
+    right:2vw;
+    z-index:120;
+    animation: whatsapp-animation 3s infinite;
+}
+
+@keyframes whatsapp-animation {
+
+    50%{
+        transform: translateY(-3vh);
+    }
 
 }
 
 
-.ef_producto:hover{
+    header{
+        width: 100%;
+        background: #202020;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        top:0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+        position: sticky;
+        z-index:100;
+
+    }
+    
+    header .container-body{
+        display: flex;
+        justify-content: space-between;
+        padding: 0.3%;
+        height: 120px;
+    }
+    
+    .container-header-all{
+        width: 100%;
+        margin:auto;
+    }
+    
+    header .container-header-all .row0{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        background: #101010;
+    }
+    
+    header .row0 a{
+        color: #c7c7c7;
+        text-decoration: none; 
+        padding: 3%; 
+    }
+    
+    header .row1{
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+    header .row1 .colum0{
+        max-width: 10%;
+        width: 10%;
+        text-align: center;
+    }
+    
+    header .row1 .colum1{
+        max-width: 20%;
+        width: 20%;
+        display:none;
+        
+    }
+
+    header .row1 .colum1 input{
+        border-radius: 8px;
+    }
+
+
+    header .row1 .colum2{
+        max-width:80%;
+        width: 80%;
+        text-align: center;
+    }
+    header .row1 .colum3{
+        max-width: 10%;
+        width: 10%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    header .container-body .colum3{
+        display: flex;
+        flex-direction: column;
+        align-items:flex-end;
+     
+    }
+    
+    header .container-body .colum3 i{
+    color: white;
+    margin: 0.5vw;
+    text-align: right;
+    font-size: 120%;
+    padding-right: 2vw;
+    }
+
+  /*main*/
+
+
+    main .container-main1-all{
     display:none;
-} 
+
+    }
+
+    main .container-main3-all .container-body{
+    height:auto;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main .container-main2-all .container-body{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.1%;
+    height:84vh;
+}
+
+main .container-main2-all{
+    width: 100%;
+    margin:auto;
+}
+
+main .container-main2-all .row0{
+    display: flex;
+    flex-direction:column;
+    height:auto;
+    width: 100%;
+
+}
+
+
+
+
+main .container-main2-all .container-body .row0 .colum0{
+    max-width: 100%;
+    width: 100%;
+    height:50%;
+    margin:1%;
+}
+
+main .container-main2-all .container-body .row0 .colum1{
+    max-width: 100%;
+    width: 100%;
+    height:50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin:1%;
+}
+
+
+main .container-main2-all .container-body .row0 .colum0{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+}
+
+
+
+main .container-main2-all .container-body .row0 .colum1{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+}
+
+
+
+
+/*
+main .container-main3-all .row0{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    height:100%;
+    width: 100%;
+}
+
+
+.ef_producto{
+   width:100%;
+   height: 100%;
+   margin:0.4%;
+   box-shadow: 0px 0px 4px #c7c7c7;
+   background-color:#fcfdff;
+}
+
+*/
+
+main .ef_producto .producto{
+    max-width: 100%;
+    width: 100%;
+    max-height: 80%;
+    height:80%;
+    display:flex;
+    flex-direction:column;
+    padding:1%;
+    position:relative;
+}
+
+main .ef_producto .producto img{
+    width:100%;
+    height:100%;
+
+}
+
+main .ef_producto .producto i{
+    position:absolute;
+    top:40vh;
+    right:50vw;
+}
 
     
 }
