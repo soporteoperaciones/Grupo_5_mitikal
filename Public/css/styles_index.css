@@ -670,19 +670,6 @@ footer .politicas a{
     /*header*/
 
 
-    header{
-        width: 100%;
-        background: #202020;
-        color: white;
-        margin: 0px;
-        padding: 0px;
-        top:0;
-        box-sizing: border-box;
-        font-family: sans-serif;
-        position: sticky;
-        z-index:100;
-    }
-    
     header .container-body{
         display: flex;
         justify-content: space-between;
@@ -744,21 +731,6 @@ footer .politicas a{
         justify-content: flex-end;
     }
     
-    header .container-body .colum3{
-        display: flex;
-        flex-direction: column;
-        align-items:flex-end;
-     
-    }
-    
-    header .container-body .colum3 i{
-    color: white;
-    margin: 0.5vw;
-    text-align: right;
-    font-size: 120%;
-    padding-right: 2vw;
-    }
-
   /*main*/
 
 
@@ -773,88 +745,27 @@ footer .politicas a{
 
 
 
-main .container-main3-all .row0{
+    main .container-main3-all .row0{
     display: flex;
     flex-direction:column;
     align-items:center;
     height:100%;
     width: 100%;
-}
+    }
 
-
-.ef_producto{
-   width:100%;
-   height: 100%;
-   margin:0.4%;
-   box-shadow: 0px 0px 4px #c7c7c7;
-   background-color:#fcfdff;
-}
-
-
-main .ef_producto .producto{
-    max-width: 100%;
-    width: 100%;
-    max-height: 80%;
-    height:80%;
-    display:flex;
-    flex-direction:column;
-    padding:1%;
-    position:relative;
-
-}
-
-main .ef_producto .producto img{
+    main .ef_producto .producto img{
     width:100%;
     height:100%;
-}
+    }
 
-main .ef_producto .producto i{
+    main .ef_producto .producto i{
     position:absolute;
-    top:65vh;
-    right:45vw;
+    top:90%;
+    right:47%;
     font-size:7vw;
     color:#202020;
     transition: 1s infinite;
-}
-
-
-main .ef_producto .description{
-    max-width: 100%;
-    width: 100%;
-    height:20%;
-    max-height: 20%;
-    display:flex;
-    align-items:flex-start;
-    flex-direction:column;
-    align-items:center;
-    justify-content:space-evenly;
-}
-
-main .ef_producto .description h3{
-     font-family: 'Muli', sans-serif;
-     font-size:1vh;
-     margin-bottom:8%;
-     color:green;
-
-}
-
-main .ef_producto .description h4{
-     font-family: 'Rubik', sans-serif;
-     font-size:2vh;
-     margin-bottom:0%;
-     font-weight: 700;
-     color: red;
-}
-
-main .ef_producto .description h5{
-     font-family: 'Rubik', sans-serif;
-     font-size:1vh;
-     margin-bottom:0%;
-     font-weight: 500;
-     color: blue;
-
-}
-
+    }
     
 }
 
@@ -883,154 +794,41 @@ header .whatsapp-logo img{
 }
 
 
-    header{
-        width: 100%;
-        background: #202020;
-        color: white;
-        margin: 0px;
-        padding: 0px;
-        top:0;
-        box-sizing: border-box;
-        font-family: sans-serif;
-        position: sticky;
-        z-index:100;
+/**header*/
 
-    }
-    
-    header .container-body{
-        display: flex;
-        justify-content: space-between;
-        padding: 0.3%;
-        height: 120px;
-    }
-    
-    .container-header-all{
-        width: 100%;
-        margin:auto;
-    }
-    
-    header .container-header-all .row0{
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        width: 100%;
-        background: #101010;
-    }
-    
-    header .row0 a{
-        color: #c7c7c7;
-        text-decoration: none; 
-        padding: 3%; 
-    }
-    
-    header .row1{
-        display: flex;
-        width: 100%;
-        align-items: center;
-    }
-    header .row1 .colum0{
-        max-width: 10%;
-        width: 10%;
-        text-align: center;
-    }
-    
-    header .row1 .colum1{
-        max-width: 20%;
-        width: 20%;
-        display:none;
-        
-    }
-
-    header .row1 .colum1 input{
-        border-radius: 8px;
-    }
-
-
-    header .row1 .colum2{
-        max-width:80%;
-        width: 80%;
-        text-align: center;
-    }
-    header .row1 .colum3{
-        max-width: 10%;
-        width: 10%;
-        display: flex;
-        justify-content: flex-end;
-    }
-    
-    header .container-body .colum3{
-        display: flex;
-        flex-direction: column;
-        align-items:flex-end;
-     
-    }
-    
-    header .container-body .colum3 i{
-    color: white;
-    margin: 0.5vw;
-    text-align: right;
-    font-size: 120%;
-    padding-right: 2vw;
-    }
 
   /*main*/
 
 
-    main .container-main1-all{
-    display:none;
-
-    }
-
-    main .container-main3-all .container-body{
-    height:auto;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-main .container-main2-all .container-body{
+    main .container-main2-all .container-body{
     display: flex;
     justify-content: space-between;
     padding: 0.1%;
     height:84vh;
-}
+    }
 
-main .container-main2-all{
+    main .container-main2-all{
     width: 100%;
     margin:auto;
-}
+    }
 
-main .container-main2-all .row0{
+    main .container-main2-all .row0{
     display: flex;
     flex-direction:column;
     height:auto;
     width: 100%;
 
-}
+    }
+    
 
-
-
-
-main .container-main2-all .container-body .row0 .colum0{
+    main .container-main2-all .container-body .row0 .colum0{
     max-width: 100%;
     width: 100%;
     height:50%;
     margin:1%;
-}
+    }
 
-main .container-main2-all .container-body .row0 .colum1{
+    main .container-main2-all .container-body .row0 .colum1{
     max-width: 100%;
     width: 100%;
     height:50%;
@@ -1038,49 +836,26 @@ main .container-main2-all .container-body .row0 .colum1{
     align-items: center;
     text-align: center;
     margin:1%;
-}
+    }
 
 
-main .container-main2-all .container-body .row0 .colum0{
+    main .container-main2-all .container-body .row0 .colum0{
     display:flex;
     flex-direction:column;
     justify-content:center;
 
-}
+    }
 
 
-
-main .container-main2-all .container-body .row0 .colum1{
+    main .container-main2-all .container-body .row0 .colum1{
     display:flex;
     flex-direction:column;
     justify-content:center;
 
-}
+    }
 
 
-
-
-/*
-main .container-main3-all .row0{
-    display: flex;
-    flex-direction:column;
-    align-items:center;
-    height:100%;
-    width: 100%;
-}
-
-
-.ef_producto{
-   width:100%;
-   height: 100%;
-   margin:0.4%;
-   box-shadow: 0px 0px 4px #c7c7c7;
-   background-color:#fcfdff;
-}
-
-*/
-
-main .ef_producto .producto{
+    main .ef_producto .producto{
     max-width: 100%;
     width: 100%;
     max-height: 80%;
@@ -1089,19 +864,5 @@ main .ef_producto .producto{
     flex-direction:column;
     padding:1%;
     position:relative;
-}
-
-main .ef_producto .producto img{
-    width:100%;
-    height:100%;
-
-}
-
-main .ef_producto .producto i{
-    position:absolute;
-    top:40vh;
-    right:50vw;
-}
-
-    
+    }
 }
