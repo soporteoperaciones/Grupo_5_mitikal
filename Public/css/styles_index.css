@@ -221,28 +221,6 @@ main{
      
 }
 
-main .whatsapp-logo img{
-    position:fixed;
-    height: 5vh;
-    width: 5vw;
-    top:253vh;
-    right:169vw;
-    z-index:99999;
-    animation: whatsapp-animation 3s infinite;
-
-    
-
-}
-
-@keyframes whatsapp-animation {
-
-    50%{
-        transform: translateY(-20px);
-    }
-
-}
-
-
 main .container-main2-all .container-body{
     display: flex;
     justify-content: space-between;
