@@ -2,6 +2,8 @@ const express = require('express')
 const path = require('path');
 const app = express();
 
+app.set('view engine', 'ejs');
+
 app.get('/', function(req, res) {
     let htmlPath = path.resolve(__dirname, './Views/index.html')
     res.sendFile(htmlPath)
@@ -45,8 +47,13 @@ app.get('/cart', function(req, res) {
 /*OLD*/
 app.use(express.static('Public'));
 
+
+app.set('views', path.join(__dirname, "views"))
+
+app.set('view engine', 'ejs');
+
 const indexRoutes = require('./routes/indexRoutes')
 
-app.use('/',indexRoutes);
+app.use('/', indexRoutes);
 
 app.listen(process.env.PORT || 3050, () => console.log('Servidor corriendo en el puerto 3050'));

@@ -2,23 +2,23 @@ const path = require('path')
 
 const indexController = {
     login: (req, res) => {
-        res.sendFile(path.resolve('Views/login.html'))
+        return res.render('login')
     },
     reset_account: (req, res) => {
-        res.sendFile(path.resolve('Views/reset_account.html'))
+        return res.render('reset_account')
     },
     register: (req, res) => {
-        res.sendFile(path.resolve('Views/register.html'))
+        return res.render('register')
     },
     market: (req, res) => {
-        res.sendFile(path.resolve('Views/market.html'))
+        return res.render('market')
     },
 
     detalleProducto: (req, res) => {
-        res.sendFile(path.resolve('Views/detalleProducto.html'))
+        return res.render('detalleProducto')
     },
     cart: (req, res) => {
-        res.sendFile(path.resolve('Views/cart.html'))
+        return res.render('cart')
     },
 
 }
