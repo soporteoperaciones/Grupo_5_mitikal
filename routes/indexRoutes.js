@@ -3,7 +3,7 @@ const indexRoutes = express.Router()
 
 const indexController = require('../controllers/indexController')
 
-indexRoutes.get('/index', indexController.index)
+indexRoutes.get('/', indexController.index)
 indexRoutes.get('/login', indexController.login)
 indexRoutes.get('/reset_account', indexController.reset_account)
 indexRoutes.get('/register', indexController.register)
