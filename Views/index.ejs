@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fontawesome.com/icons?d=gallery&p=2&m=free">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -23,23 +23,40 @@
     <!-- Parte superior de la pagina dividido en un box, con tres box internos -->
     <%- include("Partials/header") %>
     <!-- Cuerpo principal de la pagina dividido en 4 boxes, -->
+
     <main>
         <!--Galeria-->
+
+        <div id="carouselExampleIndicators" class="carousel carousel-dark  slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/img/image_novedades.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/img/image_destacados.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/img/image_novedades.jpeg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
        <!--< <div class="container-main0-all menu" >
             <i class="far fa-times-circle"></i>
         </div>-->
-        <div class="container-main1-all">
-            <div class="container-body">
-                <div class="row0">
-                    <div class="galeria">
-                        <input type="radio" name="navegacion" id="_1" checked>
-                        <input type="radio" name="navegacion" id="_2">
-                        <img src="/img/image_novedades.jpeg" alt="Galeria CSS 1" />
-                        <img src="/img/image_destacados.jpeg" alt="Galeria CSS 2" />
-                    </div>
-                </div>
-            </div>
-        </div>
+        
         <!--Novedades y Destacados-->
 
         <div class="container-main2-all">
@@ -113,7 +130,7 @@
             <div class="newsletter">
                 <h3> Suscribite a nuestro newsletter </h3>
                 <h4> ¡Registrate y disfrutá nuestras ofertas!</h4>
-                <input class="register" type="text" placeholder="E-MAIL...">
+                <div><input class="register" type="text" placeholder="E-MAIL..."></div>
                 <button class="boton_enviar">ENVIAR</button>
             </div>
         </section>
@@ -123,5 +140,5 @@
     <%- include("Partials/footer") %>
 
 </body>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </html>

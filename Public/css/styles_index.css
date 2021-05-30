@@ -126,7 +126,20 @@ header .whatsapp-logo img{
 
 }
 
+
+
+
 /* ---- main ---------------------------------------------------------------------------------------------------------------      */
+/*carrousel*/
+.carousel-inner .carousel-item img{
+    height: 80vh;
+
+}
+
+.color-button{
+    color:red;
+}
+/* **************************************************************************************************************************** */
 
 main .container-main1-all{
     height:1100px;
@@ -542,9 +555,9 @@ main .ef_producto .description h5{
 .newsletter input {
     border-radius: 50px;
     border: 1px solid rgba(67, 67, 67, 0.14);
-    height: 5vh;
+    height: 1.5vh;
     width: 50vw;
-    padding: 2.5vw;
+    padding: 1.5vw;
 }
 
  /* ------------------------------------------------------------------------------------------------------------------------------      */

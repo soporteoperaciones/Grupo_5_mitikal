@@ -23,6 +23,9 @@ const indexController = {
     cart: (req, res) => {
         return res.render('cart')
     },
+    prueba: (req, res) => {
+        return res.render('prueba')
+    },
 
 }
 
