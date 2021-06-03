@@ -10,6 +10,6 @@ indexRoutes.get('/register', indexController.register)
 indexRoutes.get('/market', indexController.market)
 indexRoutes.get('/detalleProducto', indexController.detalleProducto)
 indexRoutes.get('/cart', indexController.cart)
-/*indexRoutes.get('/prueba', indexController.prueba)*/
+/*indexRoutes.get('/prueba', indexController.prueba) */
 
 module.exports = indexRoutes
