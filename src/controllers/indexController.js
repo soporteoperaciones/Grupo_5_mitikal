@@ -5,27 +5,27 @@ const indexController = {
         return res.render('index')
     },
     login: (req, res) => {
-        return res.render('login')
+        return res.render('./users/login')
     },
     reset_account: (req, res) => {
-        return res.render('reset_account')
+        return res.render('./users/reset_account')
     },
     register: (req, res) => {
-        return res.render('register')
+        return res.render('./users/register')
     },
     market: (req, res) => {
-        return res.render('market')
+        return res.render('./products/market')
     },
 
     detalleProducto: (req, res) => {
-        return res.render('detalleProducto')
+        return res.render('./products/detalleProducto')
     },
     cart: (req, res) => {
-        return res.render('cart')
+        return res.render('./products/cart')
     },
-    prueba: (req, res) => {
+ /*   prueba: (req, res) => {
         return res.render('prueba')
-    },
+    },*/
 
 }
 
