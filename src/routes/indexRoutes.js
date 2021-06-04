@@ -12,4 +12,6 @@ indexRoutes.get('/detalleProducto', indexController.detalleProducto)
 indexRoutes.get('/cart', indexController.cart)
 /*indexRoutes.get('/prueba', indexController.prueba) */
 
+
+
 module.exports = indexRoutes
