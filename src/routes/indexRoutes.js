@@ -10,6 +10,9 @@ indexRoutes.get('/register', indexController.register)
 indexRoutes.get('/market', indexController.market)
 indexRoutes.get('/detalleProducto', indexController.detalleProducto)
 indexRoutes.get('/cart', indexController.cart)
+indexRoutes.get('/createProduct', indexController.createProduct)
+indexRoutes.get('/updateProduct', indexController.updateProduct)
+
 /*indexRoutes.get('/prueba', indexController.prueba) */
 
 

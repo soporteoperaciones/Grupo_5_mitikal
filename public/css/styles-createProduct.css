@@ -1,0 +1,321 @@
+header {
+    width: 100%;
+    background: #202020;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    top: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    position: sticky;
+    z-index:999;
+}
+
+header .container-body {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    height: 120px;
+}
+
+.container-header-all {
+    width: 100%;
+    margin: auto;
+}
+
+header .container-header-all .row0 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background: #101010;
+}
+
+header .row0 a {
+    color: #c7c7c7;
+    text-decoration: none;
+    padding: 5px;
+}
+
+header .row1 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+header .row1 .colum0 {
+    max-width: 3%;
+    width: 3%;
+    text-align: center;
+}
+
+header .row1 .colum1 {
+    max-width: 27%;
+    width: 27%;
+}
+
+header .row1 .colum1 input {
+    border-radius: 8px;
+}
+
+header .row1 .colum2 {
+    max-width: 40%;
+    width: 40%;
+    text-align: center;
+}
+
+header .row1 .colum3 {
+    max-width: 30%;
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header .container-body .colum3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+header .container-body .colum3 i {
+    color: white;
+    margin: 20px;
+    text-align: right;
+    font-size: 25px;
+    padding-right: 20px;
+}
+
+header .row2 {
+    display: flex;
+    justify-content: space-between align-items: flex-end;
+}
+
+header .row2 {
+    display: flex;
+    justify-content: space-between align-items: flex-end;
+    width: 100%;
+    height: 100px;
+    background: white;
+}
+
+header .row2 .colum0 {
+    display: flex;
+    justify-content: space-between align-items: flex-end;
+    width: 33%
+}
+
+header .row2 .colum1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 33%;
+    color: black;
+} 
+
+header .row2 .colum2 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    width: 33%;
+}
+
+header .filtrar_contenido {
+    border-radius: 50px;
+    background-color: white;
+    color: black;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: 4px;
+    width: 42%;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30%;
+    /*transition-duration: 5s;*/
+}
+
+header .filtrar_contenido:hover {
+    border: black solid 2.5px;
+    background-color: white;
+    color: black;
+    width: 44%;
+    height: 55px;
+    font-weight: bold;
+}
+
+header .mostrar_detacados {
+    border-radius: 50px;
+    background-color: white;
+    color: black;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: 4px;
+    width: 70%;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 2%;
+    margin-left: 5%;
+}
+
+header .mostrar_detacados:hover {
+    border: black solid 2.5px;
+    background-color: white;
+    color: black;
+    width: 74%;
+    height: 55px;
+    font-weight: bold;
+}
+
+
+/* ---- main ---------------------------------------------------------------------------------------------------------------      */
+
+
+main .box-create-product{
+    position: relative;
+    width: 100%;
+    height: 800px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+main h1, h2{ 
+    text-align: center;
+    font-family: 'Mulish', sans-serif;
+    font-size: 30px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+
+main input{
+    border-radius: 50px;
+    border:1px solid rgba(67, 67, 67, 0.14);
+    height: 40px;
+    width: 500px;
+    padding: 10px;
+    
+}
+main input::placeholder{
+    color:#434343;
+}
+
+main label{
+    color: black;
+    display: block;
+    margin: .5em 0 0 0;
+    font-family: 'Rubik', sans-serif;
+    color:#afafaf;
+}
+
+
+main .input-container-image label
+{
+    border-radius: 50px;
+    border:1px solid rgba(67, 67, 67, 0.14);
+    height: 40px;
+    width: 500px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color:black ;
+    color:white;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: 4px;
+    text-align:center;
+  
+}
+
+
+
+
+
+
+
+main .createproduct{
+    position: relative;
+    top:1%;
+    border-radius: 50px;
+    background-color:black ;
+    color:white;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: 4px;
+    width: 300px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20%;  
+    transition-duration: 0.5s;
+}
+
+main .createproduct:hover{
+    border: black solid 1px;
+    background-color: white;
+    color: black;
+}
+
+
+
+
+
+main .iniciar-sesion{
+    color: #434343;
+    font-family: 'Rubik', sans-serif;
+    position:absolute;
+    top: 72%;
+}
+
+
+
+main .iniciar-sesion a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #434343;
+    transition-duration: 0.5s;
+}
+
+main .iniciar-sesion a:hover {
+    text-decoration: none;
+    font-weight: normal;
+    color: white;
+    border:1px solid #434343;
+    background-color: #434343;
+    border-radius: 50px;
+
+}
+
+
+
+
+
+main .whatsapp-logo{
+    position: sticky;
+    z-index: 999999;
+    height: 45px;
+    width: 45px;
+    left: 95%;
+    bottom: 25%;
+}
+
+
+header .whatsapp-logo img{
+    position:fixed;
+    height: 4vh;
+    width: 4vw;
+    top:88vh;
+    right:5vw;
+    z-index:99999;
+    animation: whatsapp-animation 3s infinite;
+}
+
+@keyframes whatsapp-animation {
+
+    50%{
+        transform: translateY(-20px);
+    }
+
+}
