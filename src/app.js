@@ -3,7 +3,7 @@ const path = require('path');
 const app = express();
 const indexRoutes = require('./routes/indexRoutes');
 
-const public = path.resolve('../public');
+const public = path.resolve('./public');
 
 app.use(express.static(public));
 
