@@ -27,14 +27,27 @@ const indexController = {
     createProduct: (req, res) => {
         return res.render('./products/createProduct')
     },
+
     updateProduct: (req, res) => {
-        return res.render('./products/updateProduct')
-    },
+        const data = req.body;
+        const { id } = req.params;
+        // el producto original
+        const productoOriginal = productsModel.findByPk(id)
+            // la imagen original: productoOriginal.image
 
-    /*   prueba: (req, res) => {
-           return res.render('prueba')
-       },*/
+        // dentro de req.file va a venir la información del archivo
+        const { file } = req
 
+        /* Si viene una imagen nueva, cargar la imagen nueva
+        sino poner la original */
+        let image
+
+        if (file) {
+            image = '/img/' + file.filename
+        } else {
+            image = productoOriginal.image
+        }
+
+    }
 }
-
 module.exports = indexController
