@@ -23,47 +23,47 @@
     <!-- Parte superior de la pagina dividido en un box, con tres box internos -->
 
     <%- include("../partials/header") %>
-    <!-- Cuerpo principal de la pagina dividido en 4 boxes, -->
-    <main>
-        <div class="box-create-product">
-            <h1>Crear Producto</h1>
-            <H2>Bienvenido, vamos a cargar un nuevo producto</H2>
-            <form action="" name="create-product-form" method="GET">
-                <div class="input-container">
-                    <label for="name">Nombre del Producto</label>
-                    <input type="text" name="name" id="name"  required />
-                </div>
-                <div class="input-container">
-                    <label for="description">Descripción</label>
-                    <input type="text" name="description" id="description"   required />
-                </div>
-                <div class="input-container">
-                    <label for="category">Categoria</label>
-                    <input type="text" name="category" id="category" required />
-                </div>
-                <div class="input-container">
-                    <label for="color">Color</label>
-                    <input type="text" name="color" id="color" required />
-                </div>
-                <div class="input-container">
-                    <label for="size">Talle</label>
-                    <input type="text" name="size" id="size" required />
-                </div>
-                <div class="input-container">
-                    <label for="price">Precio</label>
-                    <input type="text" name="price" id="price" required />
-                </div>
-                <div class="input-container-image">
-                    <label for="image">Imagen</label>
-                    <input type="file" name="image" id="image" accept=".jpg , .png" multiple required hidden/>
-                </div>
-                
-                <button class="createproduct" type="submit" >Crear Producto</button>
-                
-            </form>
-        
+        <!-- Cuerpo principal de la pagina dividido en 4 boxes, -->
+        <main>
+            <div class="box-create-product">
+                <h1>Crear Producto</h1>
+                <H2>Bienvenido, vamos a cargar un nuevo producto</H2>
+                <form action="/createProduct" name="create-product-form" method="POST" enctype="multipart/form-data">
+                    <div class="input-container">
+                        <label for="name">Nombre del Producto</label>
+                        <input type="text" name="name" id="name" required />
+                    </div>
+                    <div class="input-container">
+                        <label for="description">Descripción</label>
+                        <input type="text" name="description" id="description" />
+                    </div>
+                    <div class="input-container">
+                        <label for="category">Categoria</label>
+                        <input type="text" name="category" id="category" />
+                    </div>
+                    <div class="input-container">
+                        <label for="color">Color</label>
+                        <input type="text" name="color" id="color" />
+                    </div>
+                    <div class="input-container">
+                        <label for="size">Talle</label>
+                        <input type="text" name="size" id="size" />
+                    </div>
+                    <div class="input-container">
+                        <label for="price">Precio</label>
+                        <input type="text" name="price" id="price" />
+                    </div>
+                    <div class="input-container-image">
+                        <label for="image">Imagen</label>
+                        <input type="file" name="image" id="image" accept=".jpg , .png" multiple required hidden/>
+                    </div>
 
-    </main>
+                    <button class="createproduct" type="submit">Crear Producto</button>
+
+                </form>
+
+
+        </main>
 
 </body>
 

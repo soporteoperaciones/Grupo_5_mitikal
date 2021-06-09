@@ -1,4 +1,5 @@
 const path = require('path')
+const productsModel = require('../models/productsModel')
 
 const indexController = {
     index: (req, res) => {
@@ -30,9 +31,9 @@ const indexController = {
         return res.render('./products/updateProduct')
     },
 
- /*   prueba: (req, res) => {
-        return res.render('prueba')
-    },*/
+    /*   prueba: (req, res) => {
+           return res.render('prueba')
+       },*/
 
 }
 
