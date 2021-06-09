@@ -47,7 +47,12 @@ const indexController = {
         } else {
             image = productoOriginal.image
         }
+        data.image = image
 
-    }
+        productsModel.update(data, id);
+
+        res.redirect('/products/detalleProdduct/' + id);
+    },
 }
+
 module.exports = indexController

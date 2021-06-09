@@ -43,7 +43,9 @@ indexRoutes.get('/cart', indexController.cart)
 indexRoutes.get('/createProduct', indexController.createProduct)
 indexRoutes.post('/createProduct', upload.single('image'), indexController.createProduct)
 indexRoutes.get('/updateProduct', indexController.updateProduct)
-indexRoutes.post('/updateProduct', upload.single('image'), indexController.updateProduct)
+indexRoutes.put('/updateProduct', upload.single('image'), indexController.updateProduct)
+
+
 
 
 /*indexRoutes.get('/prueba', indexController.prueba) */
