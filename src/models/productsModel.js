@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 module.exports = {
-    filename: path.resolve(__dirname, './data/mitikal.json'),
+    filename: path.resolve(__dirname, '../data/products.json'),
     readFile() {
         // Leer nuestra informacion
         const productsPath = this.filename;
