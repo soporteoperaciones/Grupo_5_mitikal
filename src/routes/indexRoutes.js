@@ -5,7 +5,8 @@ const path = require('path')
 
 const indexController = require('../controllers/indexController')
 
-/* Llamados a IndexController */
+
 indexRoutes.get('/', indexController.index)
+
 
 module.exports = indexRoutes
