@@ -4,6 +4,7 @@ const app = express();
 const indexRoutes = require('./routes/indexRoutes');
 const userRoutes = require('./routes/userRoutes');
 const productRoutes = require('./routes/productRoutes');
+const methodOverride = require('method-override')
 
 
 const public = path.resolve('./public');
