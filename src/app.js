@@ -5,6 +5,7 @@ const indexRoutes = require('./routes/indexRoutes');
 const userRoutes = require('./routes/userRoutes');
 const productRoutes = require('./routes/productRoutes');
 
+
 const public = path.resolve('./public');
 
 app.use(express.static(public));
@@ -14,6 +15,8 @@ app.set('views', path.join(__dirname, "views"))
 app.set('view engine', 'ejs');
 
 app.use('/', indexRoutes);
+
+app.use(methodOverride('_method'));
 
 
 app.get('/login', userRoutes);

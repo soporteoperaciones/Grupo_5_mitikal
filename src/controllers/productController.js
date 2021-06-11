@@ -7,13 +7,13 @@ const productController = {
     },
 
     market_test: (req, res) => {
-            const productList = productsModel.findAll()
+        const productList = productsModel.findAll()
             // aca leo el json y se lo paso al template
             // res.render('planets/list', { planetList: planetList })
-            res.render('./products/market_test', { productList })
+        res.render('./products/market_test', { productList })
 
     },
-    
+
     novedades: (req, res) => {
         return res.render('./products/market')
     },

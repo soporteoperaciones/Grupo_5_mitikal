@@ -28,7 +28,7 @@
             <div class="box-create-product">
                 <h1>Actualización de Producto</h1>
                 <H2>Favor de actualizar los datos del producto</H2>
-                <form action="/updateProduct<%= product.id %>?_method=PUT" method="POST" enctype="multipart/form-data"></form>
+                <form action="/updateProduct name=" create-product-form " <%= product.id %>?_method=PUT" method="POST" enctype="multipart/form-data"></form>
                 <div class="input-container">
                     <label for="name">Nombre del Producto</label>
                     <input type="text" name="name" id="name" required value="<%= product.name %>" />
