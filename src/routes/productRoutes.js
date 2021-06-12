@@ -38,11 +38,12 @@ productRoutes.get('/market', productController.market)
 productRoutes.get('/market_test', productController.market_test)
 productRoutes.get('/novedades', productController.novedades)
 productRoutes.get('/destacados', productController.destacados)
-productRoutes.get('/detalleProducto', productController.detalleProducto)
+productRoutes.get('/detalleProducto/:id?', productController.detalleProducto)
 productRoutes.get('/createProduct', productController.createProduct)
-productRoutes.post('/createProduct', upload.single('image'), productController.createProduct)
+productRoutes.post('/createProduct', upload.single('image'), productController.storeProduct)
+
 productRoutes.get('/updateProduct', productController.updateProduct)
-productRoutes.put('/updateProduct', upload.single('image'), productController.updateProduct)
+productRoutes.put('/updateProduct/id', upload.single('image'), productController.updateProduct)
 
 
 /*indexRoutes.get('/prueba', indexController.prueba) */

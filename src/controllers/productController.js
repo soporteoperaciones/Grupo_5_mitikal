@@ -31,6 +31,37 @@ const productController = {
         return res.render('./products/createProduct')
     },
 
+    storeProduct: (req, res) => {
+        // Crear el objeto planeta
+        const { name, description, category, color, size, price } = req.body;
+
+        console.log( req.body);
+        // dentro de req.file va a venir la información del archivo
+        const { file } = req
+        
+        // nuestra ruta al archivo
+        const image = file.filename
+
+        const newProduct = {
+            name: name, 
+            description: description, 
+            category: category, 
+            color: color, 
+            size: size, 
+            price: price,
+            image: '/img/' + image,
+        }
+
+        console.log( newProduct);
+
+        /*const productCreated = */
+        productsModel.create(newProduct);
+
+        /*redireccionamiento*/
+
+        res.redirect('/products/detalleProducto' /*+ productCreated.id*/);
+    },
+
     updateProduct: (req, res) => {
         const data = req.body;
         const { id } = req.params;
