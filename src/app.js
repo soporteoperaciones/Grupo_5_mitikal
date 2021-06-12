@@ -25,7 +25,7 @@ app.use('/register', userRoutes);
 app.use('/cart', userRoutes);
 */
 
-app.use('/', productRoutes);
+app.use('/products', productRoutes);
 /*
 app.use('/market', productRoutes);
 app.use('/market_test', productRoutes);

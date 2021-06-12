@@ -59,7 +59,7 @@ const productController = {
 
         /*redireccionamiento*/
 
-        res.redirect('/createProduct' /*+ productCreated.id*/);
+        res.redirect('/products/createProduct' /*+ productCreated.id*/);
     },
 
     updateProduct: (req, res) => {
