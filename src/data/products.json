@@ -17,5 +17,35 @@
     "price": "456",
     "image": "/img/1623466167958.jpg",
     "id": 2
+  },
+  {
+    "name": "Gerardo",
+    "description": "prueba",
+    "category": "test",
+    "color": "test",
+    "size": "test",
+    "price": "test",
+    "image": "/img/1623469869490.PNG",
+    "id": 3
+  },
+  {
+    "name": "Gerardo",
+    "description": "prueba",
+    "category": "test",
+    "color": "test",
+    "size": "test",
+    "price": "test",
+    "image": "/img/1623471117824.PNG",
+    "id": 4
+  },
+  {
+    "name": "Gerardo",
+    "description": "prueba",
+    "category": "test",
+    "color": "test",
+    "size": "test",
+    "price": "test",
+    "image": "/img/1623471146868.PNG",
+    "id": 5
   }
 ]

@@ -28,14 +28,13 @@ const productController = {
     },
 
     createProduct: (req, res) => {
-        return res.render('./products/createProduct')
+        return res.render('./products/detalleProducto')
     },
 
     storeProduct: (req, res) => {
         // Crear el objeto planeta
         const { name, description, category, color, size, price } = req.body;
 
-        console.log( req.body);
         // dentro de req.file va a venir la información del archivo
         const { file } = req
         
@@ -52,14 +51,12 @@ const productController = {
             image: '/img/' + image,
         }
 
-        console.log( newProduct);
-
         /*const productCreated = */
         productsModel.create(newProduct);
 
         /*redireccionamiento*/
 
-        res.redirect('/createProduct' /*+ productCreated.id*/);
+        res.redirect('/detalleProducto' /*+ productCreated.id*/);
     },
 
     updateProduct: (req, res) => {
