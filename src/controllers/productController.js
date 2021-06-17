@@ -1,3 +1,4 @@
+const { validationResult } = require('express-validator')
 const path = require('path')
 const productsModel = require('../models/productsModel')
 
@@ -37,16 +38,16 @@ const productController = {
 
         // dentro de req.file va a venir la información del archivo
         const { file } = req
-        
+
         // nuestra ruta al archivo
         const image = file.filename
 
         const newProduct = {
-            name: name, 
-            description: description, 
-            category: category, 
-            color: color, 
-            size: size, 
+            name: name,
+            description: description,
+            category: category,
+            color: color,
+            size: size,
             price: price,
             image: '/img/' + image,
         }
@@ -56,7 +57,7 @@ const productController = {
 
         /*redireccionamiento*/
 
-        res.redirect('/detalleProducto' /*+ productCreated.id*/);
+        res.redirect('/detalleProducto' /*+ productCreated.id*/ );
     },
 
     updateProduct: (req, res) => {

@@ -47,5 +47,25 @@
     "price": "testgsdg",
     "image": "/img/1623502411684.PNG",
     "id": 5
+  },
+  {
+    "name": "nuevo producto 12062021",
+    "description": "descripcion 12062021",
+    "category": "ropa interior",
+    "color": "blanco",
+    "size": "2",
+    "price": "1200",
+    "image": "/img/1623503695503.jpg",
+    "id": 6
+  },
+  {
+    "name": "nuevo producto 12062021",
+    "description": "descripcion 12062021",
+    "category": "ropa interior",
+    "color": "negro",
+    "size": "4",
+    "price": "2000",
+    "image": "/img/1623505729009.jpg",
+    "id": 7
   }
 ]

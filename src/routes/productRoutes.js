@@ -5,6 +5,10 @@ const path = require('path')
 
 const productController = require('../controllers/productController')
 
+const { isFileImage } = require('../helpers/file')
+
+const validationNewProduct = require('../middlewares/validationNewProduct')
+
 // destino donde guardar el archivo
 // nombre del archivo
 const storage = multer.diskStorage({
@@ -40,7 +44,7 @@ productRoutes.get('/novedades', productController.novedades)
 productRoutes.get('/destacados', productController.destacados)
 productRoutes.get('/detalleProducto/:id?', productController.detalleProducto)
 productRoutes.get('/createProduct', productController.createProduct)
-productRoutes.post('/createProduct', upload.single('image'), productController.storeProduct)
+productRoutes.post('/createProduct', upload.single('image'), validationNewProduct, productController.storeProduct)
 
 productRoutes.get('/updateProduct', productController.updateProduct)
 productRoutes.put('/updateProduct/id', upload.single('image'), productController.updateProduct)
