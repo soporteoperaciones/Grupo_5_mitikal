@@ -67,5 +67,45 @@
     "price": "2000",
     "image": "/img/1623505729009.jpg",
     "id": 7
+  },
+  {
+    "name": "nuevo producto 17062021",
+    "description": "descripcion 17062021",
+    "category": "ropa interior",
+    "color": "blanco",
+    "size": "4",
+    "price": "3000",
+    "image": "/img/1623951435526.jpg",
+    "id": 8
+  },
+  {
+    "name": "angelina",
+    "description": "conjunto angelina",
+    "category": "ropa interior",
+    "color": "blanco",
+    "size": "5",
+    "price": "4000",
+    "image": "/img/1623951846096.png",
+    "id": 9
+  },
+  {
+    "name": "angelina",
+    "description": "conjunto angelina",
+    "category": "ropa interior",
+    "color": "blanco",
+    "size": "5",
+    "price": "4000",
+    "image": "/img/1623951877956.png",
+    "id": 10
+  },
+  {
+    "name": "angelina 2",
+    "description": "descripcion angelina 2",
+    "category": "ropa interior",
+    "color": "negro",
+    "size": "4",
+    "price": "4000",
+    "image": "/img/1623952967506.png",
+    "id": 11
   }
 ]

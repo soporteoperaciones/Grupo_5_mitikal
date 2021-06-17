@@ -31,31 +31,66 @@
                 <form action="/createProduct" name="create-product-form" method="POST" enctype="multipart/form-data">
                     <div class="input-container">
                         <label for="name">Nombre del Producto</label>
-                        <input type="text" name="name" id="name" required />
+                        <input type="text" name="name" id="name" class="<%= (locals.errors && errors.name) ? 'input-error' : '' %>" value="<%= locals.oldValues && oldValues.name %>" />
+                        <% if (locals.errors && errors.name) { %>
+                            <p class='msg-error'>
+                                <%= errors.name.msg %>
+                            </p>
+                            <% } %>
                     </div>
                     <div class="input-container">
                         <label for="description">Descripción</label>
-                        <input type="text" name="description" id="description" />
+                        <input type="text" name="description" id="description" class="<%= (locals.errors && errors.name) ? 'input-error' : '' %>" value="<%= locals.oldValues && oldValues.name %>" />
+                        <% if (locals.errors && errors.name) { %>
+                            <p class='msg-error'>
+                                <%= errors.name.msg %>
+                            </p>
+                            <% } %>
                     </div>
                     <div class="input-container">
                         <label for="category">Categoria</label>
-                        <input type="text" name="category" id="category" />
+                        <input type="text" name="category" id="category" class="<%= (locals.errors && errors.name) ? 'input-error' : '' %>" value="<%= locals.oldValues && oldValues.name %>" />
+                        <% if (locals.errors && errors.name) { %>
+                            <p class='msg-error'>
+                                <%= errors.name.msg %>
+                            </p>
+                            <% } %>
                     </div>
                     <div class="input-container">
                         <label for="color">Color</label>
-                        <input type="text" name="color" id="color" />
+                        <input type="text" name="color" id="color" class="<%= (locals.errors && errors.name) ? 'input-error' : '' %>" value="<%= locals.oldValues && oldValues.name %>" />
+                        <% if (locals.errors && errors.name) { %>
+                            <p class='msg-error'>
+                                <%= errors.name.msg %>
+                            </p>
+                            <% } %>
                     </div>
                     <div class="input-container">
                         <label for="size">Talle</label>
-                        <input type="text" name="size" id="size" />
+                        <input type="text" name="size" id="size" class="<%= (locals.errors && errors.name) ? 'input-error' : '' %>" value="<%= locals.oldValues && oldValues.name %>" />
+                        <% if (locals.errors && errors.name) { %>
+                            <p class='msg-error'>
+                                <%= errors.name.msg %>
+                            </p>
+                            <% } %>
                     </div>
                     <div class="input-container">
                         <label for="price">Precio</label>
-                        <input type="text" name="price" id="price" />
+                        <input type="text" name="price" id="price" class="<%= (locals.errors && errors.name) ? 'input-error' : '' %>" value="<%= locals.oldValues && oldValues.name %>" />
+                        <% if (locals.errors && errors.name) { %>
+                            <p class='msg-error'>
+                                <%= errors.name.msg %>
+                            </p>
+                            <% } %>
                     </div>
                     <div class="input-container-image">
                         <label for="image">Imagen</label>
                         <input type="file" name="image" id="image" accept=".jpg , .png" multiple required hidden/>
+                        <% if (locals.errors && errors.image) { %>
+                            <p class='msg-error'>
+                                <%= errors.image.msg %>
+                            </p>
+                            <% } %>
                     </div>
 
                     <button class="createproduct" type="submit">Crear Producto</button>

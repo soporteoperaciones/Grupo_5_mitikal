@@ -3,11 +3,13 @@ const productRoutes = express.Router()
 const multer = require('multer')
 const path = require('path')
 
-const productController = require('../controllers/productController')
+
 
 const { isFileImage } = require('../helpers/file')
 
 const validationNewProduct = require('../middlewares/validationNewProduct')
+
+const productController = require('../controllers/productController')
 
 // destino donde guardar el archivo
 // nombre del archivo
