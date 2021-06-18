@@ -8,9 +8,44 @@ const validationNewProduct = [
     .notEmpty()
     .withMessage('Por favor ingrese un nombre de producto')
     .bail()
-    //
     .isLength({ min: 3 })
     .withMessage('Por favor un nombre más largo'),
+    
+    body('description')
+    .notEmpty()
+    .withMessage('Por favor descripcion')
+    .bail()
+    .isLength({ min: 3 })
+    .withMessage('Por favor descripcion'),
+
+    body('category')
+    .notEmpty()
+    .withMessage('Por favor ingrese categoria')
+    .bail()
+    .isLength({ min: 3 })
+    .withMessage('Por favor ingrese categoria'),
+    
+    body('color')
+    .notEmpty()
+    .withMessage('Por favor ingrese color')
+    .bail()
+    .isLength({ min: 3 })
+    .withMessage('Por favor ingrese color'),
+
+    body('size')
+    .notEmpty()
+    .withMessage('Por favor ingrese un size')
+    .bail()
+    .isLength({ min: 3 })
+    .withMessage('Por favor ingrese un size'),
+
+    body('price')
+    .notEmpty()
+    .withMessage('Por favor ingrese un price de producto')
+    .bail()
+    .isLength({ min: 3 })
+    .withMessage('Por favor ingrese un price de producto'),
+
     body('image')
     .custom((value, { req }) => {
         const { file } = req
@@ -26,7 +61,7 @@ const validationNewProduct = [
 
         if (!isFileImage(file.originalname)) {
             // disparar error
-            throw new Error('Por favor ingrese una archivo que sea una imagen')
+            throw new Error('Por favor ingrese un archivo que sea una imagen')
         }
 
         // chequea que la extensión sea la correcta

@@ -3,8 +3,6 @@ const productRoutes = express.Router()
 const multer = require('multer')
 const path = require('path')
 
-
-
 const { isFileImage } = require('../helpers/file')
 
 const validationNewProduct = require('../middlewares/validationNewProduct')

@@ -107,5 +107,15 @@
     "price": "4000",
     "image": "/img/1623952967506.png",
     "id": 11
+  },
+  {
+    "name": "nombre",
+    "description": "djaldjla",
+    "category": "fnvxcm,,",
+    "color": "mmb,vcnmb,cv",
+    "size": "nx,mvnx,v",
+    "price": "456",
+    "image": "/img/1623983624837.PNG",
+    "id": 12
   }
 ]

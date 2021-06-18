@@ -26,30 +26,55 @@
             <div class="box-register">
                 <h1>CREAR CUENTA</h1>
                 <H2>Comprá más rápido y llevá el control de tus pedidos, ¡en un solo lugar!</H2>
-                <form action="" name="register-form" method="GET">
+                <form action="/register" name="register-form" method="POST" enctype="multipart/form-data" >
                     <div class="input-container">
                         <label for="name">NOMBRE</label>
-                        <input type="text" name="name" id="name" placeholder="Tu nombre" autocomplete="on" required />
+                        <input type="text" name="name" id="name" class="<%= (locals.errors && errors.name) ? 'input-error' : '' %>" value="<%= locals.oldValues && oldValues.name %>" />
+                        <% if (locals.errors && errors.name) { %>
+                            <p class='msg-error'>
+                                <%= errors.name.msg %>
+                            </p>
+                            <% } %>
                     </div>
                     <div class="input-container">
                         <label for="email">E-Mail</label>
-                        <input type="email" name="email" id="email" placeholder="tuNombre@mail.com" autocomplete="on" required />
+                        <input type="email" name="email" id="email" class="<%= (locals.errors && errors.email) ? 'input-error' : '' %>" value="<%= locals.oldValues && oldValues.email %>" />
+                        <% if (locals.errors && errors.email) { %>
+                            <p class='msg-error'>
+                                <%= errors.email.msg %>
+                            </p>
+                            <% } %>
                     </div>
                     <div class="input-container">
                         <label for="tel">TELÉFONO</label>
-                        <input type="tel" name="tel" id="tel" placeholder="1123445567" required />
+                        <input type="tel" name="tel" id="tel" class="<%= (locals.errors && errors.tel) ? 'input-error' : '' %>" value="<%= locals.oldValues && oldValues.tel %>" />
+                        <% if (locals.errors && errors.tel) { %>
+                            <p class='msg-error'>
+                                <%= errors.tel.msg %>
+                            </p>
+                            <% } %>
                     </div>
                     <div class="input-container">
                         <label for="password1">Contraseña</label>
-                        <input type="password" name="password1" id="password1" placeholder="***" required />
+                        <input type="password" name="password1" id="password1" class="<%= (locals.errors && errors.password1) ? 'input-error' : '' %>" value="<%= locals.oldValues && oldValues.password1 %>" />
+                        <% if (locals.errors && errors.password1) { %>
+                            <p class='msg-error'>
+                                <%= errors.password1.msg %>
+                            </p>
+                            <% } %>
                     </div>
                     <div class="input-container">
                         <label for="password2">Confirmar Contraseña</label>
-                        <input type="password" name="password2" id="password2" placeholder="***" required />
+                        <input type="password" name="password2" id="password2" class="<%= (locals.errors && errors.password2) ? 'input-error' : '' %>" value="<%= locals.oldValues && oldValues.password2 %>" />
+                        <% if (locals.errors && errors.password2) { %>
+                            <p class='msg-error'>
+                                <%= errors.password2.msg %>
+                            </p>
+                            <% } %>
                     </div>
                     
                     
-                    <button class="crear-cuenta" type="submit" onclick="comprobarClave()">CREAR CUENTA</button>
+                    <button class="crear-cuenta" type="submit" >CREAR CUENTA</button>
                     
                 </form>
                 <div class="iniciar-sesion">¿Ya tenés una cuenta? <a href="/login">Iniciá Sesión</a></div>

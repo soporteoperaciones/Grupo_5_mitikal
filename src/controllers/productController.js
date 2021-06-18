@@ -1,6 +1,7 @@
 const { validationResult } = require('express-validator')
 const path = require('path')
 const productsModel = require('../models/productsModel')
+const fs = require('fs')
 
 const productController = {
     market: (req, res) => {
