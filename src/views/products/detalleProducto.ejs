@@ -40,11 +40,11 @@
                                     <% } %>
 
                                         <div class="actions">
-                                            <a href="/products/<%= productDetail.id %>/editProduct">
-                                                <button>Edit</button>
+                                            <a href="../products/<%= productDetail.id %>/updateProduct">
+                                                <button>Editar Producto</button>
                                             </a>
-                                            <form action="/products/<%= productDetail.id %>?_method=DELETE" method="POST">
-                                                <button type="submit">Delete</button>
+                                            <form action="../products/<%= productDetail.id %>?_method=DELETE" method="POST">
+                                                <button type="submit">Borrar Producto</button>
                                             </form>
                                         </div>
                         </section>
