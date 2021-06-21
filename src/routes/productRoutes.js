@@ -46,8 +46,11 @@ productRoutes.get('/detalleProducto/:id?', productController.detalleProducto)
 productRoutes.get('/createProduct', productController.createProduct)
 productRoutes.post('/createProduct', upload.single('image'), validationNewProduct, productController.storeProduct)
 
-productRoutes.get('/updateProduct', productController.updateProduct)
-productRoutes.put('/updateProduct/id', upload.single('image'), productController.updateProduct)
+productRoutes.get('/:id/editProduct', productController.editProduct)
+productRoutes.put('/:id', upload.single('image'), productController.update)
+
+// Delete
+productRoutes.delete('/:id', productController.destroy);
 
 
 /*indexRoutes.get('/prueba', indexController.prueba) */

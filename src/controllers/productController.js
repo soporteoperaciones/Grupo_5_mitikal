@@ -55,7 +55,7 @@ const productController = {
         }
 
 
-        // Crear el objeto planeta
+        // Crear el objeto producto
         const { name, description, category, color, size, price } = req.body;
 
         // dentro de req.file va a venir la información del archivo
@@ -82,7 +82,14 @@ const productController = {
         res.redirect('/detalleProducto' /*+ productCreated.id*/ );
     },
 
-    updateProduct: (req, res) => {
+    editProduct: (req, res) => {
+        const product = productsModel.findByPk(req.params.id);
+
+        res.render('products/updateProduct', {
+            product
+        });
+    },
+    update: (req, res) => {
         const data = req.body;
         const { id } = req.params;
         // el producto original
@@ -107,6 +114,14 @@ const productController = {
 
         res.redirect('/products/detalleProduct/' + id);
     },
+
+    destroy: (req, res) => {
+        const id = req.params.id;
+
+        productsModel.destroy(id);
+
+        res.redirect('/products/list');
+    }
 }
 
 module.exports = productController
