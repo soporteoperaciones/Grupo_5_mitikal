@@ -23,12 +23,32 @@
     <!-- Parte superior de la pagina dividido en un box, con tres box internos -->
 
     <%- include("../partials/header") %>
-    <!-- Cuerpo principal de la pagina dividido en 4 boxes, -->
-    <main>
-        <div class="container-main-all">
-            <div class="container-body">
-                <div class="row0">
-                    <div class="galeria">
+        <!-- Cuerpo principal de la pagina dividido en 4 boxes, -->
+        <main>
+            <div class="container-main-all">
+                <div class="container-body">
+                    <div class="row0">
+                        <section class="planets-detail">
+                            <% if (productDetail == null) {%>
+                                Producto no Encontrado !!!
+                                <% } else { %>
+                                    <h2>
+                                        <%= productDetail.name %>
+                                    </h2>
+                                    <img src="<%= productDetail.image %>" width="80%" />
+
+                                    <% } %>
+
+                                        <div class="actions">
+                                            <a href="/products/<%= productDetail.id %>/editProduct">
+                                                <button>Edit</button>
+                                            </a>
+                                            <form action="/products/<%= productDetail.id %>?_method=DELETE" method="POST">
+                                                <button type="submit">Delete</button>
+                                            </form>
+                                        </div>
+                        </section>
+                        <!-- <div class="galeria">
                         <input type="radio" name="navegacion" id="_1" checked>
                         <input type="radio" name="navegacion" id="_2">
                         <input type="radio" name="navegacion" id="_3">
@@ -56,17 +76,17 @@
 
                         </div>
 
+                    </div> -->
+                    </div>
+                    <div class="row1">
+                        <h3 class="Titulo_Producto_1"> PRODUCTOS RELACIONADOS</h3>
                     </div>
                 </div>
-                <div class="row1">
-                    <h3 class="Titulo_Producto_1"> PRODUCTOS RELACIONADOS</h3>
-                </div>
             </div>
-        </div>
 
-    </main>
-    <!-- Parte inferior con dos cajas, una exclusiva para el copyright, y la otra subdividida en 3 boxes-->
-    <%- include("../partials/footer") %>
+        </main>
+        <!-- Parte inferior con dos cajas, una exclusiva para el copyright, y la otra subdividida en 3 boxes-->
+        <%- include("../partials/footer") %>
 
 </body>
 
