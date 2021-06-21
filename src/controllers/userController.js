@@ -16,28 +16,20 @@ const userController = {
 
     storeUser: (req, res) => {
         const formValidation = validationResult(req)
+        const oldValues = req.body
 
-        /* si encuentro un error devuelvo el formulario
-        con los valores ya cargados y los errores */
-        console.log('formValidation.mapped()', formValidation.mapped())
-
-        
         if (!formValidation.isEmpty()) {
             // borrar imagen
-        /*    if (req.file) {
+            if (req.file) {
                 // primero chequeamos que exista
                 fs.unlinkSync(req.file.path)
             }
-            */
 
-            // tenemos errores
-            const oldValues = req.body
 
-            console.log(oldValues)            
             res.render('users/register', { oldValues, errors: formValidation.mapped() })
             return
         }
-        
+
 
         // Crear el objeto user
         const { name, email, tel, password1, password2 } = req.body;
@@ -55,13 +47,13 @@ const userController = {
 
         /*redireccionamiento*/
 
-        res.redirect('/login' );
+        res.redirect('/login');
     },
 
     updateProduct: (req, res) => {
         const data = req.body;
         const { id } = req.params;
- 
+
         userModel.update(data, id);
 
         res.redirect('/login');
