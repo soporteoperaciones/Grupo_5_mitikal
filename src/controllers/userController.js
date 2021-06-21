@@ -18,6 +18,8 @@ const userController = {
         const formValidation = validationResult(req)
         const oldValues = req.body
 
+
+
         if (!formValidation.isEmpty()) {
             // borrar imagen
             if (req.file) {
