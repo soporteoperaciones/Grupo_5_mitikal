@@ -28,38 +28,38 @@
             <div class="box-create-product">
                 <h1>Actualización de Producto</h1>
                 <H2>Favor de actualizar los datos del producto</H2>
-                <form action="/products/<%= product.id %>?_method=PUT" method="POST" enctype="multipart/form-data"></form>
-                <div class="input-container">
-                    <label for="name">Nombre del Producto</label>
-                    <input type="text" name="name" id="name" required value="<%= product.name %>" />
-                </div>
-                <div class="input-container">
-                    <label for="description">Descripción</label>
-                    <input type="text" name="description" id="description" required value="<%= product.description %>" />
-                </div>
-                <div class="input-container">
-                    <label for="category">Categoria</label>
-                    <input type="text" name="category" id="category" required value="<%= product.category %>" />
-                </div>
-                <div class="input-container">
-                    <label for="color">Color</label>
-                    <input type="text" name="color" id="color" required value="<%= product.color %>" />
-                </div>
-                <div class="input-container">
-                    <label for="size">Talle</label>
-                    <input type="text" name="size" id="size" required value="<%= product.size %>" />
-                </div>
-                <div class="input-container">
-                    <label for="price">Precio</label>
-                    <input type="text" name="price" id="price" required value="<%= product.size %>" />
-                </div>
-                <div class="input-container-image">
-                    <label for="image">Imagen</label>
-                    <img src="<%= product.image %>" width="300" />
-                    <input type="file" name="image" id="image" accept=".jpg , .png" multiple hidden/>
-                </div>
+                <form action="/<%= product.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
+                    <div class="input-container">
+                        <label for="name">Nombre del Producto</label>
+                        <input type="text" name="name" id="name" required value="<%= product.name %>" />
+                    </div>
+                    <div class="input-container">
+                        <label for="description">Descripción</label>
+                        <input type="text" name="description" id="description" required value="<%= product.description %>" />
+                    </div>
+                    <div class="input-container">
+                        <label for="category">Categoria</label>
+                        <input type="text" name="category" id="category" required value="<%= product.category %>" />
+                    </div>
+                    <div class="input-container">
+                        <label for="color">Color</label>
+                        <input type="text" name="color" id="color" required value="<%= product.color %>" />
+                    </div>
+                    <div class="input-container">
+                        <label for="size">Talle</label>
+                        <input type="text" name="size" id="size" required value="<%= product.size %>" />
+                    </div>
+                    <div class="input-container">
+                        <label for="price">Precio</label>
+                        <input type="text" name="price" id="price" required value="<%= product.size %>" />
+                    </div>
+                    <div class="input-container-image">
+                        <label for="image">Imagen</label>
+                        <img src="<%= product.image %>" width="300" />
+                        <input type="file" name="image" id="image" accept=".jpg , .png" multiple hidden/>
+                    </div>
 
-                <button class="updateproduct" type="submit">Actualizar Producto</button>
+                    <button class="updateproduct" type="submit">Actualizar Producto</button>
 
                 </form>
 

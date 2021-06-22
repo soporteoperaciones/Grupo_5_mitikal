@@ -16,20 +16,20 @@ const productController = {
 
     },
 
-    novedades: (req, res) => {
+    releases: (req, res) => {
         return res.render('./products/market')
     },
 
-    destacados: (req, res) => {
+    important: (req, res) => {
         return res.render('./products/market')
     },
 
 
-    detalleProducto: (req, res) => {
+    detailProduct: (req, res) => {
         const { id } = req.params
         const productDetail = productsModel.findByPk(id)
 
-        return res.render('./products/detalleProducto', { productDetail })
+        return res.render('./products/detailProduct', { productDetail })
     },
 
     createProduct: (req, res) => {
@@ -77,12 +77,11 @@ const productController = {
             image: '/img/' + image,
         }
 
-        /*const productCreated = */
-        productsModel.create(newProduct);
+        const productCreated = productsModel.create(newProduct);
 
         /*redireccionamiento*/
 
-        res.redirect('/detalleProducto' /*+ productCreated.id*/ );
+        res.redirect('/detailProduct' + productCreated.id );
     },
 
     editProduct: (req, res) => {
@@ -115,7 +114,7 @@ const productController = {
 
         productsModel.update(data, id);
 
-        res.redirect('/products/detalleProduct/' + id);
+        res.redirect('products/detailProduct/' + id);
     },
 
     destroy: (req, res) => {

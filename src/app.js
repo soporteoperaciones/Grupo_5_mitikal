@@ -21,4 +21,5 @@ app.use('/', userRoutes);
 
 app.use('/', productRoutes);
 
+
 app.listen(process.env.PORT || 3050, () => console.log('Servidor corriendo en el puerto 3050'));

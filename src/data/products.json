@@ -117,5 +117,35 @@
     "price": "456",
     "image": "/img/1623983624837.PNG",
     "id": 12
+  },
+  {
+    "name": "Producto1",
+    "description": "saraza 123",
+    "category": "nomeacuerdo",
+    "color": "cualquiera",
+    "size": "otro",
+    "price": "456",
+    "image": "/img/1624330397659.PNG",
+    "id": 13
+  },
+  {
+    "name": "Producto3",
+    "description": "saraza 123",
+    "category": "nomeacuerdo",
+    "color": "cualquiera",
+    "size": "otro",
+    "price": "456",
+    "image": "/img/1624331324506.PNG",
+    "id": 14
+  },
+  {
+    "name": "Producto4",
+    "description": "sarazkdfsñlkfñ",
+    "category": "dflsjaglfa",
+    "color": "gjlsdjglfd",
+    "size": "gsdklfjhkdfj",
+    "price": "354",
+    "image": "/img/1624331590947.PNG",
+    "id": 15
   }
 ]
