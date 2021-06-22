@@ -30,52 +30,58 @@
                     <% if (productDetail == null) {%>
                         Producto no Encontrado !!!
                         <% } else { %>
-                    <div class="row0">
-                        <div class="galeria">
-                            <input type="radio" name="navegacion" id="_1" checked>
-                            <input type="radio" name="navegacion" id="_2">
-                            <input type="radio" name="navegacion" id="_3">
-                            <img src="<%= productDetail.image %>" alt="Galeria CSS 1" />
-                            <img src="<%= productDetail.image %>" alt="Galeria CSS 2" />
-                            <img src="<%= productDetail.image %>" alt="Galeria CSS 3" />
-                        </div>
-                    <div class="producto">
-                        <div class="descripcion">
-                            <h3 class="nombre_producto"> <%= productDetail.name %> </h3>
-                            <h3 class="nombre_producto"> <%= productDetail.description %> </h3>
-                            <h2 class="precio"> <%= productDetail.price %> </h2>
-                            <button class="seleccion_medio_de_pago" type="submit">MEDIO DE PAGO</button>
-                        </div>
-                        <div class="botonera">
-                            <div class="seleccion">
-                                <button class="seleccion_talle" type="submit"><%= productDetail.size %></button>
-                                <button class="seleccion_color" type="submit"><%= productDetail.color %></button>
-                                <button class="seleccion_cantidad" type="submit">CANTIDAD</button>
+                            <div class="row0">
+                                <div class="galeria">
+                                    <input type="radio" name="navegacion" id="_1" checked>
+                                    <input type="radio" name="navegacion" id="_2">
+                                    <input type="radio" name="navegacion" id="_3">
+                                    <img src="<%= productDetail.image %>" alt="Galeria CSS 1" />
+                                    <img src="<%= productDetail.image %>" alt="Galeria CSS 2" />
+                                    <img src="<%= productDetail.image %>" alt="Galeria CSS 3" />
+                                </div>
+                                <div class="producto">
+                                    <div class="descripcion">
+                                        <h3 class="nombre_producto">
+                                            <%= productDetail.name %>
+                                        </h3>
+                                        <h3 class="nombre_producto">
+                                            <%= productDetail.description %>
+                                        </h3>
+                                        <h2 class="precio">
+                                            <%= productDetail.price %>
+                                        </h2>
+                                        <button class="seleccion_medio_de_pago" type="submit">MEDIO DE PAGO</button>
+                                    </div>
+                                    <div class="botonera">
+                                        <div class="seleccion">
+                                            <button class="seleccion_talle" type="submit"><%= productDetail.size %></button>
+                                            <button class="seleccion_color" type="submit"><%= productDetail.color %></button>
+                                            <button class="seleccion_cantidad" type="submit">CANTIDAD</button>
+                                        </div>
+                                        <div class="agregar_al_carrito">
+                                            <button class="button_agregar" type="submit">AGREGAR AL CARRITO</button>
+                                        </div>
+                                    </div>
+                                    <div class="descripcion_general">
+
+                                    </div>
+
+                                </div>
                             </div>
-                            <div class="agregar_al_carrito">
-                                <button class="button_agregar" type="submit">AGREGAR AL CARRITO</button>
-                            </div>    
-                        </div>
-                        <div class="descripcion_general">
-
-                        </div>
-
-                    </div>
-                    </div>
-                    <% } %>
-                    <div class="rowedition">
-                        <div class="actions">
-                            <a href="/<%= productDetail.id %>/editProduct">
-                                <button>Editar Producto</button>
-                            </a>
-                            <form action="/<%= productDetail.id %>?_method=DELETE" method="POST">
-                                <button type="submit">Borrar Producto</button>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="row1">
-                        <h3 class="Titulo_Producto_1"> PRODUCTOS RELACIONADOS</h3>
-                    </div>
+                            <% } %>
+                                <div class="rowedition">
+                                    <div class="actions">
+                                        <a href="/<%= productDetail.id %>/editProduct">
+                                            <button>Editar Producto</button>
+                                        </a>
+                                        <form action="/detailProduct/<%= productDetail.id %>?_method=DELETE" method="POST">
+                                            <button type="submit">Borrar Producto</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="row1">
+                                    <h3 class="Titulo_Producto_1"> PRODUCTOS RELACIONADOS</h3>
+                                </div>
                 </div>
             </div>
 
