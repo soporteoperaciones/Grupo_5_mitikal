@@ -173,11 +173,12 @@ header .mostrar_detacados:hover {
 /* ---- main ---------------------------------------------------------------------------------------------------------------      */
 
 main {
+    height: 100%;
     width: 100%;
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-    font-family: sans-serif;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    position: relative
 }
 
 div.products {
