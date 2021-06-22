@@ -1,151 +1,141 @@
-[
-  {
-    "id": 1,
-    "first_name": "Garvin",
-    "last_name": "Palombi",
-    "email": "gpalombij@cdbaby.com",
-    "password": "0akFxZZ",
-    "category": "user",
-    "image": "user_20.jpg"
-  },
-  {
-    "name": "Producto1",
-    "description": "saraza 123",
-    "category": "nomeacuerdo",
-    "color": "cualquiera",
-    "size": "otro",
-    "price": "456",
-    "image": "/img/1623466167958.jpg",
-    "id": 2
-  },
-  {
-    "name": "Gerardo",
-    "description": "prueba",
-    "category": "test",
-    "color": "test",
-    "size": "test",
-    "price": "test",
-    "image": "/img/1623469869490.PNG",
-    "id": 3
-  },
-  {
-    "name": "Gerardo5",
-    "description": "prueba",
-    "category": "gjlsjglsdjg",
-    "color": "hdjkahdkj",
-    "size": "jfksdhfka",
-    "price": "jglsjglsdjws",
-    "image": "/img/1623502349620.PNG",
-    "id": 4
-  },
-  {
-    "name": "Gerardo3",
-    "description": "fglsdjglsdfjl",
-    "category": "test",
-    "color": "tegsdgsdfst",
-    "size": "test",
-    "price": "testgsdg",
-    "image": "/img/1623502411684.PNG",
-    "id": 5
-  },
-  {
-    "name": "nuevo producto 12062021",
-    "description": "descripcion 12062021",
-    "category": "ropa interior",
-    "color": "blanco",
-    "size": "2",
-    "price": "1200",
-    "image": "/img/1623503695503.jpg",
-    "id": 6
-  },
-  {
-    "name": "nuevo producto 12062021",
-    "description": "descripcion 12062021",
-    "category": "ropa interior",
-    "color": "negro",
-    "size": "4",
-    "price": "2000",
-    "image": "/img/1623505729009.jpg",
-    "id": 7
-  },
-  {
-    "name": "nuevo producto 17062021",
-    "description": "descripcion 17062021",
-    "category": "ropa interior",
-    "color": "blanco",
-    "size": "4",
-    "price": "3000",
-    "image": "/img/1623951435526.jpg",
-    "id": 8
-  },
-  {
-    "name": "angelina",
-    "description": "conjunto angelina",
-    "category": "ropa interior",
-    "color": "blanco",
-    "size": "5",
-    "price": "4000",
-    "image": "/img/1623951846096.png",
-    "id": 9
-  },
-  {
-    "name": "angelina",
-    "description": "conjunto angelina",
-    "category": "ropa interior",
-    "color": "blanco",
-    "size": "5",
-    "price": "4000",
-    "image": "/img/1623951877956.png",
-    "id": 10
-  },
-  {
-    "name": "angelina 2",
-    "description": "descripcion angelina 2",
-    "category": "ropa interior",
-    "color": "negro",
-    "size": "4",
-    "price": "4000",
-    "image": "/img/1623952967506.png",
-    "id": 11
-  },
-  {
-    "name": "nombre",
-    "description": "djaldjla",
-    "category": "fnvxcm,,",
-    "color": "mmb,vcnmb,cv",
-    "size": "nx,mvnx,v",
-    "price": "456",
-    "image": "/img/1623983624837.PNG",
-    "id": 12
-  },
-  {
-    "name": "Producto1",
-    "description": "saraza 123",
-    "category": "nomeacuerdo",
-    "color": "cualquiera",
-    "size": "otro",
-    "price": "456",
-    "image": "/img/1624330397659.PNG",
-    "id": 13
-  },
-  {
-    "name": "Producto3",
-    "description": "saraza 123",
-    "category": "nomeacuerdo",
-    "color": "cualquiera",
-    "size": "otro",
-    "price": "456",
-    "image": "/img/1624331324506.PNG",
-    "id": 14
-  },
-  {
-    "name": "Producto4",
-    "description": "sarazkdfsñlkfñ",
-    "category": "dflsjaglfa",
-    "color": "gjlsdjglfd",
-    "size": "gsdklfjhkdfj",
-    "price": "354",
-    "image": "/img/1624331590947.PNG",
-    "id": 15
-  }
+[{
+        "name": "Producto1",
+        "description": "saraza 123",
+        "category": "nomeacuerdo",
+        "color": "cualquiera",
+        "size": "otro",
+        "price": "456",
+        "image": "/img/1623505729009.jpg",
+        "id": 2
+    },
+    {
+        "name": "Gerardo",
+        "description": "prueba",
+        "category": "test",
+        "color": "test",
+        "size": "test",
+        "price": "test",
+        "image": "/img/1623505729009.jpg",
+        "id": 3
+    },
+    {
+        "name": "Gerardo5",
+        "description": "prueba",
+        "category": "gjlsjglsdjg",
+        "color": "hdjkahdkj",
+        "size": "jfksdhfka",
+        "price": "jglsjglsdjws",
+        "image": "/img/1623502349620.PNG",
+        "id": 4
+    },
+    {
+        "name": "Gerardo3",
+        "description": "fglsdjglsdfjl",
+        "category": "test",
+        "color": "tegsdgsdfst",
+        "size": "test",
+        "price": "testgsdg",
+        "image": "/img/1623502411684.PNG",
+        "id": 5
+    },
+    {
+        "name": "nuevo producto 12062021",
+        "description": "descripcion 12062021",
+        "category": "ropa interior",
+        "color": "blanco",
+        "size": "2",
+        "price": "1200",
+        "image": "/img/1623503695503.jpg",
+        "id": 6
+    },
+    {
+        "name": "nuevo producto 12062021",
+        "description": "descripcion 12062021",
+        "category": "ropa interior",
+        "color": "negro",
+        "size": "4",
+        "price": "2000",
+        "image": "/img/1623505729009.jpg",
+        "id": 7
+    },
+    {
+        "name": "nuevo producto 17062021",
+        "description": "descripcion 17062021",
+        "category": "ropa interior",
+        "color": "blanco",
+        "size": "4",
+        "price": "3000",
+        "image": "/img/1623951435526.jpg",
+        "id": 8
+    },
+    {
+        "name": "angelina",
+        "description": "conjunto angelina",
+        "category": "ropa interior",
+        "color": "blanco",
+        "size": "5",
+        "price": "4000",
+        "image": "/img/1623951846096.png",
+        "id": 9
+    },
+    {
+        "name": "angelina",
+        "description": "conjunto angelina",
+        "category": "ropa interior",
+        "color": "blanco",
+        "size": "5",
+        "price": "4000",
+        "image": "/img/1623951877956.png",
+        "id": 10
+    },
+    {
+        "name": "angelina 2",
+        "description": "descripcion angelina 2",
+        "category": "ropa interior",
+        "color": "negro",
+        "size": "4",
+        "price": "4000",
+        "image": "/img/1623952967506.png",
+        "id": 11
+    },
+    {
+        "name": "nombre",
+        "description": "djaldjla",
+        "category": "fnvxcm,,",
+        "color": "mmb,vcnmb,cv",
+        "size": "nx,mvnx,v",
+        "price": "456",
+        "image": "/img/1623983624837.PNG",
+        "id": 12
+    },
+    {
+        "name": "Producto1",
+        "description": "saraza 123",
+        "category": "nomeacuerdo",
+        "color": "cualquiera",
+        "size": "otro",
+        "price": "456",
+        "image": "/img/1624330397659.PNG",
+        "id": 13
+    },
+    {
+        "name": "Producto3",
+        "description": "saraza 123",
+        "category": "nomeacuerdo",
+        "color": "cualquiera",
+        "size": "otro",
+        "price": "456",
+        "image": "/img/1624331324506.PNG",
+        "id": 14
+    },
+    {
+        "name": "Producto4",
+        "description": "sarazkdfsñlkfñ",
+        "category": "dflsjaglfa",
+        "color": "gjlsdjglfd",
+        "size": "gsdklfjhkdfj",
+        "price": "354",
+        "image": "/img/1624331590947.PNG",
+        "id": 15
+    }
 ]
