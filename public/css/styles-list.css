@@ -172,19 +172,6 @@ header .mostrar_detacados:hover {
 
 /* ---- main ---------------------------------------------------------------------------------------------------------------      */
 
-* {
-    box-sizing: border-box;
-}
-
-main {
-    display: flex;
-    width: 400%;
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
-
 .products {
     display: flex;
     flex-wrap: wrap;
@@ -202,18 +189,8 @@ main {
 }
 
 .List-Products {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(10, 6, 6);
-    transform: scale(0);
-    transition: .5s ease;
-    border: 2px solid;
 }
 
 .product-list-image:hover .List-Products {
