@@ -18,8 +18,6 @@ const userController = {
         const formValidation = validationResult(req)
         const oldValues = req.body
 
-
-
         if (!formValidation.isEmpty()) {
             // borrar imagen
             if (req.file) {
@@ -36,12 +34,17 @@ const userController = {
         // Crear el objeto user
         const { name, email, tel, password1, password2 } = req.body;
 
+        const { file } = req
+
+        const image = file.filename
+
         const newUser = {
             name: name,
             email: email,
             tel: tel,
             password1: password1,
             password2: password2,
+            image: '/img/users/' + image,
         }
 
         /*const productCreated = */
@@ -52,19 +55,18 @@ const userController = {
         res.redirect('/login');
     },
 
-    updateProduct: (req, res) => {
-        const data = req.body;
-        const { id } = req.params;
-
-        userModel.update(data, id);
-
-        res.redirect('/login');
-    },
-
 
     cart: (req, res) => {
         return res.render('./products/cart')
     },
+
+    logout: (req, res) => {
+        // borrar session y cookie
+        req.session.destroy()
+        res.clearCookie('user')
+
+        res.redirect('/')
+    }
 }
 
 module.exports = userController
