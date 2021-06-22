@@ -184,7 +184,7 @@ header .mostrar_detacados:hover {
 
 .image {
     display: flex;
-    width: 50%;
+    width: 60%;
     height: auto;
 }
 
@@ -199,7 +199,6 @@ header .mostrar_detacados:hover {
     left: 50%;
     display: flex;
     justify-content: center;
-    align-items: center;
     text-align: center;
 }
 
