@@ -27,10 +27,10 @@
 
 
 
-            <section class="products">
+            <div class="products">
                 <% productList.forEach((product) => { %>
                     <article class="product list image">
-                        <img src="<%= product.image %>" alt="" width="60%">
+                        <img src="<%= product.image %>" alt="">
 
                         <h2 class="List-Products">
                             <a href="/products/detailProduct/<%= product.id %>">
@@ -61,7 +61,7 @@
                     <% }) %>
 
 
-            </section>
+            </div>
 
 
         </main>
