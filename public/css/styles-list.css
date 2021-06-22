@@ -188,12 +188,12 @@ div.products {
     width: 180px;
 }
 
-div.products:hover {
+div.product list image:hover {
     border: 1px solid #777;
 }
 
 div.products img {
-    width: 100%;
+    width: 200%;
     height: auto;
 }
 
