@@ -6,8 +6,7 @@ const validationNewUser = require('../middlewares/validationNewUser')
 
 const userController = require('../controllers/userController')
 
-/
-destino donde guardar el archivo
+
 // nombre del archivo
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
