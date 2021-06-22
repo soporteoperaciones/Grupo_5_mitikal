@@ -131,7 +131,7 @@ const productController = {
 
         productsModel.destroy(id);
 
-        res.redirect('/products/list');
+        res.redirect('/list');
     }
 }
 
