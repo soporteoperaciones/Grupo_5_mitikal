@@ -1,6 +1,6 @@
 [{
         "name": "Producto1",
-        "description": "saraza 123",
+        "description": "Conjunto Juana",
         "category": "nomeacuerdo",
         "color": "cualquiera",
         "size": "otro",
@@ -9,8 +9,8 @@
         "id": 2
     },
     {
-        "name": "Gerardo",
-        "description": "prueba",
+        "name": "Producto2",
+        "description": "Conjunto Isabella",
         "category": "test",
         "color": "test",
         "size": "test",
@@ -19,8 +19,8 @@
         "id": 3
     },
     {
-        "name": "Gerardo5",
-        "description": "prueba",
+        "name": "Producto3",
+        "description": "Conjunto Sally",
         "category": "gjlsjglsdjg",
         "color": "hdjkahdkj",
         "size": "jfksdhfka",
@@ -29,8 +29,8 @@
         "id": 4
     },
     {
-        "name": "Gerardo3",
-        "description": "fglsdjglsdfjl",
+        "name": "Producto4",
+        "description": "Conjunto Charlotte",
         "category": "test",
         "color": "tegsdgsdfst",
         "size": "test",
@@ -39,8 +39,8 @@
         "id": 5
     },
     {
-        "name": "nuevo producto 1",
-        "description": "descripcion 12062021",
+        "name": "Producto5",
+        "description": "Conjunto Luli Soft",
         "category": "ropa interior",
         "color": "blanco",
         "size": "2",
@@ -49,8 +49,8 @@
         "id": 6
     },
     {
-        "name": "nuevo producto 2",
-        "description": "descripcion 12062021",
+        "name": "Producto6",
+        "description": "Conjunto Tania",
         "category": "ropa interior",
         "color": "negro",
         "size": "4",
@@ -59,8 +59,8 @@
         "id": 7
     },
     {
-        "name": "nuevo producto 3",
-        "description": "descripcion 17062021",
+        "name": "Producto7",
+        "description": "Bikini Saona",
         "category": "ropa interior",
         "color": "blanco",
         "size": "4",
@@ -69,8 +69,8 @@
         "id": 8
     },
     {
-        "name": "angelina",
-        "description": "conjunto angelina",
+        "name": "Producto8",
+        "description": "Conjunto Angelina",
         "category": "ropa interior",
         "color": "blanco",
         "size": "5",
@@ -79,8 +79,8 @@
         "id": 9
     },
     {
-        "name": "angelina",
-        "description": "conjunto angelina",
+        "name": "Producto9",
+        "description": "Conjunto Regina",
         "category": "ropa interior",
         "color": "blanco",
         "size": "5",
@@ -89,8 +89,8 @@
         "id": 10
     },
     {
-        "name": "angelina 2",
-        "description": "descripcion angelina 2",
+        "name": "Producto10",
+        "description": "Body Manila",
         "category": "ropa interior",
         "color": "negro",
         "size": "4",
@@ -99,8 +99,8 @@
         "id": 11
     },
     {
-        "name": "nombre",
-        "description": "djaldjla",
+        "name": "Producto11",
+        "description": "Conjunto Cata",
         "category": "fnvxcm,,",
         "color": "mmb,vcnmb,cv",
         "size": "nx,mvnx,v",
@@ -109,8 +109,8 @@
         "id": 12
     },
     {
-        "name": "Producto1",
-        "description": "saraza 123",
+        "name": "Producto12",
+        "description": "Conjunto Nala",
         "category": "nomeacuerdo",
         "color": "cualquiera",
         "size": "otro",
@@ -119,8 +119,8 @@
         "id": 13
     },
     {
-        "name": "Producto3",
-        "description": "saraza 123",
+        "name": "Producto13",
+        "description": "Conjunto June",
         "category": "nomeacuerdo",
         "color": "cualquiera",
         "size": "otro",
@@ -129,8 +129,8 @@
         "id": 14
     },
     {
-        "name": "Producto4",
-        "description": "sarazkdfsñlkfñ",
+        "name": "Producto14",
+        "description": "Conjunto Olive",
         "category": "dflsjaglfa",
         "color": "gjlsdjglfd",
         "size": "gsdklfjhkdfj",
