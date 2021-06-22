@@ -230,3 +230,125 @@ header .whatsapp-logo img {
         transform: translateY(-20px);
     }
 }
+
+
+/*Footer*/
+
+footer {
+    width: 100%;
+    background: #202020;
+    color: white;
+    margin: 0px;
+    margin-top: 25px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+footer .container-body {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    height: min-content;
+}
+
+footer .container-footer-all {
+    width: 100%;
+    margin: auto;
+}
+
+footer .colum0 {
+    max-width: 300px;
+}
+
+footer .colum0 h1 {
+    font-size: 22px;
+}
+
+footer .colum1 {
+    max-width: 300px;
+}
+
+footer .colum1 h1 {
+    font-size: 22px;
+}
+
+footer .colum2 {
+    max-width: 300px;
+}
+
+footer .colum2 h1 {
+    font-size: 22px;
+}
+
+footer .colum3 {
+    max-width: 300px;
+}
+
+footer .colum3 h1 {
+    font-size: 22px;
+}
+
+footer .row0 {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .row0 a {
+    color: #c7c7c7;
+    text-decoration: none;
+    padding: 5px;
+}
+
+footer .row {
+    margin-top: 20px;
+    display: flex;
+}
+
+footer .row a {
+    color: #c7c7c7;
+    text-decoration: none;
+}
+
+footer .row label {
+    margin-top: -4px;
+    margin-left: 10px;
+    color: #c7c7c7;
+}
+
+footer .row2 {
+    margin-top: 20px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .row2 a {
+    margin: 5px;
+    color: #c7c7c7;
+    text-decoration: none;
+}
+
+footer .row2 a i {
+    font-size: 25px;
+}
+
+footer .container-footer {
+    display: flex;
+    justify-content: space-between;
+    background: #101010;
+    padding: 1px 4px;
+    height: min-content;
+}
+
+footer .copyright {
+    color: #c7c7c7;
+}
+
+footer .politicas a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
