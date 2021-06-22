@@ -67,7 +67,7 @@ userRoutes.get('/login', userController.login)
 userRoutes.get('/reset_account', userController.reset_account)
 userRoutes.get('/register', userController.register)
 
-userRoutes.post('/register', validationNewUser, userController.storeUser)
+userRoutes.post('/register', upload.single('image'), validationNewUser, userController.storeUser)
 
 
 userRoutes.get('/cart', userController.cart)
