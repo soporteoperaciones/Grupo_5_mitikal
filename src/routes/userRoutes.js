@@ -12,7 +12,7 @@ destino donde guardar el archivo
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
         // guardamos el destino de la carpeta absoluta
-        const detinationPath = path.join(__dirname, '../../public/images/users')
+        const detinationPath = path.join(__dirname, '../../public/img/users')
             // llamamos al callback con error (null) y el path de donde guardaría el archivo
         cb(null, detinationPath)
     },
