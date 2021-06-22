@@ -181,24 +181,43 @@ main {
     position: relative
 }
 
-div.products {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 180px;
+.product-list-image {
+    position: relative;
+    width: 50%;
 }
 
-div.product list image:hover {
-    border: 1px solid #777;
-}
-
-div.products img {
-    width: 200%;
+.image {
+    display: block;
+    width: 100%;
     height: auto;
 }
 
-div.h2 {
-    padding: 15px;
+.List-Products {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+.product-list-image:hover .overlay {
+    opacity: 1;
+}
+
+.List-Products {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     text-align: center;
 }
 
