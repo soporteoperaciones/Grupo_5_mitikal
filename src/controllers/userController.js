@@ -52,12 +52,16 @@ const userController = {
 
         /*redireccionamiento*/
 
-        res.redirect('/login');
+        res.redirect('/users/login');
     },
 
 
     cart: (req, res) => {
         return res.render('./products/cart')
+    },
+
+    profile: (req, res) => {
+        res.render('users/profile')
     },
 
     logout: (req, res) => {
