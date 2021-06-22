@@ -21,7 +21,7 @@ app.use('/', userRoutes);
 
 app.use('/', productRoutes);
 
-app.use(method('_method'));
+app.use(methodOverride('_method'));
 
 
 app.listen(process.env.PORT || 3050, () => console.log('Servidor corriendo en el puerto 3050'));
