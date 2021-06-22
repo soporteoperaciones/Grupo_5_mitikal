@@ -194,7 +194,7 @@ main .List-Products {
     position: relative;
     top: 1%;
     border-radius: 50px;
-    background-color: black;
+    background-color: rgb(240, 151, 240);
     color: white;
     font-family: 'Rubik', sans-serif;
     letter-spacing: 4px;
