@@ -25,14 +25,24 @@
             </div>
             <div class="box-register">
                 <h1>INICIAR SESIÓN</h1>
-                <form action="*" method="GET">
+                <form action="/users/login" method="POST">
                     <div class="input-container">
                         <label for="email">E-Mail</label>
-                        <input type="email" name="email" id="email" placeholder="tuNombre@mail.com" autocomplete="on" />
+                        <input type="email" name="email" id="email" class="<%= (locals.errors && errors.email) ? 'input-error' : '' %>" value="<%= locals.oldValues && oldValues.email %>" />
+                        <% if (locals.errors && errors.email) { %>
+                            <p class='msg-error'>
+                                <%= errors.email.msg %>
+                            </p>
+                            <% } %>
                     </div>
                     <div class="input-container">
                         <label for="password">Contraseña</label>
-                        <input type="password" name="password" id="password" placeholder="Password" required />
+                        <input type="password" name="password" id="password" class="<%= (locals.errors && errors.password) ? 'input-error' : '' %>" value="<%= locals.oldValues && oldValues.password %>" />
+                        <% if (locals.errors && errors.password) { %>
+                            <p class='msg-error'>
+                                <%= errors.password.msg %>
+                            </p>
+                            <% } %>
                     </div>
                     <a href="/reset_account" class="olvidaste-contrasena">¿Olvidaste la Contraseña?</a>
                     <br>
