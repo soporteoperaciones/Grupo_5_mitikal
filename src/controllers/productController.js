@@ -4,6 +4,15 @@ const productsModel = require('../models/productsModel')
 const fs = require('fs')
 
 const productController = {
+
+    list: (req, res) => {
+        const productList = productsModel.findAll()
+
+        // aca leo el json y se lo paso al template
+        // res.render('planets/list', { planetList: planetList })
+        res.render('products/list', { productList })
+
+    },
     market: (req, res) => {
         return res.render('./products/market')
     },
@@ -81,7 +90,7 @@ const productController = {
 
         /*redireccionamiento*/
 
-        res.redirect('/detailProduct' + productCreated.id );
+        res.redirect('/detailProduct' + productCreated.id);
     },
 
     editProduct: (req, res) => {
