@@ -172,13 +172,22 @@ header .mostrar_detacados:hover {
 
 /* ---- main ---------------------------------------------------------------------------------------------------------------      */
 
+* {
+    box-sizing: border-box;
+}
+
 main {
     display: flex;
-    width: 100%;
+    width: 400%;
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
     font-family: sans-serif;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .product-list-image {
@@ -188,21 +197,23 @@ main {
 
 .image {
     display: flex;
-    width: 50%;
+    width: 20%;
     height: auto;
 }
 
 .List-Products {
     position: absolute;
     top: 0;
-    bottom: 0;
     left: 0;
-    right: 0;
-    height: 100%;
     width: 100%;
-    opacity: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(10, 6, 6);
+    transform: scale(0);
     transition: .5s ease;
-    background-color: #f8a3d4;
+    border: 2px solid;
 }
 
 .product-list-image:hover .List-Products {
