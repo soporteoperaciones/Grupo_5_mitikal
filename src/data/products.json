@@ -5,7 +5,7 @@
         "color": "cualquiera",
         "size": "otro",
         "price": "456",
-        "image": "/img/1623505729009.jpg",
+        "image": "/img/imagenmitikal1.jpg",
         "id": 2
     },
     {
@@ -15,7 +15,7 @@
         "color": "test",
         "size": "test",
         "price": "test",
-        "image": "/img/1623505729009.jpg",
+        "image": "/img/imagenmitikal2.jpg",
         "id": 3
     },
     {
@@ -25,7 +25,7 @@
         "color": "hdjkahdkj",
         "size": "jfksdhfka",
         "price": "jglsjglsdjws",
-        "image": "/img/1623502349620.PNG",
+        "image": "/img/imagenmitikal3.jpg",
         "id": 4
     },
     {
@@ -35,7 +35,7 @@
         "color": "tegsdgsdfst",
         "size": "test",
         "price": "testgsdg",
-        "image": "/img/1623502411684.PNG",
+        "image": "/img/imagenmitikal4.jpg",
         "id": 5
     },
     {
@@ -45,7 +45,7 @@
         "color": "blanco",
         "size": "2",
         "price": "1200",
-        "image": "/img/1623503695503.jpg",
+        "image": "/img/imagenmitikal5.jpg",
         "id": 6
     },
     {
@@ -55,7 +55,7 @@
         "color": "negro",
         "size": "4",
         "price": "2000",
-        "image": "/img/1623505729009.jpg",
+        "image": "/img/imagenmitikal6.jpg",
         "id": 7
     },
     {
@@ -65,7 +65,7 @@
         "color": "blanco",
         "size": "4",
         "price": "3000",
-        "image": "/img/1623951435526.jpg",
+        "image": "/img/imagenmitikal7.jpg",
         "id": 8
     },
     {
@@ -75,7 +75,7 @@
         "color": "blanco",
         "size": "5",
         "price": "4000",
-        "image": "/img/1623951846096.png",
+        "image": "/img/imagenmitikal8.jpg",
         "id": 9
     },
     {
@@ -85,7 +85,7 @@
         "color": "blanco",
         "size": "5",
         "price": "4000",
-        "image": "/img/1623951877956.png",
+        "image": "/img/imagenmitikal9.jpg",
         "id": 10
     },
     {
@@ -95,7 +95,7 @@
         "color": "negro",
         "size": "4",
         "price": "4000",
-        "image": "/img/1623952967506.png",
+        "image": "/img/imagenmitikal10.jpg",
         "id": 11
     },
     {
@@ -105,7 +105,7 @@
         "color": "mmb,vcnmb,cv",
         "size": "nx,mvnx,v",
         "price": "456",
-        "image": "/img/1623983624837.PNG",
+        "image": "/img/imagenmitikal11.jpg",
         "id": 12
     },
     {
@@ -115,7 +115,7 @@
         "color": "cualquiera",
         "size": "otro",
         "price": "456",
-        "image": "/img/1624330397659.PNG",
+        "image": "/img/imagenmitikal10.jpg",
         "id": 13
     },
     {
@@ -125,7 +125,7 @@
         "color": "cualquiera",
         "size": "otro",
         "price": "456",
-        "image": "/img/1624331324506.PNG",
+        "image": "/img/imagenmitikal9.jpg",
         "id": 14
     },
     {
@@ -135,7 +135,7 @@
         "color": "gjlsdjglfd",
         "size": "gsdklfjhkdfj",
         "price": "354",
-        "image": "/img/1624331590947.PNG",
+        "image": "/img/imagenmitikal4.jpg",
         "id": 15
     }
 ]
