@@ -6,6 +6,7 @@ const path = require('path')
 const { isFileImage } = require('../helpers/file')
 
 const validationNewUser = require('../middlewares/validationNewUser')
+const validationAuthUser = require('../middlewares/validationAuthUser')
 
 const userController = require('../controllers/userController')
 
@@ -71,6 +72,8 @@ userRoutes.get('/reset_account', userController.reset_account)
 userRoutes.get('/register', userController.register)
 userRoutes.post('/register', upload.single('image'), validationNewUser, userController.storeUser)
 
+userRoutes.get('/profile', validationAuthUser, userController.profile)
+userRoutes.get('/logout', validationAuthUser, userController.logout)
 
 userRoutes.get('/cart', userController.cart)
 
