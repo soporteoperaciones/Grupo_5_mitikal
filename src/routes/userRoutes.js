@@ -3,6 +3,8 @@ const userRoutes = express.Router()
 const multer = require('multer')
 const path = require('path')
 
+const { isFileImage } = require('../helpers/file')
+
 const validationNewUser = require('../middlewares/validationNewUser')
 
 const userController = require('../controllers/userController')
