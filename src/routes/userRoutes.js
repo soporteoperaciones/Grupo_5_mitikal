@@ -64,9 +64,11 @@ const upload = multer({ storage, fileFilter })
 
 /* Llamados a UserController */
 userRoutes.get('/login', userController.login)
-userRoutes.get('/reset_account', userController.reset_account)
-userRoutes.get('/register', userController.register)
+userRoutes.post('/login', validationNewUser, userController.processLogin)
 
+userRoutes.get('/reset_account', userController.reset_account)
+
+userRoutes.get('/register', userController.register)
 userRoutes.post('/register', upload.single('image'), validationNewUser, userController.storeUser)
 
 
