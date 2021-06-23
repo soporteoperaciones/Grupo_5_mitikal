@@ -196,5 +196,32 @@
     "password2": "123456",
     "image": "/img/users/1624411523782.jpg",
     "id": 22
+  },
+  {
+    "name": "Gerardo",
+    "email": "gagomez85@gmail.com",
+    "tel": "4451121212",
+    "password1": "123456",
+    "password2": "123456",
+    "image": "/img/users/1624415335136.PNG",
+    "id": 23
+  },
+  {
+    "name": "Gerardo",
+    "email": "gerardo.gomez@gmail.com",
+    "tel": "+5491169018487",
+    "password1": "123456",
+    "password2": "123456",
+    "image": "/img/users/1624415458725.PNG",
+    "id": 24
+  },
+  {
+    "name": "Ramiro",
+    "email": "ramiro@gmail.com",
+    "tel": "12313464646",
+    "password1": "123456",
+    "password2": "123456",
+    "image": "/img/users/1624416198858.PNG",
+    "id": 25
   }
 ]

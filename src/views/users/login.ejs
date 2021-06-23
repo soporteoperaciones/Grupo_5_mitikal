@@ -25,7 +25,7 @@
             </div>
             <div class="box-register">
                 <h1>INICIAR SESIÓN</h1>
-                <form action="/users/login" method="POST">
+                <form action="/login" method="POST">
                     <div class="input-container">
                         <label for="email">E-Mail</label>
                         <input type="email" name="email" id="email" class="<%= (locals.errors && errors.email) ? 'input-error' : '' %>" value="<%= locals.oldValues && oldValues.email %>" />

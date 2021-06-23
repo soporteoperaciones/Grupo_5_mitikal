@@ -7,6 +7,8 @@ const { isFileImage } = require('../helpers/file')
 
 const validationNewUser = require('../middlewares/validationNewUser')
 const validationAuthUser = require('../middlewares/validationAuthUser')
+const validationLoginUser = require('../middlewares/validationLoginUser')
+
 
 const userController = require('../controllers/userController')
 
@@ -65,7 +67,7 @@ const upload = multer({ storage, fileFilter })
 
 /* Llamados a UserController */
 userRoutes.get('/login', userController.login)
-userRoutes.post('/login', validationNewUser, userController.processLogin)
+userRoutes.post('/login', validationLoginUser, userController.processLogin)
 
 userRoutes.get('/reset_account', userController.reset_account)
 

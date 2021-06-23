@@ -6,7 +6,7 @@ const { maxAgeUserCookie } = require('../config/config')
 
 const userController = {
     login: (req, res) => {
-        return res.render('../views/users/profile')
+        return res.render('users/login')
     },
 
     processLogin: (req, res) => {
