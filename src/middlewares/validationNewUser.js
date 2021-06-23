@@ -26,7 +26,7 @@ const validationNewUser = [
 
         return true
     })
-    .withMessage('El usuario ya existe'),
+    .withMessage('El email ya se encuantra registrado'),
 
     body('tel')
     .notEmpty()

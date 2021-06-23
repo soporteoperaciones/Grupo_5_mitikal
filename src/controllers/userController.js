@@ -89,7 +89,7 @@ const userController = {
 
         /*redireccionamiento*/
 
-        res.redirect('/users/login');
+        res.redirect('/login');
     },
 
 
