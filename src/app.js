@@ -9,6 +9,8 @@ const methodOverride = require('method-override');
 
 const public = path.resolve('./public');
 
+app.use(methodOverride('_method'));
+
 app.use(express.static(public));
 
 app.set('views', path.join(__dirname, "views"))
@@ -21,7 +23,7 @@ app.use('/', userRoutes);
 
 app.use('/', productRoutes);
 
-app.use(methodOverride('_method'));
+
 
 
 app.listen(process.env.PORT || 3050, () => console.log('Servidor corriendo en el puerto 3050'));

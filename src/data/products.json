@@ -1,141 +1,142 @@
-[{
-        "name": "Producto1",
-        "description": "Conjunto Juana",
-        "category": "nomeacuerdo",
-        "color": "cualquiera",
-        "size": "otro",
-        "price": "456",
-        "image": "/img/imagenmitikal1.jpg",
-        "id": 2
-    },
-    {
-        "name": "Producto2",
-        "description": "Conjunto Isabella",
-        "category": "test",
-        "color": "test",
-        "size": "test",
-        "price": "test",
-        "image": "/img/imagenmitikal2.jpg",
-        "id": 3
-    },
-    {
-        "name": "Producto3",
-        "description": "Conjunto Sally",
-        "category": "gjlsjglsdjg",
-        "color": "hdjkahdkj",
-        "size": "jfksdhfka",
-        "price": "jglsjglsdjws",
-        "image": "/img/imagenmitikal3.jpg",
-        "id": 4
-    },
-    {
-        "name": "Producto4",
-        "description": "Conjunto Charlotte",
-        "category": "test",
-        "color": "tegsdgsdfst",
-        "size": "test",
-        "price": "testgsdg",
-        "image": "/img/imagenmitikal4.jpg",
-        "id": 5
-    },
-    {
-        "name": "Producto5",
-        "description": "Conjunto Luli Soft",
-        "category": "ropa interior",
-        "color": "blanco",
-        "size": "2",
-        "price": "1200",
-        "image": "/img/imagenmitikal5.jpg",
-        "id": 6
-    },
-    {
-        "name": "Producto6",
-        "description": "Conjunto Tania",
-        "category": "ropa interior",
-        "color": "negro",
-        "size": "4",
-        "price": "2000",
-        "image": "/img/imagenmitikal6.jpg",
-        "id": 7
-    },
-    {
-        "name": "Producto7",
-        "description": "Bikini Saona",
-        "category": "ropa interior",
-        "color": "blanco",
-        "size": "4",
-        "price": "3000",
-        "image": "/img/imagenmitikal7.jpg",
-        "id": 8
-    },
-    {
-        "name": "Producto8",
-        "description": "Conjunto Angelina",
-        "category": "ropa interior",
-        "color": "blanco",
-        "size": "5",
-        "price": "4000",
-        "image": "/img/imagenmitikal8.jpg",
-        "id": 9
-    },
-    {
-        "name": "Producto9",
-        "description": "Conjunto Regina",
-        "category": "ropa interior",
-        "color": "blanco",
-        "size": "5",
-        "price": "4000",
-        "image": "/img/imagenmitikal7.jpg",
-        "id": 10
-    },
-    {
-        "name": "Producto10",
-        "description": "Body Manila",
-        "category": "ropa interior",
-        "color": "negro",
-        "size": "4",
-        "price": "4000",
-        "image": "/img/imagenmitikal10.jpg",
-        "id": 11
-    },
-    {
-        "name": "Producto11",
-        "description": "Conjunto Cata",
-        "category": "fnvxcm,,",
-        "color": "mmb,vcnmb,cv",
-        "size": "nx,mvnx,v",
-        "price": "456",
-        "image": "/img/imagenmitikal2.jpg",
-        "id": 12
-    },
-    {
-        "name": "Producto12",
-        "description": "Conjunto Nala",
-        "category": "nomeacuerdo",
-        "color": "cualquiera",
-        "size": "otro",
-        "price": "456",
-        "image": "/img/imagenmitikal10.jpg",
-        "id": 13
-    },
-    {
-        "name": "Producto13",
-        "description": "Conjunto June",
-        "category": "nomeacuerdo",
-        "color": "cualquiera",
-        "size": "otro",
-        "price": "456",
-        "image": "/img/imagenmitikal1.jpg",
-        "id": 14
-    },
-    {
-        "name": "Producto14",
-        "description": "Conjunto Olive",
-        "category": "dflsjaglfa",
-        "color": "gjlsdjglfd",
-        "size": "gsdklfjhkdfj",
-        "price": "354",
-        "image": "/img/imagenmitikal4.jpg",
-        "id": 15
-    }
+[
+  {
+    "id": 2,
+    "name": "Producto1",
+    "description": "Conjunto Juana",
+    "category": "nomeacuerdo",
+    "color": "cualquiera",
+    "size": "L",
+    "price": "2000",
+    "image": "/img/imagenmitikal1.jpg"
+  },
+  {
+    "name": "Producto2",
+    "description": "Conjunto Isabella",
+    "category": "test",
+    "color": "test",
+    "size": "test",
+    "price": "test",
+    "image": "/img/imagenmitikal2.jpg",
+    "id": 3
+  },
+  {
+    "name": "Producto3",
+    "description": "Conjunto Sally",
+    "category": "gjlsjglsdjg",
+    "color": "hdjkahdkj",
+    "size": "jfksdhfka",
+    "price": "jglsjglsdjws",
+    "image": "/img/imagenmitikal3.jpg",
+    "id": 4
+  },
+  {
+    "name": "Producto4",
+    "description": "Conjunto Charlotte",
+    "category": "test",
+    "color": "tegsdgsdfst",
+    "size": "test",
+    "price": "testgsdg",
+    "image": "/img/imagenmitikal4.jpg",
+    "id": 5
+  },
+  {
+    "name": "Producto5",
+    "description": "Conjunto Luli Soft",
+    "category": "ropa interior",
+    "color": "blanco",
+    "size": "2",
+    "price": "1200",
+    "image": "/img/imagenmitikal5.jpg",
+    "id": 6
+  },
+  {
+    "name": "Producto6",
+    "description": "Conjunto Tania",
+    "category": "ropa interior",
+    "color": "negro",
+    "size": "4",
+    "price": "2000",
+    "image": "/img/imagenmitikal6.jpg",
+    "id": 7
+  },
+  {
+    "name": "Producto7",
+    "description": "Bikini Saona",
+    "category": "ropa interior",
+    "color": "blanco",
+    "size": "4",
+    "price": "3000",
+    "image": "/img/imagenmitikal7.jpg",
+    "id": 8
+  },
+  {
+    "name": "Producto8",
+    "description": "Conjunto Angelina",
+    "category": "ropa interior",
+    "color": "blanco",
+    "size": "5",
+    "price": "4000",
+    "image": "/img/imagenmitikal8.jpg",
+    "id": 9
+  },
+  {
+    "name": "Producto9",
+    "description": "Conjunto Regina",
+    "category": "ropa interior",
+    "color": "blanco",
+    "size": "5",
+    "price": "4000",
+    "image": "/img/imagenmitikal7.jpg",
+    "id": 10
+  },
+  {
+    "name": "Producto10",
+    "description": "Body Manila",
+    "category": "ropa interior",
+    "color": "negro",
+    "size": "4",
+    "price": "4000",
+    "image": "/img/imagenmitikal10.jpg",
+    "id": 11
+  },
+  {
+    "name": "Producto11",
+    "description": "Conjunto Cata",
+    "category": "fnvxcm,,",
+    "color": "mmb,vcnmb,cv",
+    "size": "nx,mvnx,v",
+    "price": "456",
+    "image": "/img/imagenmitikal2.jpg",
+    "id": 12
+  },
+  {
+    "name": "Producto12",
+    "description": "Conjunto Nala",
+    "category": "nomeacuerdo",
+    "color": "cualquiera",
+    "size": "otro",
+    "price": "456",
+    "image": "/img/imagenmitikal10.jpg",
+    "id": 13
+  },
+  {
+    "name": "Producto13",
+    "description": "Conjunto June",
+    "category": "nomeacuerdo",
+    "color": "cualquiera",
+    "size": "otro",
+    "price": "456",
+    "image": "/img/imagenmitikal1.jpg",
+    "id": 14
+  },
+  {
+    "name": "Producto14",
+    "description": "Conjunto Olive",
+    "category": "dflsjaglfa",
+    "color": "gjlsdjglfd",
+    "size": "gsdklfjhkdfj",
+    "price": "354",
+    "image": "/img/imagenmitikal4.jpg",
+    "id": 15
+  }
 ]

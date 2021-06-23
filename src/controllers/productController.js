@@ -123,7 +123,7 @@ const productController = {
 
         productsModel.update(data, id);
 
-        res.redirect('products/detailProduct/' + id);
+        res.redirect('/detailProduct/' + id);
     },
 
     destroy: (req, res) => {
