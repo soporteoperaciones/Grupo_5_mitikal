@@ -33,12 +33,12 @@ const userController = {
         req.session.logged = user
 
         // guardamos un dato de nuestro usuario en la sesión (email, user_id)
-        /*if (remember) {
+        if (remember) {
             // clave
             res.cookie('user', user.id, {
                 maxAge: maxAgeUserCookie
             })
-        }*/
+        }
 
 
         // redirigimos al profile
