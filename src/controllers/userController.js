@@ -2,10 +2,11 @@ const { validationResult } = require('express-validator')
 const path = require('path')
 const userModel = require('../models/userModel')
 const fs = require('fs')
+const { maxAgeUserCookie } = require('../config/config')
 
 const userController = {
     login: (req, res) => {
-        return res.render('./users/login')
+        return res.render('../views/users/profile')
     },
 
     processLogin: (req, res) => {
@@ -32,12 +33,12 @@ const userController = {
         req.session.logged = user
 
         // guardamos un dato de nuestro usuario en la sesión (email, user_id)
-        if (remember) {
+        /*if (remember) {
             // clave
             res.cookie('user', user.id, {
                 maxAge: maxAgeUserCookie
             })
-        }
+        }*/
 
 
         // redirigimos al profile
