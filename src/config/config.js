@@ -1,0 +1,1 @@
+module.exports = { sessionSecret: 'Mitikal', maxAgeUserCookie: 1000 * 60 * 6 }
