@@ -67,7 +67,7 @@ const upload = multer({ storage, fileFilter })
 
 /* Llamados a UserController */
 userRoutes.get('/list', userController.list)
-userRoutes.get('/detail/:id', userController.detail)
+
 
 userRoutes.get('/login', userController.login)
 userRoutes.post('/login', validationLoginUser, userController.processLogin)
