@@ -3,8 +3,23 @@ const path = require('path')
 const userModel = require('../models/userModel')
 const fs = require('fs')
 const { maxAgeUserCookie } = require('../config/config')
+const { ModelUser } = require('../database/models')
+const { Op } = require('sequelize')
+
+
 
 const userController = {
+    list: (req, res) => {
+        userModel.findAll({
+                order: [
+                    ['name', 'ASC']
+                ],
+            })
+            .then(userList => {
+                res.render('users/list', { userList })
+            })
+    },
+
     login: (req, res) => {
         return res.render('users/login')
     },
