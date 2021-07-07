@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
-<%- include('../partials/head') %>
-
-    <body>
-
-        <%- include('../partials/header') %>
-            <main>
 
 
+<body>
 
-                <section class="users">
-                    <% userList.forEach((users) => { %>
-                        <article class="user user-1">
-                            <img src="<%= user.image %>" alt="" width="100%">
-
-                            <h2 class="user-detail">
-                                <a href="/user/detail/<%= user.id %>">
-                                    <%= user.name %>
-                                </a>
-                            </h2>
-                        </article>
-                        <% }) %>
-
-
-                </section>
+    <%- include('../partials/header') %>
+        <main>
 
 
 
-            </main>
+            <section class="users">
+                <% userList.forEach((User) => { %>
+                    <article class="user user-1">
+                        <img src="<%= User.image %>" alt="" width="100%">
+
+                        <h2 class="user-detail">
+                            <a href="/users/list/<%= User.id %>">
+                                <%= User.name %>
+                            </a>
+                        </h2>
+                    </article>
+                    <% }) %>
+
+
+            </section>
 
 
 
-    </body>
+        </main>
+
+
+
+</body>
 
 </html>
