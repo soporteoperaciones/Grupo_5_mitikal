@@ -22,7 +22,7 @@ const userController = {
     },
 
     login: (req, res) => {
-        return res.render('users/login')
+        res.render('users/login')
     },
 
     processLogin: (req, res) => {
