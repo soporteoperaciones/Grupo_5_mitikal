@@ -26,13 +26,13 @@
         <main>
 
             <div class="products">
-                <% productList.forEach((product) => { %>
+                <% productList.forEach((Product) => { %>
                     <div class="product-list-image">
-                        <img src="<%= product.image %>" alt="" width="100%">
+                        <img src="<%= Product.image %>" alt="" width="100%">
 
                         <h2 class="List-Products">
-                            <a href="/products/detailProduct/<%= product.id %>">
-                                <%= product.name %>
+                            <a href="/products/detailProduct/<%= Product.id %>">
+                                <%= Product.name %>
                             </a>
                         </h2>
 
