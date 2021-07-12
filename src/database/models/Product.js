@@ -26,7 +26,7 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.STRING,
         },
         image: {
-            type: DataTypes.STRING,
+            type: DataTypes.STRING(200),
         }
     }
     const config = {
