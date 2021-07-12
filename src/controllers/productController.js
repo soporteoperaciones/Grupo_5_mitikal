@@ -46,9 +46,12 @@ const productController = {
 
     detailProduct: (req, res) => {
         const { id } = req.params
-        const productDetail = productsModel.findByPk(id)
+            //const productDetail = productsModel.findByPk(id)
 
-        return res.render('./products/detailProduct', { productDetail })
+        Product.findByPk(id)
+            .then(productDetail => {
+                res.render('products/detailProduct', { productDetail })
+            })
     },
 
     createProduct: (req, res) => {
