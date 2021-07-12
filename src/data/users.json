@@ -223,5 +223,14 @@
     "password2": "123456",
     "image": "/img/users/1624416198858.PNG",
     "id": 25
+  },
+  {
+    "name": "Leo Messi",
+    "email": "leomessi@hotmail.com",
+    "tel": "1155555555",
+    "password1": "987654",
+    "password2": "987654",
+    "image": "/img/users/1626120167535.jpg",
+    "id": 26
   }
 ]
