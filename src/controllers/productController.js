@@ -2,17 +2,27 @@ const { validationResult } = require('express-validator')
 const path = require('path')
 const productsModel = require('../models/productsModel')
 const fs = require('fs')
+const { Product } = require('../database/models')
+const { Op } = require('sequelize')
 
 const productController = {
 
     list: (req, res) => {
-        const productList = productsModel.findAll()
-
-        // aca leo el json y se lo paso al template
-        // res.render('planets/list', { planetList: planetList })
-        res.render('products/list', { productList })
-
+        Product.findAll({
+                order: [
+                    ['name', 'ASC']
+                ],
+            })
+            .then(productList => {
+                res.render('products/list', { productList })
+            })
     },
+    //const productList = productsModel.findAll()
+
+    // aca leo el json y se lo paso al template
+    // res.render('planets/list', { planetList: planetList })
+    //res.render('products/list', { productList })
+    //    },
     market: (req, res) => {
         return res.render('./products/market')
     },
@@ -36,9 +46,12 @@ const productController = {
 
     detailProduct: (req, res) => {
         const { id } = req.params
-        const productDetail = productsModel.findByPk(id)
+            //const productDetail = productsModel.findByPk(id)
 
-        return res.render('./products/detailProduct', { productDetail })
+        Product.findByPk(id)
+            .then(productDetail => {
+                res.render('products/detailProduct', { productDetail })
+            })
     },
 
     createProduct: (req, res) => {

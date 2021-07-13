@@ -38,7 +38,7 @@ const storage = multer.diskStorage({
 const upload = multer({ storage })
 
 /* Llamados a productController */
-productRoutes.get('/list', productController.list)
+productRoutes.get('/products/list', productController.list)
 productRoutes.use('/market', productController.market)
 productRoutes.get('/market_test', productController.market_test)
 productRoutes.get('/releases', productController.releases)

@@ -66,6 +66,9 @@ const upload = multer({ storage, fileFilter })
 /*const { body, validationResult } = require('express-validator');*/
 
 /* Llamados a UserController */
+userRoutes.get('/list', userController.list)
+
+
 userRoutes.get('/login', userController.login)
 userRoutes.post('/login', validationLoginUser, userController.processLogin)
 

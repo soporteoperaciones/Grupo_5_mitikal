@@ -1,13 +1,33 @@
+const fs = require('fs')
 const { validationResult } = require('express-validator')
+const bcrypt = require('bcryptjs')
 const path = require('path')
 const userModel = require('../models/userModel')
+<<<<<<< HEAD
 const fs = require('fs')
 const bcrypt = require('bcryptjs')
+=======
+>>>>>>> 49463725226f2518fe06fdadd89347b1fe3535a9
 const { maxAgeUserCookie } = require('../config/config')
+const { User } = require('../database/models')
+const { Op } = require('sequelize')
+
+
 
 const userController = {
+    list: (req, res) => {
+        User.findAll({
+                order: [
+                    ['name', 'ASC']
+                ],
+            })
+            .then(userList => {
+                res.render('users/list', { userList })
+            })
+    },
+
     login: (req, res) => {
-        return res.render('users/login')
+        res.render('users/login')
     },
 
     processLogin: (req, res) => {
@@ -38,7 +58,8 @@ const userController = {
         if (remember) {
             // clave
             res.cookie('user', user.id, {
-                maxAge: maxAgeUserCookie
+                maxAge: maxAgeUserCookie,
+                signed: true,
             })
         }
 

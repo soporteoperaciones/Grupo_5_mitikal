@@ -25,26 +25,17 @@
     <%- include("../partials/header") %>
         <main>
 
-
-
             <div class="products">
-                <% productList.forEach((product) => { %>
+                <% productList.forEach((Product) => { %>
                     <div class="product-list-image">
-                        <img src="<%= product.image %>" alt="" class="image">
+                        <img src="<%= Product.image %>" alt="" width="50%">
 
                         <h2 class="List-Products">
-                            <a href="/detailProduct/<%= product.id %>">
-                                <%= product.name %>
-                            </a>
-                        </h2>
-                        <h2 class="List-Products">
-                            <a href="/detailProduct/<%= product.id %>">
-                                <%= product.description %>
+                            <a href="/products/detailProduct/<%= Product.id %>">
+                                <%= Product.name %>
                             </a>
                         </h2>
 
-
-                        </h2>
                     </div>
                     <% }) %>
 
