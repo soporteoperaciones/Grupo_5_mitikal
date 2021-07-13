@@ -20,18 +20,18 @@ const validationLoginUser = [
 
             // chequear que userFound exista
             if (userFound) {
-
+                console.log("Usuario no validado")
                 // comparar contraseñas
-                const passwordMatch = bcrypt.compareSync(password, userFound.password)
-
+                const passwordMatch = bcrypt.compareSync(password, userFound.password1) 
                 if (passwordMatch) {
                     return true
                 }
             }
 
+            console.log("Usuario no validado")
             return false
         })
-        .withMessage('El usuario o la contraseña son inválidas'),
+    .withMessage('El usuario o la contraseña son inválidas'),
 ]
 
 module.exports = validationLoginUser

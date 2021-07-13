@@ -2,6 +2,7 @@ const { validationResult } = require('express-validator')
 const path = require('path')
 const userModel = require('../models/userModel')
 const fs = require('fs')
+const bcrypt = require('bcryptjs')
 const { maxAgeUserCookie } = require('../config/config')
 
 const userController = {
@@ -10,6 +11,7 @@ const userController = {
     },
 
     processLogin: (req, res) => {
+        console.log("Validando Usuario")
         const formValidation = validationResult(req)
         const oldValues = req.body
 
@@ -76,12 +78,16 @@ const userController = {
 
         const image = file.filename
 
+
+        // hashear el password
+        const hashPassword = bcrypt.hashSync(password1)
+    
         const newUser = {
             name: name,
             email: email,
             tel: tel,
-            password1: password1,
-            password2: password2,
+            password1: hashPassword,
+            password2: hashPassword,
             image: '/img/users/' + image,
         }
 
