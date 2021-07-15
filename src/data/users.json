@@ -223,5 +223,23 @@
     "password2": "123456",
     "image": "/img/users/1624416198858.PNG",
     "id": 25
+  },
+  {
+    "name": "test",
+    "email": "test@test.com",
+    "tel": "45416519",
+    "password1": "123456",
+    "password2": "123456",
+    "image": "/img/users/1626314973121.jpg",
+    "id": 26
+  },
+  {
+    "name": "test2",
+    "email": "test2@test.com",
+    "tel": "415641231",
+    "password1": "$2a$10$VR8qyJoSbcGveJtg9eGpR.C2YugzDrfge20exNeoPD.LVJN0kfPMG",
+    "password2": "$2a$10$VR8qyJoSbcGveJtg9eGpR.C2YugzDrfge20exNeoPD.LVJN0kfPMG",
+    "image": "/img/users/1626315844205.jpg",
+    "id": 27
   }
 ]

@@ -1,15 +1,5 @@
 [
   {
-    "id": 2,
-    "name": "Producto1",
-    "description": "Conjunto Juana",
-    "category": "nomeacuerdo",
-    "color": "cualquiera",
-    "size": "L",
-    "price": "2000",
-    "image": "/img/imagenmitikal1.jpg"
-  },
-  {
     "name": "Producto3",
     "description": "Conjunto Sally",
     "category": "gjlsjglsdjg",
