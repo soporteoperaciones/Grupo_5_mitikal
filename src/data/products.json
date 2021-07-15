@@ -90,43 +90,13 @@
     "id": 11
   },
   {
+    "id": 12,
     "name": "Producto11",
     "description": "Conjunto Cata",
-    "category": "fnvxcm,,",
-    "color": "mmb,vcnmb,cv",
-    "size": "nx,mvnx,v",
-    "price": "456",
-    "image": "/img/imagenmitikal2.jpg",
-    "id": 12
-  },
-  {
-    "name": "Producto12",
-    "description": "Conjunto Nala",
-    "category": "nomeacuerdo",
-    "color": "cualquiera",
-    "size": "otro",
-    "price": "456",
-    "image": "/img/imagenmitikal10.jpg",
-    "id": 13
-  },
-  {
-    "name": "Producto13",
-    "description": "Conjunto June",
-    "category": "nomeacuerdo",
-    "color": "cualquiera",
-    "size": "otro",
-    "price": "456",
-    "image": "/img/imagenmitikal1.jpg",
-    "id": 14
-  },
-  {
-    "name": "Producto14",
-    "description": "Conjunto Olive",
-    "category": "dflsjaglfa",
-    "color": "gjlsdjglfd",
-    "size": "gsdklfjhkdfj",
-    "price": "354",
-    "image": "/img/imagenmitikal4.jpg",
-    "id": 15
+    "category": "papa",
+    "color": "violeta",
+    "size": "xl",
+    "price": "nx,mvnx,v",
+    "image": "/img/imagenmitikal2.jpg"
   }
 ]

@@ -126,7 +126,7 @@ const userController = {
     },
 
     logout: (req, res) => {
-        // borrar session y cookie
+
         req.session.destroy()
         res.clearCookie('user')
 

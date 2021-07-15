@@ -225,12 +225,39 @@
     "id": 25
   },
   {
-    "name": "Leo Messi",
-    "email": "leomessi@hotmail.com",
-    "tel": "1155555555",
-    "password1": "987654",
-    "password2": "987654",
-    "image": "/img/users/1626120167535.jpg",
+    "name": "Alfredo",
+    "email": "alfredo@hotmail.com",
+    "tel": "151515151515",
+    "password1": "123456",
+    "password2": "123456",
+    "image": "/img/users/1624488975511.PNG",
     "id": 26
+  },
+  {
+    "name": "vdsvdsvsd",
+    "email": "blabla@bla.com",
+    "tel": "45421685",
+    "password1": "$2a$10$f/YS0FKbCyEwCDJG/4xHpOTaNtfVVXjaeLkyy1z1n3E9IqPNwhJt2",
+    "password2": "$2a$10$f/YS0FKbCyEwCDJG/4xHpOTaNtfVVXjaeLkyy1z1n3E9IqPNwhJt2",
+    "image": "/img/users/1626310447440.jpg",
+    "id": 27
+  },
+  {
+    "name": "dsvdsd",
+    "email": "hcsiacsoi@gmail.com",
+    "tel": "45416519",
+    "password1": "$2a$10$c6bymsfA9FXkxCg.BKmO8ODt5qfBT6rDBxt85cUlylfQ8spDIstLu",
+    "password2": "$2a$10$c6bymsfA9FXkxCg.BKmO8ODt5qfBT6rDBxt85cUlylfQ8spDIstLu",
+    "image": "/img/users/1626310486881.jpg",
+    "id": 28
+  },
+  {
+    "name": "ramiro",
+    "email": "test@test.com",
+    "tel": "45416519",
+    "password1": "$2a$10$EptrvvOa/hIvBqEzNMz5FOvurVK.tMWd0chUsALMxCGK4ehJcBGxW",
+    "password2": "$2a$10$EptrvvOa/hIvBqEzNMz5FOvurVK.tMWd0chUsALMxCGK4ehJcBGxW",
+    "image": "/img/users/1626310585207.jpg",
+    "id": 29
   }
 ]
