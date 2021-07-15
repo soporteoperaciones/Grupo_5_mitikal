@@ -3,3 +3,6 @@
 3- Tuvimos como siempre problemas con el Git y el deploy de Heroku, tema a analizar la peroxima weekly.
 4- Con el Sprint 4 pudimos corregir todo a ingles los nombres de los archivos y nos queda mejorar los accesos a los menus.
 5- Agregamos Validaciones y uso de JSON.
+6- Semana con reunion con los profes y mejorar lo comentando en el Sprint 5 y mejorar el trabajo en equipo.
+7- Se agrego Sequelize , mysql y las validaciones y cookies contra la DB.
+8- Nos juntamos para empezar a mejorar la estetica fina que la tenemos abandonada por la parte gruesa del backend.
