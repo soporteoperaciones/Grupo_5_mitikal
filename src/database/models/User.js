@@ -14,16 +14,16 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.STRING,
         },
         image: {
-            type: DataTypes.STRING(200),
+            type: DataTypes.STRING,
         },
         tel: {
             type: DataTypes.STRING,
         },
         password1: {
-            type: DataTypes.STRING,
+            type: DataTypes.STRING(60),
         },
         password2: {
-            type: DataTypes.STRING,
+            type: DataTypes.STRING(60),
         }
     }
     const config = {
@@ -33,6 +33,6 @@ module.exports = (sequelize, DataTypes) => {
 
     }
 
-    const Model = sequelize.define(alias, columns, config);
-    return Model;
+    const UserModel = sequelize.define(alias, columns, config);
+    return UserModel;
 }

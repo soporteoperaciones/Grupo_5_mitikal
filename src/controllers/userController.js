@@ -1,11 +1,13 @@
 const fs = require('fs')
+
 const { validationResult } = require('express-validator')
 const bcrypt = require('bcryptjs')
-const path = require('path')
-const userModel = require('../models/userModel')
-const { maxAgeUserCookie } = require('../config/config')
+
+const userModel = require('../models/userModel') //
+
 const { User } = require('../database/models')
 const { Op } = require('sequelize')
+const { maxAgeUserCookie } = require('../config/config')
 
 
 
@@ -25,7 +27,7 @@ const userController = {
         res.render('users/login')
     },
 
-    processLogin: (req, res) => {
+    processLogin: async(req, res) => {
         const formValidation = validationResult(req)
         const oldValues = req.body
 
@@ -33,35 +35,34 @@ const userController = {
             return res.render('users/login', { oldValues, errors: formValidation.mapped() })
         }
 
-        // lo que viene del login
         const { email, remember } = req.body
 
-        // le pedimos al modelo el usuario
-        const user = usersModel.findByField('email', email)
-            //req.session = {}
+        const user = await User.findOne({
+            where: {
+                email
+            }
+        })
 
-        // cargamos los datos del usuario en la sesión
+        req.session.logged = user.id
 
-        // le sacamos el password
-        delete user.password
+        console.log(req.session.logged)
 
-        // cargamos dentro de la sesión la propieda logged con el usuario (menos el password)
-        req.session.logged = user
-
-        // guardamos un dato de nuestro usuario en la sesión (email, user_id)
         if (remember) {
-            // clave
+
             res.cookie('user', user.id, {
                 maxAge: maxAgeUserCookie,
+
                 signed: true,
             })
         }
 
 
-        // redirigimos al profile
+
         res.redirect('/users/profile')
 
+
     },
+
     reset_account: (req, res) => {
         return res.render('./users/reset_account')
     },
@@ -72,9 +73,9 @@ const userController = {
     storeUser: (req, res) => {
         const formValidation = validationResult(req)
         const oldValues = req.body
-
+        console.log(oldValues)
         if (!formValidation.isEmpty()) {
-            // borrar imagen
+
             if (req.file) {
                 // primero chequeamos que exista
                 fs.unlinkSync(req.file.path)
@@ -86,28 +87,33 @@ const userController = {
         }
 
 
-        // Crear el objeto user
         const { name, email, tel, password1, password2 } = req.body;
 
         const { file } = req
 
         const image = file.filename
 
+        const hashPassword1 = bcrypt.hashSync(password1)
+        const hashPassword2 = bcrypt.hashSync(password2)
+
         const newUser = {
             name: name,
             email: email,
             tel: tel,
-            password1: password1,
-            password2: password2,
+            password1: hashPassword1,
+            password2: hashPassword2,
             image: '/img/users/' + image,
         }
 
         /*const productCreated = */
-        userModel.create(newUser);
+        User.create(newUser)
+            .then(() => {
+                res.redirect('/users/login');
+            })
 
-        /*redireccionamiento*/
 
-        res.redirect('/login');
+
+
     },
 
 

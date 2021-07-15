@@ -25,10 +25,10 @@
             </div>
             <div class="box-register">
                 <h1>INICIAR SESIÓN</h1>
-                <form action="/login" method="POST">
+                <form action="/users/login" method="POST">
                     <div class="input-container">
                         <label for="email">E-Mail</label>
-                        <input type="email" name="email" id="email" class="<%= (locals.errors && errors.email) ? 'input-error' : '' %>" value="<%= locals.oldValues && oldValues.email %>" />
+                        <input type="text" name="email" id="email" class="<%= (locals.errors && errors.email) ? 'input-error' : '' %>" value="<%= locals.oldValues && oldValues.email %>" />
                         <% if (locals.errors && errors.email) { %>
                             <p class='msg-error'>
                                 <%= errors.email.msg %>
@@ -43,9 +43,6 @@
                                 <%= errors.password.msg %>
                             </p>
                             <% } %>
-                    </div>
-                    <div class="input-container">
-                        <input type="checkbox" name="remember" id="remember" value="yes" <%=( locals.oldValues && oldValues.remember==='yes' ) ? 'checked' : '' %>/> Recordar usuario
                     </div>
 
                     <button class="iniciar_sesion" type="submit">INICIAR SESIÓN</button>

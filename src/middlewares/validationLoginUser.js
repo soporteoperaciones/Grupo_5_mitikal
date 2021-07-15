@@ -1,37 +1,44 @@
 const { body } = require('express-validator')
 const bcrypt = require('bcryptjs')
 const userModel = require('../models/userModel')
+const { User } = require('../database/models')
 
 const validationLoginUser = [
     body('email')
-        .notEmpty()
-        .withMessage('Por favor ingrese su e-mail')
-        .isEmail()
-        .withMessage('No es en formato e-mail'),
+    .notEmpty()
+    .withMessage('Por favor ingrese su e-mail')
+    .isEmail()
+    .withMessage('No es en formato e-mail'),
     body('password')
-        .notEmpty()
-        .withMessage('Por favor ingrese su password')
-        .bail()
-        .custom((value, { req }) => {
-            const { email, password } = req.body
-            
-            // encontrar un usuario con el email
-            const userFound = userModel.findByField('email', email)
+    .notEmpty()
+    .withMessage('Por favor ingrese su password')
+    .bail()
+    .custom(async(value, { req }) => {
+        const { email, password } = req.body
 
-            // chequear que userFound exista
-            if (userFound) {
+        const userFound = await User.findOne({
+            where: {
+                email
+            }
+        })
+        if (userFound) {
+            console.log('encontre el usuario')
 
-                // comparar contraseñas
-                const passwordMatch = bcrypt.compareSync(password, userFound.password)
+            const passwordMatch = bcrypt.compareSync(req.body.password, userFound.password1)
+            console.log(passwordMatch)
 
-                if (passwordMatch) {
-                    return true
-                }
+            if (!passwordMatch) {
+                return Promise.reject('Usuario o Password Invalidos !!')
             }
 
-            return false
-        })
-        .withMessage('El usuario o la contraseña son inválidas'),
+
+            return true
+        } else {
+            return Promise.reject('Usuario o Password Invalidos!!')
+        }
+
+
+    }),
 ]
 
 module.exports = validationLoginUser
