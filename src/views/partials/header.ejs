@@ -30,6 +30,16 @@
                     <a href="/users/login"><i class="fas fa-user"></i></a>
                     <a href="/market"><i class="fas fa-shopping-cart"></i></a>
                 </div>
+                <div class="session-nav">
+                    <% if (locals.logged) { %>
+                        <%- include('nav-auth') %>
+                            <% } else {%>
+                                <%- include('nav-guest') %>
+                                    <% }%>
+
+
+
+                </div>
             </div>
         </div>
     </div>
