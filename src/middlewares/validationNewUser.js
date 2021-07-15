@@ -21,7 +21,7 @@ const validationNewUser = [
         const userFound = userModel.findByField('email', email)
 
         if (userFound) {
-            return false
+            return true
         }
 
         return true

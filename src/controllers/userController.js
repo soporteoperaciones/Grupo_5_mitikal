@@ -1,10 +1,15 @@
-const fs = require('fs')
+
 const { validationResult } = require('express-validator')
 const bcrypt = require('bcryptjs')
 const path = require('path')
 const userModel = require('../models/userModel')
+
+const fs = require('fs')
+
+
+
 const { maxAgeUserCookie } = require('../config/config')
-const { User } = require('../database/models')
+//const { User } = require('../database/models')
 const { Op } = require('sequelize')
 
 
@@ -26,7 +31,7 @@ const userController = {
     },
 
     processLogin: (req, res) => {
-        console.log("Validando Usuario")
+       
         const formValidation = validationResult(req)
         const oldValues = req.body
 
@@ -40,6 +45,8 @@ const userController = {
         // le pedimos al modelo el usuario
         const user = usersModel.findByField('email', email)
             //req.session = {}
+           
+            
 
         // cargamos los datos del usuario en la sesión
 
