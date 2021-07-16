@@ -39,7 +39,7 @@ app.use('/', indexRoutes);
 
 app.use('/users', userRoutes);
 
-app.use('/', productRoutes);
+app.use('/products', productRoutes);
 
 
 

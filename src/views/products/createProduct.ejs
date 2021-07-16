@@ -28,7 +28,7 @@
             <div class="box-create-product">
                 <h1>Crear Producto</h1>
                 <H2>Bienvenido, vamos a cargar un nuevo producto</H2>
-                <form action="/createProduct" name="create-product-form" method="POST" enctype="multipart/form-data">
+                <form action="/products/createProduct" name="create-product-form" method="POST" enctype="multipart/form-data">
                     <div class="input-container">
                         <label for="name">Nombre del Producto</label>
                         <input type="text" name="name" id="name" class="<%= (locals.errors && errors.name) ? 'input-error' : '' %>" value="<%= locals.oldValues && oldValues.name %>" />

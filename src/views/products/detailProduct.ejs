@@ -71,10 +71,10 @@
                             <% } %>
                                 <div class="rowedition">
                                     <div class="actions">
-                                        <a href="/<%= productDetail.id %>/editProduct">
+                                        <a href="/products/<%= productDetail.id %>/editProduct">
                                             <button>Editar Producto</button>
                                         </a>
-                                        <form action="/<%= productDetail.id %>?_method=DELETE" method="POST">
+                                        <form action="/products/<%= productDetail.id %>?_method=DELETE" method="POST">
                                             <button type="submit">Borrar Producto</button>
                                         </form>
                                     </div>

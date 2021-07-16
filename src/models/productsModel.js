@@ -46,7 +46,7 @@ module.exports = {
         return product;
     },
     update(data, id) {
-        const products = this.readFile();
+        const Products = this.readFile();
 
         const newProducts = products.map(product => {
             if (product.id == id) {
