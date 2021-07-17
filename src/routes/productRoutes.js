@@ -38,16 +38,19 @@ const storage = multer.diskStorage({
 const upload = multer({ storage })
 
 /* Llamados a productController */
-productRoutes.get('/products/list', productController.list)
+productRoutes.get('/list', productController.list)
 productRoutes.use('/market', productController.market)
+/*
 productRoutes.get('/market_test', productController.market_test)
+*/
+
 productRoutes.get('/releases', productController.releases)
 productRoutes.get('/important', productController.important)
 productRoutes.get('/detailProduct/:id?', productController.detailProduct)
 productRoutes.get('/createProduct', productController.createProduct)
 productRoutes.post('/createProduct', upload.single('image'), validationNewProduct, productController.storeProduct)
 productRoutes.get('/:id/editProduct', productController.editProduct)
-    /*productRoutes.put('/:id', productController.editProduct)*/
+/*productRoutes.put('/:id', productController.editProduct)*/
 productRoutes.put('/:id', upload.single('image'), productController.update)
 
 // Delete

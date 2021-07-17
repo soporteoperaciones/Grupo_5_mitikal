@@ -1,7 +1,10 @@
-const { validationResult } = require('express-validator')
-const path = require('path')
-const productsModel = require('../models/productsModel')
 const fs = require('fs')
+
+const { validationResult } = require('express-validator')
+const productsModel = require('../models/productsModel')
+
+const path = require('path')
+
 const { Product } = require('../database/models')
 const { Op } = require('sequelize')
 
@@ -23,6 +26,7 @@ const productController = {
     // res.render('planets/list', { planetList: planetList })
     //res.render('products/list', { productList })
     //    },
+    
     market: (req, res) => {
         return res.render('./products/market')
     },
@@ -103,15 +107,23 @@ const productController = {
 
         /*redireccionamiento*/
 
-        res.redirect('/detailProduct' + productCreated.id);
+        res.redirect('products/detailProduct' + productCreated.id);
     },
 
     editProduct: (req, res) => {
-        const product = productsModel.findByPk(req.params.id);
+        console.log(req.params.id);
+        const { id } = req.params
+/*        const product = Product.findByPk(id);
+*/
+        Product.findByPk(id)
+        .then(productDetail => {
+        
+            res.render('products/updateProduct', {
+                productDetail
+            });
+        })
 
-        res.render('products/updateProduct', {
-            product
-        });
+        
     },
     update: (req, res) => {
         const data = req.body;
@@ -136,16 +148,18 @@ const productController = {
 
         productsModel.update(data, id);
 
-        res.redirect('/detailProduct/' + id);
+        res.redirect('products/detailProduct/' + id);
     },
 
     destroy: (req, res) => {
-        const id = req.params.id;
+        Product.destroy ({
+            where: {id:req.params.id}
+    
+        })
+        res.redirect('./list');
+    },
 
-        productsModel.destroy(id);
-
-        res.redirect('/list');
-    }
+    
 }
 
 module.exports = productController

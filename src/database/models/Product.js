@@ -36,6 +36,6 @@ module.exports = (sequelize, DataTypes) => {
 
     }
 
-    const Model = sequelize.define(alias, columns, config);
-    return Model;
+    const ProductModel = sequelize.define(alias, columns, config);
+    return ProductModel;
 }

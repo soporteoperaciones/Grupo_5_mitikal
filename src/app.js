@@ -17,7 +17,7 @@ const app = express();
 const cookiesSessionMiddleware = require('./middlewares/cookiesSessionMiddleware')
 const sessionToLocals = require('./middlewares/sessionToLocals');
 const { allowedNodeEnvironmentFlags } = require('process');
-app.use(session({ secret: 'shhhh' }))
+app.use(session({ secret: 'shhhh', saveUninitialized: true, resave: true }))
 app.use(cookieParser('secreto'));
 app.use(cookiesSessionMiddleware)
 app.use(sessionToLocals)
@@ -39,7 +39,7 @@ app.use('/', indexRoutes);
 
 app.use('/users', userRoutes);
 
-app.use('/', productRoutes);
+app.use('/products', productRoutes);
 
 
 
