@@ -125,11 +125,11 @@ const productController = {
 
         
     },
-    update: (req, res) => {
+    update: async (req, res) => {
         const data = req.body;
         const { id } = req.params;
         // el producto original
-        const productoOriginal = productsModel.findByPk(id)
+        const productoOriginal = await Product.findByPk(id)
             // la imagen original: productoOriginal.image
 
         // dentro de req.file va a venir la información del archivo
@@ -146,10 +146,16 @@ const productController = {
         }
         data.image = image
 
-        productsModel.update(data, id);
+        await Product.update(data, {
+            where: {
+                id
+        }})
 
-        res.redirect('products/detailProduct/' + id);
+        res.redirect('./detailProduct/' + id);
     },
+
+    
+
 
     destroy: (req, res) => {
         Product.destroy ({
