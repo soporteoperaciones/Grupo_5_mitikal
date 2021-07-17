@@ -6,3 +6,6 @@
 6- Semana con reunion con los profes y mejorar lo comentando en el Sprint 5 y mejorar el trabajo en equipo.
 7- Se agrego Sequelize , mysql y las validaciones y cookies contra la DB.
 8- Nos juntamos para empezar a mejorar la estetica fina que la tenemos abandonada por la parte gruesa del backend.
+9- Rama Main : proyecto middleware , sequelize con mysql.
+10- RamaMaster : proyecto middleware con Json.
+
