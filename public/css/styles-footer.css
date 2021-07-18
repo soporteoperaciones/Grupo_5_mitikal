@@ -1,0 +1,113 @@
+ /*Footer*/
+
+
+ footer{
+    width: 100%;
+    background: #202020;
+    color: white;
+    margin: 0px;
+    margin-top: 2.5%;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+
+footer .container-body{
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh;
+    height:min-content;
+}
+footer .container-footer-all{
+    width: 100%;
+    margin:auto;
+}
+footer .colum0{
+    max-width: 25%;
+}
+footer .colum0 h1{
+    font-size: 2.3vh;
+}
+
+footer .colum1{
+    max-width: 25%;
+}
+
+footer .colum1 h1{
+    font-size: 2.3vh;
+}
+
+footer .colum2{
+    max-width: 25%;
+}
+footer .colum2 h1{
+    font-size: 2.3vh;
+}
+footer .colum3{
+    max-width: 25%;
+}
+footer .colum3 h1{
+    font-size: 2.2vh;
+}
+footer .row0{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    
+}
+footer .row0 a{
+    color: #c7c7c7;
+    text-decoration: none; 
+    padding: 1.2%;
+}
+
+footer .row{
+    margin-top: 10%;
+    display: flex;
+}
+footer .row a {
+    color: #c7c7c7;
+    text-decoration: none;
+}
+footer .row label{
+    margin-top: -0.5vh;
+    margin-left: 0.8vw;
+    color: #c7c7c7;
+
+}
+footer .row2{
+    margin-top: 2%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .row2 a{
+    margin: 2%;
+    color: #c7c7c7;
+    text-decoration: none;
+    
+}
+footer .row2 a i{
+    font-size: 2.5vh;
+}
+
+footer .container-footer{
+    display: flex;
+    justify-content: space-between;
+    background: #101010;
+    padding: 0.3vh 0.5vw;
+    height: min-content;
+
+}
+footer .copyright{
+    color: #c7c7c7;
+}
+
+footer .politicas a{
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+}

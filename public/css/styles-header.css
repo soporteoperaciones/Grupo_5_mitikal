@@ -1,0 +1,266 @@
+header{
+    width: 100%;
+    background: #202020;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    top:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    position: sticky;
+    z-index:100;
+}
+
+header i{
+    color:white;
+  }
+
+
+header .container-body{
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+}
+
+.container-header-all{
+    width: 100%;
+    margin:auto;
+}
+
+header .container-header-all .row0{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background: #101010;
+}
+
+header .row0 a{
+    color: #c7c7c7;
+    text-decoration: none; 
+    padding: 0.1%; 
+}
+
+header .row1{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+header .row1 .colum0{
+    max-width: 3%;
+    width: 3%;
+    text-align: center;
+}
+header .row1 .colum1{
+    position:relative;
+    max-width: 27%;
+    width: 27%;
+    
+}
+
+header .row1 .colum1 input{
+    border-radius: 0.8%;
+}
+
+header .row1 .colum1 i{
+    position:absolute;
+    top:0.9vh;
+    right:5vw;
+    font-size:100%;
+    color:#202020;
+
+}
+
+header .row1 .colum2{
+    max-width: 40%;
+    width: 40%;
+    text-align: center;
+}
+
+header .row1 .colum2 img{
+    max-width:60%;
+    width: auto;
+    text-align: center;
+}
+
+
+header .row1 .colum3{
+    max-width: 30%;
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header .container-body .colum3{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+ 
+}
+
+header .container-body .colum3 i{
+    color: white;
+    margin: 0.5vw;
+    text-align: right;
+    font-size: 120%;
+    padding-right: 2vw;
+}
+
+header .whatsapp-logo img{
+    position:fixed;
+    height: 3vh;
+    width: auto;
+    top:88vh;
+    right:2vw;
+    z-index:120;
+    animation: whatsapp-animation 3s infinite;
+}
+
+@keyframes whatsapp-animation {
+
+    50%{
+        transform: translateY(-3vh);
+    }
+
+}
+
+/* Media Query */
+
+@media (max-width: 768px){
+    /*header*/
+
+
+    header .container-body{
+        display: flex;
+        justify-content: space-between;
+        padding: 0.3%;
+        height: 120px;
+    }
+    
+    .container-header-all{
+        width: 100%;
+        margin:auto;
+    }
+    
+    header .container-header-all .row0{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        background: #101010;
+    }
+    
+    header .row0 a{
+        color: #c7c7c7;
+        text-decoration: none; 
+        padding: 3%; 
+    }
+    
+    header .row1{
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+    header .row1 .colum0{
+        max-width: 10%;
+        width: 10%;
+        text-align: center;
+    }
+    
+    header .row1 .colum1{
+        max-width: 20%;
+        width: 20%;
+        display:none;
+        
+    }
+
+    header .row1 .colum1 input{
+        border-radius: 8px;
+    }
+
+
+    header .row1 .colum2{
+        max-width:80%;
+        width: 80%;
+        text-align: center;
+    }
+    header .row1 .colum3{
+        max-width: 10%;
+        width: 10%;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 425px){
+    /*header*/
+
+    header .whatsapp-logo img{
+        position:fixed;
+        height: 3vh;
+        width: auto;
+        top:88vh;
+        right:2vw;
+        z-index:120;
+        animation: whatsapp-animation 3s infinite;
+    }
+}
+
+@keyframes whatsapp-animation {
+
+    50%{
+        transform: translateY(-3vh);
+    }
+
+}
+
+
+/**header*/
+
+
+/* ---- header menu sidebar-------------------------------------------------------------------------------------------------------------      
+
+body {
+    font-family: "Lato", sans-serif;
+  }
+  */
+  
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+

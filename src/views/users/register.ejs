@@ -76,23 +76,30 @@
                     </div>
 
                     <div class="input-container">
-                        <label for="image">Imágen de perfil</label>
-                        <input type="file" name="image" id="image" />
+                        <label for="file-upload" class="subir">
+                            <i class="fas fa-cloud-upload-alt"></i> Subir archivo
+                        </label>
+                        <input id="file-upload" onchange='cambiar()' type="file" style='display: none;'/>
                         <% if (locals.errors && errors.image) { %>
                             <p class='msg-error'>
                                 <%= errors.image.msg %>
                             </p>
                             <% } %>
 
+                        
+                        
+
+ 
+
                     </div>
 
-
+                    <div class="iniciar-sesion">¿Ya tenés una cuenta? <a href="/users/login">Iniciá Sesión</a></div>
                     <button class="crear-cuenta" type="submit">CREAR CUENTA USUARIO</button>
 
                 </form>
 
 
-                <div class="iniciar-sesion">¿Ya tenés una cuenta? <a href="/users/login">Iniciá Sesión</a></div>
+                
 
 
             </div>
