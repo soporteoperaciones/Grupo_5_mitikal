@@ -74,13 +74,14 @@ header .row1 .colum1 i{
 header .row1 .colum2{
     max-width: 40%;
     width: 40%;
-    text-align: center;
+    margin-left: 22%;
+    
 }
 
 header .row1 .colum2 img{
     max-width:60%;
     width: auto;
-    text-align: center;
+    
 }
 
 

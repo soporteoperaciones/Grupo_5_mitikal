@@ -52,6 +52,7 @@ productRoutes.post('/createProduct', upload.single('image'), validationNewProduc
 productRoutes.get('/:id/editProduct', productController.editProduct)
 /*productRoutes.put('/:id', productController.editProduct)*/
 productRoutes.put('/:id', upload.single('image'), productController.update)
+productRoutes.get('/sizes-tables', productController.sizesTables)
 
 // Delete
 productRoutes.delete('/:id', productController.destroy);

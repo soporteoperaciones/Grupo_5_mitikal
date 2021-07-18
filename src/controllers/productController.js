@@ -165,6 +165,11 @@ const productController = {
         res.redirect('./list');
     },
 
+    sizesTables: (req, res) => {
+        
+        return res.redirect('./sizes-tables');
+    },
+
     
 }
 
