@@ -28,8 +28,11 @@
             <div class="container-main-all">
                 <div class="container-body">
                     <% if (productDetail == null) {%>
-                        Producto no Encontrado !!!
                         <% } else { %>
+                            <h2>
+                                <%= productDetail.name %>
+                            </h2>
+
                             <div class="row0">
                                 <div class="galeria">
                                     <input type="radio" name="navegacion" id="_1" checked>
@@ -48,7 +51,7 @@
                                             <%= productDetail.description %>
                                         </h3>
                                         <h2 class="precio">
-                                            <%= productDetail.price %>
+                                            <% productDetail.price %>
                                         </h2>
                                         <button class="seleccion_medio_de_pago" type="submit">MEDIO DE PAGO</button>
                                     </div>
@@ -80,7 +83,7 @@
                                     </div>
                                 </div>
                                 <div class="row1">
-                                   
+
                                 </div>
                 </div>
             </div>

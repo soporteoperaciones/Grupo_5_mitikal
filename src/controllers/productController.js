@@ -1,24 +1,24 @@
-const fs = require('fs')
-
 const { validationResult } = require('express-validator')
+const fs = require('fs')
 const productsModel = require('../models/productsModel')
-
-const path = require('path')
-
 const { Product } = require('../database/models')
 const { Op } = require('sequelize')
+const path = require('path')
+
+
 
 const productController = {
 
-    list: (req, res) => {
-        Product.findAll({
-                order: [
-                    ['name', 'ASC']
-                ],
-            })
-            .then(productList => {
-                res.render('products/list', { productList })
-            })
+    list: async(req, res) => {
+
+        const productList = await Product.findAll({
+            order: [
+                ['name', 'ASC']
+            ],
+        })
+
+        res.render('products/list', { productList })
+
     },
     //const productList = productsModel.findAll()
 
@@ -26,7 +26,7 @@ const productController = {
     // res.render('planets/list', { planetList: planetList })
     //res.render('products/list', { productList })
     //    },
-    
+
     market: (req, res) => {
         return res.render('./products/market')
     },
@@ -113,19 +113,19 @@ const productController = {
     editProduct: (req, res) => {
         console.log(req.params.id);
         const { id } = req.params
-/*        const product = Product.findByPk(id);
-*/
+            /*        const product = Product.findByPk(id);
+             */
         Product.findByPk(id)
-        .then(productDetail => {
-        
-            res.render('products/updateProduct', {
-                productDetail
-            });
-        })
+            .then(productDetail => {
 
-        
+                res.render('products/updateProduct', {
+                    productDetail
+                });
+            })
+
+
     },
-    update: async (req, res) => {
+    update: async(req, res) => {
         const data = req.body;
         const { id } = req.params;
         // el producto original
@@ -149,18 +149,19 @@ const productController = {
         await Product.update(data, {
             where: {
                 id
-        }})
+            }
+        })
 
         res.redirect('./detailProduct/' + id);
     },
 
-    
+
 
 
     destroy: (req, res) => {
-        Product.destroy ({
-            where: {id:req.params.id}
-    
+        Product.destroy({
+            where: { id: req.params.id }
+
         })
         res.redirect('./list');
     },
@@ -169,7 +170,7 @@ const productController = {
         res.render('products/sizes-tables')
     },
 
-    
+
 }
 
 module.exports = productController
