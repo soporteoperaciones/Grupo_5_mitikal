@@ -8,7 +8,7 @@ header{
     box-sizing: border-box;
     font-family: sans-serif;
     position: sticky;
-    z-index:100;
+    z-index:200;
 }
 
 header i{
@@ -74,7 +74,7 @@ header .row1 .colum1 i{
 header .row1 .colum2{
     max-width: 40%;
     width: 40%;
-    margin-left: 22%;
+    margin-left: 17%;
     
 }
 

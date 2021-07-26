@@ -42,6 +42,11 @@ app.use('/users', userRoutes);
 app.use('/products', productRoutes);
 
 
+app.use((req, res, next) => {
+    res.status(404).render("./not-found");
+});
+
+
 
 
 app.listen(process.env.PORT || 3050, () => console.log('Servidor corriendo en el puerto 3050'));
