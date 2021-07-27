@@ -38,6 +38,10 @@ main input {
 main input::placeholder {
     color: #434343;
 }
+main .checkbox input{
+    height: 20px;
+    width: 20px;
+}
 
 main label {
     color: black;
