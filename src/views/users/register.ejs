@@ -82,10 +82,6 @@
                         </label>
                         <input id="file-upload" name="image" onchange='cambiar()' type="file" style='display: none;'/>
                         
-                        <!--
-                        <label for="image">Imagen</label>                       
-                        <input type="file" name="image" id="image"  hidden/>
-                        -->
                         <% if (locals.errors && errors.image) { %>
                             <p class='msg-error'>
                                 <%= errors.image.msg %>
