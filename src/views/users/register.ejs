@@ -76,14 +76,16 @@
                     </div>
 
                     <div class="input-container">
-                        <!-- 
+                         
                         <label for="file-upload" class="subir">
                             <i class="fas fa-cloud-upload-alt"></i> Subir archivo
                         </label>
-                        <input id="file-upload" onchange='cambiar()' type="file" style='display: none;'/>
-                        -->
+                        <input id="file-upload" name="image" onchange='cambiar()' type="file" style='display: none;'/>
+                        
+                        <!--
                         <label for="image">Imagen</label>                       
                         <input type="file" name="image" id="image"  hidden/>
+                        -->
                         <% if (locals.errors && errors.image) { %>
                             <p class='msg-error'>
                                 <%= errors.image.msg %>
