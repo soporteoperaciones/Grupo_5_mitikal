@@ -13,12 +13,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@600&family=Rubik:ital,wght@1,300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="/css/styles-header.css">
     <title>Mitikal</title>
 </head>
@@ -39,15 +33,13 @@
                                 <a href="#">Destacados</a>
                                 <a href="#">Novedades</a>
                                 <a href="/products/list/">Productos</a>
-                                <a href="/users/login">Usuarios Login</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Action</a></li>
-                                    <li><a href="#">Another action</a></li>
-                                    <li><a href="#">Something else here</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="#">Separated link</a></li>
-                                  </ul>
-                                <a href="/users/register">Registrate</a>
+                                <a href="" data-toggle="collapse" data-target="#demo">Usuarios <i class="fas fa-arrow-down"></i></a>   
+                                <div id="demo" class="collapse">
+                                    <a href="/users/login">Login</a>
+                                    <a href="/users/logout">Logout</a>
+                                    <a href="/users/register">Registrate</a>
+                                </div>
+                                <a href="/products/sizes-tables">Tabla de Talles</a>
                             </nav>
                             <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
                         </div>

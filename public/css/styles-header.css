@@ -251,6 +251,12 @@ body {
   .sidenav a:hover {
     color: #f1f1f1;
   }
+
+  .sidenav a i{
+    color: #818181; 
+    font-size: 19px;
+
+  }
   
   .sidenav .closebtn {
     position: absolute;
