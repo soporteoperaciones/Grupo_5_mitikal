@@ -37,7 +37,7 @@ const storage = multer.diskStorage({
     },
 })
 
-
+/*
 const fileFilter = (req, file, cb) => {
     if (!file) {
         cb(null, false)
@@ -58,8 +58,10 @@ const fileFilter = (req, file, cb) => {
     cb(null, true)
 
 }
-
 const upload = multer({ storage, fileFilter })
+
+*/
+const upload = multer({ storage })
 
 
 userRoutes.get('/list', userController.list)
