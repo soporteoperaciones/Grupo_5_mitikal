@@ -75,10 +75,14 @@
                                 <div class="rowedition">
                                     <div class="actions">
                                         <a href="/products/<%= productDetail.id %>/editProduct">
-                                            <button>Editar Producto</button>
+                                            <% if(locals.user){ %>  
+                                                <button>Editar Producto</button>
+                                            <% } %> 
                                         </a>
                                         <form action="/products/<%= productDetail.id %>?_method=DELETE" method="POST">
-                                            <button type="submit">Borrar Producto</button>
+                                            <% if(locals.user){ %> 
+                                                <button type="submit">Borrar Producto</button>
+                                            <% } %> 
                                         </form>
                                     </div>
                                 </div>
