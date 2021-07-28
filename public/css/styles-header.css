@@ -105,6 +105,7 @@ header .container-body .colum3 i{
     text-align: right;
     font-size: 120%;
     padding-right: 2vw;
+   
 }
 
 header .whatsapp-logo img{
@@ -273,7 +274,16 @@ body {
 
 
 
+  .nav-item img {
+	border-radius: 50%;
+	width: 36px;
+	height: 36px;
+	margin-right: 10px;
 
+
+    -----------------------------------------------------
+
+    
 
 
   ---------------------------------------------------------

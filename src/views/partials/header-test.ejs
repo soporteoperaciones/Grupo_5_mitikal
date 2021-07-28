@@ -57,9 +57,9 @@
                             <div class="nav-item dropdown">
                                 <a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle user-action"><img src="<%= locals.user.image%> " class="avatar" alt="Avatar"> <%= locals.user.name %> <b class="caret"></b></a>
                                 <div class="dropdown-menu">
-                                    <a href="/users/profile" class="dropdown-item"><i class="fa fa-user-o"></i> Profile</a>
+                                    <a href="/profile" class="dropdown-item"><i class="fa fa-user-o"></i> Profile</a>
                                     <div class="divider dropdown-divider"></div>
-                                    <a href="/users/logout" class="dropdown-item"><i class="material-icons">&#xE8AC;</i> Logout</a>
+                                    <a href="/logout" class="dropdown-item"><i class="material-icons">&#xE8AC;</i> Logout</a>
                                 </div>
                             </div>
                         <% }else{ %> 
@@ -70,17 +70,18 @@
                             <div class="nav-item dropdown">
                                 <a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle user-action"><img src="https://www.tutorialrepublic.com/examples/images/avatar/3.jpg" class="avatar" alt="Avatar"> Invitado <b class="caret"></b></a>
                                 <div class="dropdown-menu">
-                                    <a href="/users/login" class="dropdown-item"><i class="fa fa-user-o"></i> Login</a>
+                                    <a href="/login" class="dropdown-item"><i class="fa fa-user-o"></i> Login</a>
                                     <div class="divider dropdown-divider"></div>
-                                    <a href="/users/register" class="dropdown-item"><i class="material-icons">&#xE8AC;</i> Registrate</a>
+                                    <a href="/logout" class="dropdown-item"><i class="material-icons">&#xE8AC;</i> Logout</a>
                                 </div>
                        
                             </div>
                        
                         <% } %> 
                         <a href="/products/market"><i class="fas fa-shopping-cart"></i></a>
-                    </div>
+                        <a href="/users/login"><i class="fas fa-user"></i></a>
 
+                    </div>
 
                 </div>
             </div>
@@ -90,7 +91,7 @@
         </div>
         <script>
             function openNav() {
-                document.getElementById("mySidenav").style.width = "350px";
+                document.getElementById("mySidenav").style.width = "250px";
             }
 
             function closeNav() {
