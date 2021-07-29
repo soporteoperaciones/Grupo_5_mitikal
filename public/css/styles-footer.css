@@ -9,7 +9,7 @@
     margin-top: 2.5%;
     padding: 0px;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Anton', sans-serif;
     
 }
 
@@ -22,7 +22,11 @@ footer .container-body{
 footer .container-footer-all{
     width: 100%;
     margin:auto;
+    transition-duration: 0.5s;
 }
+footer .container-footer-all a:hover{
+    color: white;
+}    
 footer .colum0{
     max-width: 25%;
 }
@@ -100,6 +104,7 @@ footer .container-footer{
     background: #101010;
     padding: 0.3vh 0.5vw;
     height: min-content;
+    letter-spacing: 1.5px;
 
 }
 footer .copyright{
@@ -108,6 +113,13 @@ footer .copyright{
 
 footer .politicas a{
     text-decoration: none;
+    color: #c7c7c7;
+    transition-duration: 0.5s;
+    
+}
+
+footer .politicas a:hover{
+    
     color:white;
-    font-weight: bold;
+    
 }

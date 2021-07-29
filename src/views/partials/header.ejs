@@ -9,8 +9,11 @@
     <link rel="stylesheet" href="https://fontawesome.com/icons?d=gallery&p=2&m=free">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@600&family=Rubik:ital,wght@1,300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/styles-header.css">
@@ -21,7 +24,7 @@
     <header>
         <div class="container-header-all">
             <div class="row0">
-                <a class="a_banner_header" href="Link a envios">  3 CUOTAS SIN INTERES - ENVIOS GRATIS A TODO EL PAIS </a>
+                <a class="a_banner_header" href="">  3 CUOTAS SIN INTERES - ENVIOS GRATIS A TODO EL PAIS </a>
             </div>
             <div class="container-body">
                 <div class="row1">
@@ -55,22 +58,22 @@
                         <!--<a href="/users/login"><i class="fas fa-user"></i></a>-->
                        <% if(locals.user){ %> 
                             <div class="nav-item dropdown">
-                                <a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle user-action"><img src="<%= locals.user.image%> " class="avatar" alt="Avatar"> <%= locals.user.name %> <b class="caret"></b></a>
+                                <a href="" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle user-action"><img src="<%= locals.user.image%> " class="avatar" alt="Avatar"> <%= locals.user.name %> <b class="caret"></b></a>
                                 <div class="dropdown-menu">
-                                    <a href="/users/profile" class="dropdown-item"><i class="fa fa-user-o"></i> Profile</a>
+                                    <a href="/users/profile" class="dropdown-item">Profile</a>
                                     <div class="divider dropdown-divider"></div>
-                                    <a href="/users/logout" class="dropdown-item"><i class="material-icons">&#xE8AC;</i> Logout</a>
+                                    <a href="/users/logout" class="dropdown-item">Logout</a>
                                 </div>
                             </div>
                         <% }else{ %> 
                         
 
                             <div class="nav-item dropdown">
-                                <a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle user-action"><img src="https://www.tutorialrepublic.com/examples/images/avatar/3.jpg" class="avatar" alt="Avatar"> Invitado <b class="caret"></b></a>
+                                <a href="" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle user-action"><img src="http://images3.wikia.nocookie.net/__cb20090809232449/lossimpson/es/images/9/9f/Benjamin.png" class="avatar" alt="Avatar"> Invitado <b class="caret"></b></a>
                                 <div class="dropdown-menu">
-                                    <a href="/users/login" class="dropdown-item"><i class="fa fa-user-o"></i> Login</a>
+                                    <a href="/users/login" class="dropdown-item">Login</a>
                                     <div class="divider dropdown-divider"></div>
-                                    <a href="/users/register" class="dropdown-item"><i class="material-icons">&#xE8AC;</i> Registrate</a>
+                                    <a href="/users/register" class="dropdown-item">Registrate</a>
                                 </div>
                        
                             </div>
@@ -94,7 +97,12 @@
             function closeNav() {
                 document.getElementById("mySidenav").style.width = "0";
             }
+            $("mySidenav").on("click", function(event){
+    $("mySidenav").slideToggle();
+    event.stopImmediatePropagation(); //Detengo la inmediata propagación del evento
+});
         </script>
+        
     </header>
 
 </body>
