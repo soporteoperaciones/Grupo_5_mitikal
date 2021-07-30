@@ -165,12 +165,14 @@ const userController = {
     
     destroy: (req, res) => {
         console.log(req.params)
+        req.session.destroy();
         User.destroy({
             
             where: { id: req.params.id }
 
         })
-        res.redirect('/users/login');
+        
+        res.redirect('/');
     },
 }
 
