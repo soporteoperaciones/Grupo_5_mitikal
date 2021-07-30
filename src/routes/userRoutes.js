@@ -77,9 +77,12 @@ userRoutes.get('/register', userController.register)
 userRoutes.post('/register', upload.single('image'), validationNewUser, userController.storeUser)
 
 userRoutes.get('/profile', validationAuthUser, userController.profile)
+userRoutes.patch('/:id', upload.single('image'), userController.update)
 userRoutes.get('/logout', validationAuthUser, userController.logout)
 
 userRoutes.get('/cart', userController.cart)
+
+userRoutes.delete('/:id', userController.destroy);
 
 
 

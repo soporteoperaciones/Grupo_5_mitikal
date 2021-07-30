@@ -132,7 +132,46 @@ const userController = {
 
         res.redirect('/')
 
-    }
+    },
+    
+    update: async(req, res) => {
+        const data = req.body;
+        const { id } = req.params;
+        // el usuario original
+        const userOriginal = await User.findByPk(id)
+
+        // dentro de req.file va a venir la información del archivo
+        const { file } = req
+
+        /* Si viene una imagen nueva, cargar la imagen nueva
+        sino poner la original */
+        let image
+
+        if (file) {
+            image = '/img/users/' + file.filename
+        } else {
+            image = userOriginal.image
+        }
+        data.image = image
+
+        await User.update(data, {
+            where: {
+                id
+            }
+        })
+
+        res.redirect('/users/profile');
+    },
+    
+    destroy: (req, res) => {
+        console.log(req.params)
+        User.destroy({
+            
+            where: { id: req.params.id }
+
+        })
+        res.redirect('/users/login');
+    },
 }
 
 module.exports = userController

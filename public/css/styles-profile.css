@@ -1,28 +1,27 @@
 
 /* ---- main ---------------------------------------------------------------------------------------------------------------      */
 
+main {
+    display: flex
+}
+
 main .box-register {
+    position: relative;
     width: 100%;
-    height: 500px;
+    height: 800px;
+    padding: 25px;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-main h1 {
+main h1,
+h2 {
     text-align: center;
     font-family: 'Mulish', sans-serif;
-    font-size: 60px;
-    margin-bottom: 50px;
-    margin-top: 50px;
-}
-
-main .input-container {
-    margin-top: 20px;
-}
-
-main form {
-    position: relative;
+    font-size: 30px;
+    margin-bottom: 8px;
+    margin-top: 8px;
 }
 
 main input {
@@ -45,55 +44,61 @@ main label {
     color: #afafaf;
 }
 
-main .olvidaste-contrasena {
-    color: #434343;
-    font-family: 'Rubik', sans-serif;
-    position: absolute;
-    left: 60%;
-}
-
-main .iniciar_sesion {
+main .crear-cuenta {
+    position: relative;
+    top: 1%;
     border-radius: 50px;
     background-color: black;
     color: white;
     font-family: 'Rubik', sans-serif;
     letter-spacing: 4px;
+    
     width: 300px;
     height: 50px;
-    margin-top: 20px;
+    margin-top: 65px;
     margin-bottom: 20px;
     margin-left: 20%;
     transition-duration: 0.5s;
 }
 
-main .iniciar_sesion:hover {
+main .crear-cuenta:hover {
     border: black solid 1px;
     background-color: white;
     color: black;
 }
 
-main .crear-cuenta {
+main .iniciar-sesion {
     color: #434343;
     font-family: 'Rubik', sans-serif;
     position: absolute;
-    width: 55%;
-    left: 22.5%;
+    left: 43.6%;
+    top: 72%;
+    
 }
 
-main .crear-cuenta a {
+main .iniciar-sesion a {
     text-decoration: none;
     font-weight: bold;
     color: #434343;
     transition-duration: 0.5s;
 }
 
-main .crear-cuenta a:hover {
+main .iniciar-sesion a:hover {
     text-decoration: none;
     font-weight: normal;
     color: white;
     border: 1px solid #434343;
     background-color: #434343;
     border-radius: 50px;
+}
+
+main .whatsapp-logo {
+    position: sticky;
+    z-index: 999999;
+    height: 45px;
+    width: 45px;
+    left: 95%;
+    bottom: 25%;
 }
 
 header .whatsapp-logo img {
@@ -116,15 +121,6 @@ header .whatsapp-logo img {
 /*----------------------------------------------------------------------------------------------------------------------------------*/
 
 
-
-
-/*Iconos*/
-
-header i {
-    color: white;
-}
-
-
 /* Botones */
 
 .boton_enviar {
@@ -133,80 +129,21 @@ header i {
     border-radius: 40px;
 }
 
-@media (max-width: 768px) {
-    header {
-        width: 100%;
-        background: #202020;
-        color: white;
-        margin: 0px;
-        padding: 0px;
-        top: 0;
-        box-sizing: border-box;
-        font-family: sans-serif;
-        position: sticky;
-        z-index: 100;
-    }
-    header .container-body {
-        display: flex;
-        justify-content: space-between;
-        padding: 10px;
-        height: 120px;
-    }
-    .container-header-all {
-        width: 100%;
-        margin: auto;
-    }
-    header .container-header-all .row0 {
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        width: 100%;
-        background: #101010;
-    }
-    header .row0 a {
-        color: #c7c7c7;
-        text-decoration: none;
-        padding: 5px;
-    }
-    header .row1 {
-        display: flex;
-        width: 100%;
-        align-items: center;
-    }
-    header .row1 .colum0 {
-        max-width: 10%;
-        width: 10%;
-        text-align: center;
-    }
-    header .row1 .colum1 {
-        max-width: 20%;
-        width: 20%;
-        display: none;
-    }
-    header .row1 .colum1 input {
-        border-radius: 8px;
-    }
-    header .row1 .colum2 {
-        max-width: 80%;
-        width: 80%;
-        text-align: center;
-    }
-    header .row1 .colum3 {
-        max-width: 10%;
-        width: 10%;
-        display: flex;
-        justify-content: flex-end;
-    }
-    header .container-body .colum3 {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-    }
-    header .container-body .colum3 i {
-        color: white;
-        margin: 20px;
-        text-align: right;
-        font-size: 25px;
-        padding-right: 20px;
-    }
+.subir{
+    margin-top: 20px;
+    background-color:white;
+    color:black;
+    padding: 8px 10px;
+    border-radius: 50px;
+    border: 1px solid rgba(67, 67, 67, 0.14);
+    height: 40px;
+    width: 500px;
+    transition-duration: 0.5s;
+    
+}
+ 
+.subir:hover{
+    border: black solid 1px;
+    background-color: black;
+    color: white;
 }
