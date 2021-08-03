@@ -173,28 +173,29 @@ main .container-main2-all .container-body .row0 .colum1{
 
 
 main .container-main2-all .container-body .row0 .colum0{
-    background-image: url("/img/image_destacados.jpeg");
+    background-image: url("/img/image02_destacados.jpg"); 
     background-size: cover;
     background-repeat:no-repeat;
     background-position:center;
+
     display:flex;
     flex-direction:column;
     justify-content:center;
-    box-shadow: -10px 10px 10px rgb(100, 100, 100) 
+    box-shadow: -5px 5px 5px rgb(100, 100, 100) 
 
 }
 
 
 
 main .container-main2-all .container-body .row0 .colum1{
-    background-image: url("/img/image_novedades.jpeg");
-    background-size:cover;
+    background-image: url("/img/image02_novedades.jpg");
+    background-size:unset;
     background-repeat:no-repeat;
     background-position:center;
     display:flex;
     flex-direction:column;
     justify-content:center;
-    box-shadow: 10px 10px 10px rgb(100, 100, 100); 
+    box-shadow: 5px 5px 5px rgb(100, 100, 100); 
 
 }
 
@@ -203,13 +204,14 @@ main .container-main2-all .container-body .row0 .colum1{
      }
 
 .ef_novedades_destacados:hover{
-    background-image: url("/img/image_destacados.jpeg");
+    background-image: url("/img/image02_destacados.jpg");
     background-size: 200%;
     background-repeat:no-repeat;
-    background-position:center;
+ 
     opacity:70%;
     display:flex;
-    flex-direction:column;
+    object-fit: contain;
+
 }
 
 main .ef_novedades_destacados button{ 
