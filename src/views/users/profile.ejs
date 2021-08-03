@@ -23,45 +23,58 @@
     </head>
     <body>
 
-        <%- include('../partials/header') %>
-            <main class="profile">
-                BIENVENIDO <u><%= locals.user.name %> </u><br/>
-                <img width="30%" src="<%= locals.user.image %>">
-                <form action="/users/<%= locals.user.id %>?_method=PATCH" method="POST" enctype="multipart/form-data">
-                    <div class="input-container">
-                        <label for="name">NOMBRE</label>
-                        <input type="text" name="name" id="name" required value="<%= locals.user.name %>" />
-                    </div>
-                    <div class="input-container">
-                        <label for="email">E-Mail</label>
-                        <input type="email" name="email" id="email" required value="<%= locals.user.email %>" />
-                    </div>
-                    <div class="input-container">
-                        <label for="tel">TELÉFONO</label>
-                        <input type="tel" name="tel" id="tel" required value="<%= locals.user.tel %>" />
-                    </div>
-                    <div class="input-container">
-                         
-                        <label for="file-upload" class="subir">
-                            <i class="fas fa-cloud-upload-alt"></i> Subir archivo
-                        </label>
-                        <input id="file-upload" name="image" onchange='cambiar()' type="file" style='display: none;'/>
-                        
-                        <% if (locals.errors && errors.image) { %>
-                            <p class='msg-error'>
-                                <%= errors.image.msg %>
-                            </p>
-                            <% } %>
-                    </div>
-                    <button class="updateproduct" type="submit">Actualizar Perfil</button>
-                </form>
-                    <div class="rowedition">
-                        <div class="actions">
-                            <form action="/users/<%= locals.user.id %>?_method=DELETE" method="POST">
-                                    <button type="submit">Borrar Producto</button>
-                            </form>
+             <%- include('../partials/header') %>
+            <main>
+                <div class="box">
+                                    <!-- <img width="30%" src="<%= //locals.user.image %>"> -->
+                    <div class="user-profile">
+                        <div class="user-avatar">
+                            <img src="<%= locals.user.image %>" alt="">
                         </div>
+                        <div class="name"><h5 class="user-name"><%= locals.user.name %></h5></div>
+                        <div class="email"><h6 class="user-email"><%= locals.user.email %></h6></div>
+                        <form action="/users/<%= locals.user.id %>?_method=DELETE" method="POST">
+                            <button class="delete-profile" type="submit">Borrar Perfil</button>
+                        </form>
                     </div>
+
+
+
+                    <div class="formulario">
+                        <form action="/users/<%= locals.user.id %>?_method=PATCH" method="POST" enctype="multipart/form-data">
+                            <div class="input-container">
+                                <label for="name">NOMBRE</label>
+                                <input type="text" name="name" id="name" required value="<%= locals.user.name %>" />
+                            </div>
+                            <div class="input-container">
+                                <label for="email">E-Mail</label>
+                                <input type="email" name="email" id="email" required value="<%= locals.user.email %>" />
+                            </div>
+                            <div class="input-container">
+                                <label for="tel">TELÉFONO</label>
+                                <input type="tel" name="tel" id="tel" required value="<%= locals.user.tel %>" />
+                            </div>
+                            <div class="input-container">
+                                
+                                <label for="file-upload" class="subir">
+                                    <i class="fas fa-cloud-upload-alt"></i> Cambiar Foto de Perfil
+                                </label>
+                                <input id="file-upload" name="image" onchange='cambiar()' type="file" style='display: none;'/>
+                                
+                                <% if (locals.errors && errors.image) { %>
+                                    <p class='msg-error'>
+                                        <%= errors.image.msg %>
+                                    </p>
+                                    <% } %>
+                            </div>
+                            <button class="update-profile" type="submit">Actualizar Perfil</button>
+                        
+
+                            
+                        </form>
+                    </div>
+                </div>
+
                 
 
 

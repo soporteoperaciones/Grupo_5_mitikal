@@ -1,28 +1,90 @@
 
 /* ---- main ---------------------------------------------------------------------------------------------------------------      */
-
+body{
+    background: #f5f6fa; 
+   
+}
 main {
-    display: flex
+    margin: 0;
+    padding-top: 40px;
+    color: #2e323c;
+    background: #f5f6fa;
+    height: 90vh;
+    
 }
 
-main .box-register {
-    position: relative;
-    width: 100%;
-    height: 800px;
-    padding: 25px;
+main .box{
     display: flex;
+    flex-direction: row;
+    justify-content:center;
     align-items: center;
-    flex-direction: column;
+    margin-top: 8vh;
 }
 
-main h1,
-h2 {
-    text-align: center;
-    font-family: 'Mulish', sans-serif;
-    font-size: 30px;
-    margin-bottom: 8px;
-    margin-top: 8px;
+.box .user-profile{
+   padding-right: 8vw;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
+
+.name h5{
+    font-size: 36px;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 1px;
+    
+}
+
+.email h6{
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 1px;
+    font-size: 30px !important; 
+}
+
+
+ .user-profile .user-avatar img {
+    width: 400px;
+    height: 400px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 200px;
+}
+
+
+ .user-profile h5.user-name {
+   
+    margin: 15px 15px 15px 40px;
+    color: black;
+}
+
+ .user-profile h6.user-email {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #9fa8b9;
+    padding-bottom: 15px;
+}
+
+.delete-profile{
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: 4px;
+    width: 200px;
+    height: 40px;
+    transition-duration: 0.5s;
+}
+
+.delete-profile:hover {
+    border: black solid 1px;
+    background-color: white;
+    color: black;
+}
+
+
+
+
 
 main input {
     border-radius: 50px;
@@ -36,61 +98,41 @@ main input::placeholder {
     color: #434343;
 }
 
-main label {
-    color: black;
-    display: block;
-    margin: .5em 0 0 0;
-    font-family: 'Rubik', sans-serif;
-    color: #afafaf;
-}
-
-main .crear-cuenta {
-    position: relative;
-    top: 1%;
+.update-profile {
     border-radius: 50px;
     background-color: black;
     color: white;
     font-family: 'Rubik', sans-serif;
     letter-spacing: 4px;
-    
     width: 300px;
     height: 50px;
-    margin-top: 65px;
+    margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 20%;
     transition-duration: 0.5s;
 }
 
-main .crear-cuenta:hover {
+.update-profile:hover {
     border: black solid 1px;
     background-color: white;
     color: black;
 }
 
-main .iniciar-sesion {
-    color: #434343;
-    font-family: 'Rubik', sans-serif;
-    position: absolute;
-    left: 43.6%;
-    top: 72%;
-    
+
+
+
+
+main label {
+    color: black;
+    display: block;
+    margin: .5em 0 0 0;
+    font-family: 'Anton', sans-serif;
+    color: #9fa8b9;
+    padding-left: 0.3vw;
 }
 
-main .iniciar-sesion a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #434343;
-    transition-duration: 0.5s;
-}
 
-main .iniciar-sesion a:hover {
-    text-decoration: none;
-    font-weight: normal;
-    color: white;
-    border: 1px solid #434343;
-    background-color: #434343;
-    border-radius: 50px;
-}
+
 
 main .whatsapp-logo {
     position: sticky;
@@ -121,13 +163,7 @@ header .whatsapp-logo img {
 /*----------------------------------------------------------------------------------------------------------------------------------*/
 
 
-/* Botones */
 
-.boton_enviar {
-    background: black;
-    color: white;
-    border-radius: 40px;
-}
 
 .subir{
     margin-top: 20px;
