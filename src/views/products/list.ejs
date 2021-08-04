@@ -25,21 +25,31 @@
     <%- include("../partials/header") %>
         <main>
 
-            <div class="products">
-                <% productList.forEach((Product) => { %>
-                    <article class="product-list-image">
-                        <img src="<%= Product.image %>" alt="" width="50%">
-
-                        <h2 class="List-Products">
-                            <a href="/products/detailProduct/<%= Product.id %>">
-                                <%= Product.name %>
-                            </a>
-                        </h2>
-
-                    </article>
+            <div class="container-main-all">
+                <h1>Productos</h1>
+                <div class="container-body-list">
+                    <% productList.forEach((Product) => { %>
+                       
+                            <div class="colum-list">
+                                <a href="/products/detailProduct/<%= Product.id%>">
+                                    <div class="producto">
+                                        <img src="<%= Product.image %>" alt="">
+                                        <a href="*"><i class="fas fa-cart-plus"></i></a>
+                                    </div>
+                                    <div class="description"> 
+                                        <h3 class="nombre_del_producto"><%= Product.name%></h3>
+                                        <h3 class="precio_del_producto">$ <%= Product.price%></h3>
+                                        <h5 class="forma_de_pago"><%= Product.description%></h5>
+                                    </div>
+                                </a>
+                            </div>
+    
+                      
                     <% }) %>
-
-
+                 
+                   
+                   
+                </div>
             </div>
 
 
