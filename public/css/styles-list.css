@@ -3,9 +3,12 @@
 
 
 /* ---- main ---------------------------------------------------------------------------------------------------------------      */
-
+body{
+    background: #f5f6fa !important;
+}
 .container-main-all{
     font-family: 'Anton', sans-serif ; 
+    
 }
 
 .container-main-all h1{
@@ -22,37 +25,85 @@
 }
 
 .container-body-list .colum-list{
-    height: 600px;
-    width: 500px;
+    height: auto;
+    width: 450px;
     border: 0.2px solid #b3b3b396;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius:15px;
     margin: 0.7%;
     margin-bottom: 3%;
-
+    box-shadow: -3px 1px 1px rgb(100, 100, 100) ;
+    box-shadow: 3px 1px 1px rgb(100, 100, 100);
+    transition-duration: 0.4s;
     
 }
+
+.container-body-list .colum-list .hide {
+    display: none;
+}
+.container-body-list .colum-list .hide:hover{
+    display: block;
+}
+
+
+
+.container-body-list .colum-list:hover{
+    box-shadow: 3px 1px 1px rgb(0, 255, 0) ;
+    box-shadow: -3px 1px 1px rgb(0, 255, 0);
+   
+
+}
+
 
 .container-body-list .colum-list .producto img{
     width: 100%;
     height: 35vh;
 }
 
-.container-body-list .colum-list .description{
+.container-body-list  .description{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin:1%;
+    text-align: center;
+    font-style: normal;
+    
+    
 }
 
 
 
 
 
-.producto i{
+
+
+.description i{
     color:black;
-    font-size: 25px;
+    font-size: 27px;
+    transition: 0.4s infinite;
+}
+
+
+
+.description i:hover{
+    animation: flip 0.5s infinite;
+    color: rgb(35, 161, 35);
+}
+
+  @keyframes flip {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(-15deg);
+  }
+
+  100% {
+    transform: rotateZ(15deg);
+  }
+
+
 }
 
 
@@ -198,8 +249,20 @@ header .whatsapp-logo img{
 
 
 
+.colum-list .producto{
+
+}
+
+.boxtest{
+    height: auto;
+    width: 800px;
+    border: black solid 1px;
+    
+}
 
 
+.boxtest a h1 {display:none;}
+.boxtest a:hover h1 {display:block;}
 
 
 

@@ -31,23 +31,38 @@
                     <% productList.forEach((Product) => { %>
                        
                             <div class="colum-list">
-                                <a href="/products/detailProduct/<%= Product.id%>">
-                                    <div class="producto">
+                                <div class="producto">
+                                    <a href="/products/detailProduct/<%= Product.id%>">
+                                    
                                         <img src="<%= Product.image %>" alt="">
-                                        <a href="*"><i class="fas fa-cart-plus"></i></a>
-                                    </div>
+                                    </a> 
+                                
                                     <div class="description"> 
-                                        <h3 class="nombre_del_producto"><%= Product.name%></h3>
-                                        <h3 class="precio_del_producto">$ <%= Product.price%></h3>
-                                        <h5 class="forma_de_pago"><%= Product.description%></h5>
+                                        
+                                        <a href="/products/detailProduct/<%= Product.id%>">
+                                            <h3 class="nombre_del_producto"><%= Product.name%></h3>
+                                            <div class="hide">
+                                                <h3 class="precio_del_producto">$ <%= Product.price%></h3>
+                                                <h5 class="forma_de_pago"><%= Product.description%></h5>
+                                                <a href="*"><i class="fas fa-cart-plus"></i></a>
+                                            </div>
+                                        </a>
                                     </div>
-                                </a>
+                                </div>
                             </div>
     
                       
                     <% }) %>
                  
-                   
+                    <div class="boxtest"> 
+                        <a href="">
+                            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit esse quas assumenda expedita, omnis error sapiente veniam? Expedita nihil, dolor iusto error praesentium officia vitae accusantium odio atque. Blanditiis, dignissimos.</h1>
+                            <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, pariatur delectus culpa, fuga dolore asperiores perferendis rerum repudiandae suscipit perspiciatis atque! Et dolor soluta animi quibusdam ipsum omnis corporis sunt.</h2>
+                            <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, sed numquam, quasi qui aut incidunt ducimus perspiciatis dolorum nesciunt cumque dolor, saepe voluptate explicabo distinctio! Doloribus vel qui quidem eveniet.</h3>
+                        </a>
+                    </div>
+
+                
                    
                 </div>
             </div>
@@ -60,3 +75,4 @@
 </body>
 
 </html>
+
