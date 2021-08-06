@@ -1,7 +1,3 @@
-
-
-
-
 /* ---- main ---------------------------------------------------------------------------------------------------------------      */
 body{
     background: #f5f6fa !important;
@@ -40,9 +36,11 @@ body{
 
 .container-body-list .colum-list .hide {
     display: none;
+    text-decoration: none !important;
+
 }
-.container-body-list .colum-list .hide:hover{
-    display: block;
+.container-body-list .colum-list:hover .hide{
+    display:block;
 }
 
 
@@ -71,10 +69,6 @@ body{
     
     
 }
-
-
-
-
 
 
 
@@ -133,118 +127,6 @@ header .whatsapp-logo img{
 }
 
 
-/* Carga de productos*/
-
-/*
-.row0 .colum0 .producto{
-    background-image: url("/img/image_destacados.jpeg");
-
-}
-
-.row0 .colum1 .producto{
-    background-image: url("/img/image_novedades.jpeg");
-
-}
-.row0 .colum2 .producto{
-    background-image: url("/img/image_destacados.jpeg");
-
-}
-
-
-.row1 .colum0 .producto{
-    background-image: url("/img/image_novedades.jpeg");
-
-}
-
-.row1 .colum1 .producto{
-    background-image: url("/img/image_destacados.jpeg");
-
-}
-.row1 .colum2 .producto{
-    background-image: url("/img/image_novedades.jpeg");
-
-}
-
-.row2 .colum0 .producto{
-    background-image: url("/img/image_destacados.jpeg");
-
-}
-
-.row2 .colum1 .producto{
-    background-image: url("/img/image_novedades.jpeg");
-
-}
-.row2 .colum2 .producto{
-    background-image: url("/img/image_destacados.jpeg");
-
-}
-
-
-*/
-
-/*Efectos de productos*/
-/*
-.row0 .colum0 .producto:hover{
-    background-image: url("/img/image_novedades.jpeg");
-    transition-duration:0.8s;
-}
-
-.row0 .colum1 .producto:hover{
-	background-image: url("/img/image_destacados.jpeg");
-	transition-duration:0.8s;
-}
-
-.row0 .colum2 .producto:hover{
-    background-image: url("/img/image_novedades.jpeg");
-    transition-duration:0.8s;
-
-}
-
-
-.row1 .colum0 .producto:hover{
-   	background-image: url("/img/image_destacados.jpeg");
-	transition-duration:0.8s;
-
-}
-
-.row1 .colum1 .producto:hover{
-    background-image: url("/img/image_novedades.jpeg");
-    transition-duration:0.8s;
-
-}
-.row1 .colum2 .producto:hover{
-   	background-image: url("/img/image_destacados.jpeg");
-	transition-duration:0.8s;
-
-}
-
-.row2 .colum0 .producto:hover{
-    background-image: url("/img/image_novedades.jpeg");
-    transition-duration:0.8s;
-
-}
-
-.row2 .colum1 .producto:hover{
-    	background-image: url("/img/image_destacados.jpeg");
-	transition-duration:0.8s;
-
-}
-.row2 .colum2 .producto:hover{
-    background-image: url("/img/image_novedades.jpeg");
-    transition-duration:0.8s;
-
-}
-
-.row0 .colum0 .description:hover ~ .row0 .colum0 .producto {
-
-    height:150%;
-    width:150%; 
-}
-
-/*
-~ img{}
-
-*/
 
 
 

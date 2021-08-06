@@ -33,12 +33,13 @@
                             <div class="colum-list">
                                 <div class="producto">
                                     <a href="/products/detailProduct/<%= Product.id%>">
-                                    
-                                        <img src="<%= Product.image %>" alt="">
+                                        <% if(!Product.image){ %> 
+                                            <img src="/img/no-product.png" alt="">
+                                        <% } else {%>
+                                            <img src="<%= Product.image %>" alt="">
+                                            <% } %>  
                                     </a> 
-                                
-                                    <div class="description"> 
-                                        
+                                    <div class="description">          
                                         <a href="/products/detailProduct/<%= Product.id%>">
                                             <h3 class="nombre_del_producto"><%= Product.name%></h3>
                                             <div class="hide">
@@ -50,20 +51,7 @@
                                     </div>
                                 </div>
                             </div>
-    
-                      
                     <% }) %>
-                 
-                    <div class="boxtest"> 
-                        <a href="">
-                            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit esse quas assumenda expedita, omnis error sapiente veniam? Expedita nihil, dolor iusto error praesentium officia vitae accusantium odio atque. Blanditiis, dignissimos.</h1>
-                            <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, pariatur delectus culpa, fuga dolore asperiores perferendis rerum repudiandae suscipit perspiciatis atque! Et dolor soluta animi quibusdam ipsum omnis corporis sunt.</h2>
-                            <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, sed numquam, quasi qui aut incidunt ducimus perspiciatis dolorum nesciunt cumque dolor, saepe voluptate explicabo distinctio! Doloribus vel qui quidem eveniet.</h3>
-                        </a>
-                    </div>
-
-                
-                   
                 </div>
             </div>
 
