@@ -39,15 +39,14 @@ body{
     text-decoration: none !important;
 
 }
+
 .container-body-list .colum-list:hover .hide{
     display:block;
 }
 
-
-
 .container-body-list .colum-list:hover{
-    box-shadow: 3px 1px 1px rgb(0, 255, 0) ;
-    box-shadow: -3px 1px 1px rgb(0, 255, 0);
+    box-shadow: 3px 1px 1px rgb(100, 100, 100) ;
+    box-shadow: -3px 1px 1px rgb(100, 100, 100);
    
 
 }
@@ -56,6 +55,12 @@ body{
 .container-body-list .colum-list .producto img{
     width: 100%;
     height: 35vh;
+}
+
+.description a:link{
+  text-decoration: none !important;
+  color:black;
+
 }
 
 .container-body-list  .description{
@@ -70,22 +75,19 @@ body{
     
 }
 
-
-
 .description i{
     color:black;
     font-size: 27px;
     transition: 0.4s infinite;
 }
 
-
-
 .description i:hover{
     animation: flip 0.5s infinite;
     color: rgb(35, 161, 35);
 }
 
-  @keyframes flip {
+
+@keyframes flip {
   0% {
     transform: rotateZ(0deg);
   }
@@ -96,16 +98,7 @@ body{
   100% {
     transform: rotateZ(15deg);
   }
-
-
 }
-
-
-
-
-
-
-
 
 
 header .whatsapp-logo img{
@@ -127,24 +120,6 @@ header .whatsapp-logo img{
 }
 
 
-
-
-
-
-.colum-list .producto{
-
-}
-
-.boxtest{
-    height: auto;
-    width: 800px;
-    border: black solid 1px;
-    
-}
-
-
-.boxtest a h1 {display:none;}
-.boxtest a:hover h1 {display:block;}
 
 
 

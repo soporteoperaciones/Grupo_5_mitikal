@@ -21,8 +21,9 @@
 
 <body>
     <!-- Parte superior de la pagina dividido en un box, con tres box internos -->
-
+    
     <%- include("../partials/header") %>
+    
         <main>
 
             <div class="container-main-all">
@@ -39,16 +40,16 @@
                                             <img src="<%= Product.image %>" alt="">
                                             <% } %>  
                                     </a> 
-                                    <div class="description">          
+                                </div>
+                                <div class="description">          
                                         <a href="/products/detailProduct/<%= Product.id%>">
                                             <h3 class="nombre_del_producto"><%= Product.name%></h3>
                                             <div class="hide">
-                                                <h3 class="precio_del_producto">$ <%= Product.price%></h3>
-                                                <h5 class="forma_de_pago"><%= Product.description%></h5>
+                                                <h5 class="product_description"><%= Product.description%></h5>
+                                                <h3 class="product_price">$ <%= Product.price%></h3>
                                                 <a href="*"><i class="fas fa-cart-plus"></i></a>
                                             </div>
                                         </a>
-                                    </div>
                                 </div>
                             </div>
                     <% }) %>
