@@ -1,5 +1,4 @@
 
-
 /* ---- main ---------------------------------------------------------------------------------------------------------------      */
 /*carrousel*/
 .carousel-inner .carousel-item img{
@@ -153,7 +152,6 @@ main .container-main2-all .row0{
 
 
 main .container-main2-all .container-body .row0 .colum0{
-    /*position:relative;*/
     max-width: 50%;
     width: 50%;
     justify-content: left;
@@ -189,7 +187,7 @@ main .container-main2-all .container-body .row0 .colum0{
 
 main .container-main2-all .container-body .row0 .colum1{
     background-image: url("/img/image02_novedades.jpg");
-    background-size:unset;
+    background-size:cover;
     background-repeat:no-repeat;
     background-position:center;
     display:flex;
@@ -206,8 +204,7 @@ main .container-main2-all .container-body .row0 .colum1{
 .ef_novedades_destacados:hover{
     background-image: url("/img/image02_destacados.jpg");
     background-size: 200%;
-    background-repeat:no-repeat;
- 
+    background-repeat:no-repeat; 
     opacity:70%;
     display:flex;
     object-fit: contain;
@@ -253,8 +250,9 @@ main .container-main3-all{
 
 }
 
+/*Productos*/
 main .container-main3-all .container-body{
-        height:60vh;
+        height:auto;
         display:flex;
         justify-content:center;
         align-items:center;
@@ -268,60 +266,90 @@ main .container-main3-all .row0{
     justify-content:space-between;
 }
 
+.container-main3-all .container-body{
+    font-family: 'Anton', sans-serif ; 
+    
+}
 
-.ef_producto{
-   width:100%;
-   height: 100%;
-   margin:0.4%;
-   box-shadow: 0px 0px 4px #c7c7c7;
-   background-color:#fcfdff;
+.container-main3-all .container-body h1{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 1%;
 }
 
 
-.producto i{
-    color:black;
-    margin-bottom:100px;
-    font-size:50px;
+.container-main3-all .container-body{   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center; 
+}
+
+.container-main3-all .container-body .product{
+    height: max-content;
+    width: 450px;
+    border: 0.2px solid #b3b3b396;
+    margin: 0.6%;
+    margin-bottom: 3%;
+    -webkit-transition: 1s linear;
+    transition: 0.4s linear;
+    
+}
+
+.container-main3-all .container-body .product .description_product_hide {
+    display: none;
+    text-decoration: none !important;
+}
+
+.container-main3-all .container-body .product:hover .description_product_hide{
+    display:block;
+    text-decoration: none !important;
+}
+
+.container-main3-all .container-body .product:hover{
+    box-shadow: 3px 1px 1px rgb(100, 100, 100) ;
+    box-shadow: -3px 1px 1px rgb(100, 100, 100);
+    -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+    box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+    border-radius: 30px;
 }
 
 
-.producto i:hover{
-    color:black;
-    margin-bottom:100px;
-    font-size:70px;
-
-}
-
-main .ef_producto .producto{
-    max-width: 100%;
+.container-main3-all .container-body .product .image_product img{
     width: 100%;
-    max-height: 80%;
-    height:80%;
-    display:flex;
-    flex-direction:column;
-    padding:1%;
-    position:relative;
+    height: 35vh;
 }
 
-main .ef_producto .producto img{
-    width:100%;
-    height:100%;
+.container-main3-all .container-body .product  .description_product a:link{
+    text-decoration: none !important;
+    color:black;
+  }
+  
+
+.container-main3-all .container-body .product  .description_product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:1%;
+    text-align: center;
+    font-style: normal;
+    
+    
 }
 
-main .ef_producto .producto i{
-    position:absolute;
-    top:42vh;
-    right:11vw;
-    font-size:3.2vw;
-    color:#202020;
-    transition: 1s infinite;
+.container-main3-all .container-body .product .description_product i{
+    color:black;
+    font-size: 27px;
+    transition: 0.4s infinite;
 }
 
-main .ef_producto .producto i:hover{
+.container-main3-all .container-body .product .description_product i:hover{
     animation: flip 0.5s infinite;
+    color: rgb(35, 161, 35);
 }
 
-  @keyframes flip {
+
+@keyframes flip {
   0% {
     transform: rotateZ(0deg);
   }
@@ -332,49 +360,8 @@ main .ef_producto .producto i:hover{
   100% {
     transform: rotateZ(15deg);
   }
-
-
 }
 
-
-
-
-main .ef_producto .description{
-    max-width: 100%;
-    width: 100%;
-    height:20%;
-    max-height: 20%;
-    display:flex;
-    align-items:flex-start;
-    flex-direction:column;
-    align-items:center;
-    justify-content:space-evenly;
-}
-
-main .ef_producto .description h3{
-     font-family: 'Muli', sans-serif;
-     font-size:1vh;
-     margin-bottom:8%;
-     color:green;
-
-}
-
-main .ef_producto .description h4{
-     font-family: 'Rubik', sans-serif;
-     font-size:2vh;
-     margin-bottom:0%;
-     font-weight: 700;
-     color: red;
-}
-
-main .ef_producto .description h5{
-     font-family: 'Rubik', sans-serif;
-     font-size:1vh;
-     margin-bottom:0%;
-     font-weight: 500;
-     color: blue;
-
-}
 
 
 
@@ -565,78 +552,4 @@ header .whatsapp-logo img{
         transform: translateY(-3vh);
     }
 
-}
-
-
-/**header*/
-
-
-  /*main*/
-
-
-    main .container-main2-all .container-body{
-    display: flex;
-    justify-content: space-between;
-    padding: 0.1%;
-    height:84vh;
-    }
-
-    main .container-main2-all{
-    width: 100%;
-    margin:auto;
-    }
-
-    main .container-main2-all .row0{
-    display: flex;
-    flex-direction:column;
-    height:auto;
-    width: 100%;
-
-    }
-    
-
-    main .container-main2-all .container-body .row0 .colum0{
-    max-width: 100%;
-    width: 100%;
-    height:50%;
-    margin:1%;
-    }
-
-    main .container-main2-all .container-body .row0 .colum1{
-    max-width: 100%;
-    width: 100%;
-    height:50%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin:1%;
-    }
-
-
-    main .container-main2-all .container-body .row0 .colum0{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-
-    }
-
-
-    main .container-main2-all .container-body .row0 .colum1{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-
-    }
-
-
-    main .ef_producto .producto{
-    max-width: 100%;
-    width: 100%;
-    max-height: 80%;
-    height:80%;
-    display:flex;
-    flex-direction:column;
-    padding:1%;
-    position:relative;
-    }
 }

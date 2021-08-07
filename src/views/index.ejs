@@ -81,52 +81,36 @@
             <!--Articles-->
             <div class="container-main3-all">
                 <div class="container-body">
-                    <div class="row0">
-                        <div class="colum0 ef_producto">
-                            <div class="producto">
-                                <img src="/img/image_destacados.jpeg" alt="Producto 1" />
-                                <a href="detalleProducto" target="_blank"><i class="fas fa-cart-plus"></i></a>
+                    <% elements = productList.length + 1 %>
+                    <%function aleatoria(min, max) {  %>                     
+                    <%       return Math.round(Math.random() * (max - min) + min); %>
+                    <% } %>
+                    <%for(j=0; j<4; j++){%>
+                        <% i = aleatoria(0,elements) %> 
+                        <% productList[i]//.find((i) => { %>
+                            <div class="product">
+                                <div class="image_product">
+                                    <a href="/products/detailProduct/<%= productList[i].id%>">
+                                        <% if(!productList[i].image){ %> 
+                                            <img src="/img/no-product.png" alt="">
+                                        <% } else {%>
+                                            <img src="<%= productList[i].image %>" alt="">
+                                            <% } %>  
+                                    </a> 
+                                </div>
+                                <div class="description_product">          
+                                        <a href="/products/detailProduct/<%= productList[i].id%>">
+                                            <h3 class="nombre_del_producto"><%= productList[i].name%></h3>
+                                            <div class="description_product_hide">
+                                                <h5 class="description_product_"><%= productList[i].description%></h5>
+                                                <h3 class="price_product">$ <%= productList[i].price%></h3>
+                                                <a href="*"><i class="fas fa-cart-plus"></i></a>
+                                            </div>
+                                        </a>
+                                </div>
+                                
                             </div>
-                            <div class="description">
-                                <h3 class="nombre_del_producto"> NOMBRE PRODUCTO 1</h3>
-                                <h4 class="precio_del_producto"> Precio</h4>
-                                <h5 class="forma_de_pago"> Forma de pago / promociones</h5>
-                            </div>
-                        </div>
-                        <div class="colum1 ef_producto">
-                            <div class="producto">
-                                <img src="/img/image_destacados.jpeg" alt="Producto 2" />
-                                <a href="*"><i class="fas fa-cart-plus"></i></a>
-                            </div>
-                            <div class="description">
-                                <h3 class="nombre_del_producto"> NOMBRE PRODUCTO 1</h3>
-                                <h4 class="precio_del_producto"> Precio</h4>
-                                <h5 class="forma_de_pago"> Forma de pago / promociones</h5>
-                            </div>
-                        </div>
-                        <div class="colum2 ef_producto">
-                            <div class="producto">
-                                <img src="/img/image_destacados.jpeg" alt="Producto 3" />
-                                <a href="*"><i class="fas fa-cart-plus"></i></a>
-                            </div>
-                            <div class="description">
-                                <h3 class="nombre_del_producto"> NOMBRE PRODUCTO 1</h3>
-                                <h4 class="precio_del_producto"> Precio</h4>
-                                <h5 class="forma_de_pago"> Forma de pago / promociones</h5>
-                            </div>
-                        </div>
-                        <div class="colum3 ef_producto">
-                            <div class="producto">
-                                <img src="/img/image_destacados.jpeg" alt="Producto 4" />
-                                <a href="*"><i class="fas fa-cart-plus"></i></a>
-                            </div>
-                            <div class="description">
-                                <h3 class="nombre_del_producto"> NOMBRE PRODUCTO 1</h3>
-                                <h4 class="precio_del_producto"> Precio</h4>
-                                <h5 class="forma_de_pago"> Forma de pago / promociones</h5>
-                            </div>
-                        </div>
-                    </div>
+                    <% } %>     
                 </div>
             </div>
             <!-- Newsletter -->
