@@ -27,6 +27,12 @@ module.exports = (sequelize, DataTypes) => {
         },
         image: {
             type: DataTypes.STRING(200),
+        },
+        destacados: {
+            type: DataTypes.BOOLEAN,
+        },
+        novedades: {
+            type: DataTypes.BOOLEAN,
         }
     }
     const config = {
