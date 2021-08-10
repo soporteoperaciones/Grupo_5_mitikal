@@ -8,4 +8,7 @@ Hacer más : colearning, eso aporta a todo el equipo , cuando muchos tenemos pro
 Emepzar a hacer: mas trabajo en equipo y separando tareas como lo hablado en la reunion
 Dejar de hacer: commitear uno solo.
 Seguir haciendo: reuniones semanales y trabajao grupal para la toma de decisiones.
+Empezar a hacer: a mejorar el Front End y CSS desde lo aprendido en la ultima clase.
+Dejar de Hacer:dejar pasar tiempo para aplicar lo ultimo aprendido, habilitando en GIT la ramam Test.
+HAcer mas: reuniones, colerning, y PRACTICAR, PRACTICAR, PRACTICAR.
             
