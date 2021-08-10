@@ -8,4 +8,5 @@
 8- Nos juntamos para empezar a mejorar la estetica fina que la tenemos abandonada por la parte gruesa del backend.
 9- Rama Main : proyecto middleware , sequelize con mysql.
 10- RamaMaster : proyecto middleware con Json.
-
+11- Se mejoro a nivel CSS y Validaciones, Sequlize a full.
+12- Ahora reunion en la semana para validar desde Front.
