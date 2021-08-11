@@ -48,8 +48,10 @@
                         </div>
                     </div>
                     <div class="colum1">
-                        <input type="header_type_buscar" id="header_id_buscar" placeholder="Buscar..." />
-                        <i class="fa fa-search"></i>
+                        <form action="/products/search" method="GET">
+                            <input name="search" type="header_type_buscar" id="header_id_buscar" placeholder="Buscar..." />
+                            <i class="fa fa-search"></i>
+                        </form>
                     </div>
                     <div class="colum2">
                         <a href="/"><img class="logo_mitikal" src="/img/mitikal_logo.png" alt="Mitikal - Logo"></a>

@@ -44,6 +44,7 @@ productRoutes.use('/market', productController.market)
 productRoutes.get('/market_test', productController.market_test)
 */
 
+productRoutes.get('/search', productController.search)
 productRoutes.get('/releases', productController.releases)
 productRoutes.get('/important', productController.important)
 productRoutes.get('/detailProduct/:id?', productController.detailProduct)

@@ -20,6 +20,21 @@ const productController = {
         res.render('products/list', { productList })
 
     },
+
+    search: async(req, res) => {
+
+        console.log(req.query.search)
+        const productList = await Product.findAll({
+            where: {
+                name: {
+                  [Op.like]: '%'+req.query.search+'%' // `%${req.query.search}%`
+
+                }
+              }            
+        })
+        res.render('products/list', { productList })
+
+    },    
     //const productList = productsModel.findAll()
 
     // aca leo el json y se lo paso al template
